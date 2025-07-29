@@ -15,8 +15,8 @@ window.addEventListener("scroll", function () {
 // Auto-play carousel with pause on hover
 const carousel = document.querySelector('#reviewCarousel');
 const carouselInstance = new bootstrap.Carousel(carousel, {
-  interval: 2000,
-  wrap: true
+  interval: 5000,
+  wrap: true,
 });
 
 // Pause on hover

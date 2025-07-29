@@ -616,15 +616,22 @@ body {
     margin: 20px 0;
     position: relative;
 }
+.signin-login .divider::before,
+.signin-login .divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background-color: var(--all-border);
+  width: 30%;
+}
 
 .signin-login .divider::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: var(--all-border);
+  left: 0;
+}
+
+.signin-login .divider::after {
+  right: 0;
 }
 
 .signin-login .divider span {
@@ -645,7 +652,7 @@ body {
 .signin-login .register-link {
     color: var(--secondary-colors);
     text-decoration: none;
-    font-weight: 600;
+
 }
 
 .signin-login .register-link:hover {

@@ -726,7 +726,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <label for="multicity-first">First Class</label>
                     </div>
                 </div>
-                <button type="button" class="apply-btn">Apply</button>
+                <button type="button" class="apply-btn text-white">Apply</button>
             </div>
         </div>
         `;
