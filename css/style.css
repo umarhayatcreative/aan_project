@@ -741,5 +741,9 @@ body {
 .navbar.scrolled {
     background: rgba(20, 20, 20, 0.95) !important;
     transition: background 0.3s;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
 }
