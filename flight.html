@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAN Tourism Activities</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/flight.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <!-- header & banner sec start -->
+    <section class="header-home">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100 navbar-scroll">
+            <div class="container d-flex align-items-center py-2 flex-nowrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold me-4 flex-shrink-0" href="/index.html">Logo</a>
+
+                <!-- Menu Items (centered on large screens) -->
+                <div class="collapse navbar-collapse justify-content-center flex-grow-1" id="mainMenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
+                        <li class="nav-item"><a class="nav-link active text-white" href="/flight.html">Flight</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/hotel.html">Hotel</a></li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="/activities-detail-page.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/combo-tour.html">Combo
+                                Tours</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/umrah.html">Umrah</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/visa.html">Visa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side: Contact Us, Log in, Cart -->
+                <div class="d-flex align-items-center ms-auto flex-shrink-0">
+                    <div class="d-none d-lg-flex align-items-center gap-2">
+                        <a href="/contact-us.html" class="nav-link text-white">Contact Us</a>
+                        <a href="#" class="btn btn-outline-light py-1 px-3 me-2">Log in</a>
+                    </div>
+                    <!-- Cart icon always visible -->
+                    <a href="#" class="nav-link text-white fs-5 d-flex align-items-center ms-2" id="cartIcon"><i
+                            class="bi bi-cart"></i></a>
+                    <!-- Toggler (hamburger icon) for mobile -->
+                    <button class="navbar-toggler ms-2 border-white d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <span class="navbar-toggler-icon border-white"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="home-for-mobileview">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/flight.html" class="text-decoration-none"><i
+                                class="bi bi-airplane me-2 offcanvas-icon"></i>Flight</a></li>
+                    <li class="list-group-item"><a href="/hotel.html" class="text-decoration-none"><i
+                                class="bi bi-bank me-2 offcanvas-icon"></i>Hotel</a></li>
+                    <li class="list-group-item"><a href="/activities.html" class="text-decoration-none"><i
+                                class="bi bi-camera me-2 offcanvas-icon"></i>Activities</a></li>
+                    <li class="list-group-item"><a href="/combo-tour.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Combo Tour</a></li>
+                    <li class="list-group-item"><a href="/packages.html" class="text-decoration-none"><i
+                                class="bi bi-boxes me-2 offcanvas-icon"></i>Packages</a></li>
+                    <li class="list-group-item"><a href="/umrah.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Umrah</a></li>
+                    <li class="list-group-item"><a href="/visa.html" class="text-decoration-none"><i
+                                class="bi bi-grid me-2 offcanvas-icon"></i>Visa</a></li>
+                    <li class="list-group-item"><a href="/contact-us.html" class="text-decoration-none"><i
+                                class="bi bi-telephone me-2 offcanvas-icon"></i>Contact Us</a></li>
+                    <li class="list-group-item me-2"><a href="" class="text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#loginModal"><i class="bi bi-person me-2 offcanvas-icon"></i>Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header & banner sec end -->
+
+    <!-- flight input start -->
+    <section class="flight-input-sec mt-5 py-5">
+        <div class="container">
+            <div class="flight-form-container bg-white p-3">
+                <!-- Trip Type Radio Buttons -->
+                <div class="flight-trip-type-container d-flex gap-2 mb-4 flex-wrap
+                ">
+                    <div class="trip-type-option me-2">
+                        <input type="radio" id="roundtrip-radio" name="tripType" value="roundtrip" checked>
+                        <label for="roundtrip-radio" class="text-nowrap">Round Way</label>
+                    </div>
+                    <div class="trip-type-option me-2">
+                        <input type="radio" id="oneway-radio" name="tripType" value="oneway">
+                        <label for="oneway-radio" class="text-nowrap">One Way</label>
+                    </div>
+                    <div class="trip-type-option me-2">
+                        <input type="radio" id="multicity-radio" name="tripType" value="multicity">
+                        <label for="multicity-radio" class="text-nowrap">Multi City</label>
+                    </div>
+                </div>
+
+                <form id="flightBookingForm">
+                    <!-- Round Trip & One Way Form -->
+                    <div id="standard-form" class="flight-trip-content">
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control fw-semibold" id="departure-city"
+                                        placeholder="Leaving from" value="Lahore, Pakistan">
+                                    <label for="departure-city">Leaving from</label>
+                                    <div class="city-suggestions-menu bg-white" id="departure-city-suggestions">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control fw-semibold" id="arrival-city"
+                                        placeholder="Going to">
+                                    <label for="arrival-city">Going to</label>
+                                    <div class="city-suggestions-menu bg-white" id="arrival-city-suggestions">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3" id="date-field-container">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control date-range-input fw-semibold" id="date-range"
+                                        placeholder="Jul 23    Jul 25 2025" readonly>
+                                    <label for="date-range" id="date-label">Depart , Return</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div class="travelers-dropdown">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control travelers-toggle fw-semibold"
+                                            id="travelers-display" placeholder="Travelers & Class" readonly
+                                            value="1 Adults Economy">
+                                        <label for="travelers-display">Travelers & Class</label>
+                                    </div>
+                                    <div class="travelers-menu" id="travelers-menu">
+                                        <div class="traveler-row">
+                                            <span>Adults</span>
+                                            <div class="traveler-controls">
+                                                <button type="button" class="counter-btn">-</button>
+                                                <span class="counter-value" id="adults-count">1</span>
+                                                <button type="button" class="counter-btn">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="traveler-row">
+                                            <span>Children</span>
+                                            <div class="traveler-controls">
+                                                <button type="button" class="counter-btn">-</button>
+                                                <span class="counter-value" id="children-count">0</span>
+                                                <button type="button" class="counter-btn">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="traveler-row">
+                                            <span>Infants</span>
+                                            <div class="traveler-controls">
+                                                <button type="button" class="counter-btn">-</button>
+                                                <span class="counter-value" id="infants-count">0</span>
+                                                <button type="button" class="counter-btn">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="class-options">
+                                            <div class="class-option">
+                                                <input type="radio" id="economy" name="class" value="economy" checked>
+                                                <label for="economy">Economy</label>
+                                            </div>
+                                            <div class="class-option">
+                                                <input type="radio" id="business" name="class" value="business">
+                                                <label for="business">Business Class</label>
+                                            </div>
+                                            <div class="class-option">
+                                                <input type="radio" id="first" name="class" value="first">
+                                                <label for="first">First Class</label>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="apply-btn text-white">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3 ms-auto">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <a type="submit" href="/flight-detail.html"
+                                        class="btn flight-search-btn w-100 py-3 d-flex align-items-center justify-content-center text-white">Search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multi City Form -->
+                    <div id="multicity-form" class="flight-trip-content" style="display: none;">
+                        <div id="multicity-rows"></div>
+                        <div class="row mt-2 g-2" id="multicity-actions-row">
+                            <div class="col-md-6 col-lg-9 col-xl-9 d-flex justify-content-start">
+                                <button type="button" class="add-flight-btn w-100" id="add-multicity-flight-btn">
+                                    <i class="bi bi-plus"></i> Add another flight
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-end">
+                                <button type="submit"
+                                    class="btn flight-search-btn px-5 py-3 text-white w-100">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- flight input end-->
+
+    <!-- top rated fligt sec start --> <!-- top rated fligt sec start -->
+    <section class="top-rated-flight-sec p-3 p-md-4 p-xl-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top-rated-flight-sec-heading mb-3">
+                        <h3 class="fw-bold">Top Rated Flights</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flight Cards Grid -->
+            <div class="row g-3">
+                <!-- Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="flight-details.html" class="text-decoration-none">
+                        <div class="card flight-card p-2 h-100">
+                            <img src="img/flight1.png" class="flight-card-img" alt="Islamabad">
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title mb-1 fw-bold mb-2">Baku</h6>
+                                <p class="mb-1 text-muted small">1h 50m, Non-stop</p>
+                                <p class="mb-2 text-muted small">Wed 7/01&nbsp;&nbsp;&nbsp;Wed 7/20</p>
+                                <div class="mt-auto">
+                                    <p class="mb-0 text-muted small">From</p>
+                                    <p class="fw-bold flight-card-price mb-0">AED 270.24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="flight-details.html" class="text-decoration-none">
+                        <div class="card flight-card p-2 h-100">
+                            <img src="img/flight2.png" class="flight-card-img" alt="Islamabad">
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title mb-1 fw-bold mb-2">Islamabad</h6>
+                                <p class="mb-1 text-muted small">1h 50m, Non-stop</p>
+                                <p class="mb-2 text-muted small">Wed 7/01&nbsp;&nbsp;&nbsp;Wed 7/20</p>
+                                <div class="mt-auto">
+                                    <p class="mb-0 text-muted small">From</p>
+                                    <p class="fw-bold flight-card-price mb-0">AED 270.24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="flight-details.html" class="text-decoration-none">
+                        <div class="card flight-card p-2 h-100">
+                            <img src="img/flight3.png" class="flight-card-img" alt="Islamabad">
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title mb-1 fw-bold mb-2">Dubai</h6>
+                                <p class="mb-1 text-muted small">1h 50m, Non-stop</p>
+                                <p class="mb-2 text-muted small">Wed 7/01&nbsp;&nbsp;&nbsp;Wed 7/20</p>
+                                <div class="mt-auto">
+                                    <p class="mb-0 text-muted small">From</p>
+                                    <p class="fw-bold flight-card-price mb-0">AED 270.24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <a href="flight-details.html" class="text-decoration-none">
+                        <div class="card flight-card p-2 h-100">
+                            <img src="img/flight4.png" class="flight-card-img" alt="Islamabad">
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title mb-1 fw-bold mb-2">Karachi</h6>
+                                <p class="mb-1 text-muted small">1h 50m, Non-stop</p>
+                                <p class="mb-2 text-muted small">Wed 7/01&nbsp;&nbsp;&nbsp;Wed 7/20</p>
+                                <div class="mt-auto">
+                                    <p class="mb-0 text-muted small">From</p>
+                                    <p class="fw-bold flight-card-price mb-0">AED 270.24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+    </section>
+    <!-- top rated flight sec start -->
+    <!-- top rated tour sec start -->
+    <section class="top-rated-tour-sec p-3 p-md-4 p-xl-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top-rated-tour-sec-heading mb-3">
+                        <h3 class="fw-bold">High Rated Tours</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Tour Cards Grid -->
+            <div class="row g-3 mb-5">
+                <!-- Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity1.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity2.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity3.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity1.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity2.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity3.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity1.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hotel-tour-card p-2">
+                        <div class="position-relative">
+                            <img src="img/activity2.png" class="card-img-top tour-image" alt="Desert Safari">
+                            <span class="top-rated-badge text-white">Top Rated</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="d-flex pt-1">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                                    <small class="location-text text-muted">Dubai</small>
+                                </div>
+                                <span class="rating-stars ms-auto">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="card-title activity-card-title mb-2">Desert Safari Dubai Tickets
+                                Unforgettable Desert..</h6>
+                            <div>
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <span class="text-muted small me-2">From</span>
+                                        <div class="d-flex align-items-end">
+                                            <span class="price-current">AED 270.24</span>
+                                            <span class="price-original text-muted">AED 310</span>
+                                        </div>
+                                    </div>
+                                    <a href="/activities-detail-page.html"
+                                        class="btn btn-primary activity-book-btn ms-auto border-0 mt-auto d-flex align-items-center">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- top rated tour sec end -->
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h5 class="fw-bold text-white mb-4 fs-4">Logo</h5>
+                        <p class="small text-white">
+                            From flights to tours, Umrah to visa — Tourism offers personalized services for your ideal
+                            trip. Smart
+                            planning for better travel experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
+                        <ul class="list-unstyled small text-white">
+                            <li><a href="#" class="text-white text-decoration-none">Visas</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Activities</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Tours</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Hotel</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Blogs</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Get In Touch:</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 12 345
+                                    6789</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">info__gmail.com</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Street 1, Lahore
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <script src="js/flight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</body>
