@@ -331,3 +331,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+
+
+
+
+
+ $(document).ready(function(){
+    $('.card-slider').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      smartSpeed: 800,
+      navText: ['<span class="prev">‹</span>', '<span class="next">›</span>'],
+      responsive:{
+        0:{ items:1 },
+        576:{ items:2 },
+        768:{ items:2 },
+        992:{ items:3 },
+     1200:{ items:4 }
+      },
+      slideBy: 1
+    });
+  });

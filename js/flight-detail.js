@@ -1,6 +1,10 @@
+
+
+
+
 let isHidden = true; // Start in collapsed state
 let isFlightDetailsVisible = false;
-
+document.getElementById('multicity-form').style.display = 'none';
 class FlightBookingForm {
     constructor() {
         this.currentTripType = 'roundtrip';
@@ -189,6 +193,7 @@ class FlightBookingForm {
     switchTripType() {
         const standardForm = document.getElementById('standard-form');
         const multiCityForm = document.getElementById('multicity-form');
+        
         const dateLabel = document.getElementById('date-label');
         const dateInput = document.getElementById('date-range');
 
@@ -596,15 +601,6 @@ class FlightBookingForm {
         // The dropdown will be closed by the Apply button's onclick handler
     }
 }
-
-
-
-
-
-
-
-
-
 
 // Initialize the form when the page loads
 let flightForm;

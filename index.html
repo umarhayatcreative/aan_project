@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
   <style>
     /* Cart Dropdown Styles */
   </style>
@@ -508,7 +513,7 @@
 
           <!-- Tours -->
           <div class="tab-pane fade" id="tours" role="tabpanel" aria-labelledby="tours-tab">
-          <div class="search-box bg-white">
+            <div class="search-box bg-white">
               <input type="text" class="form-control" placeholder="Search World Tours" />
               <button class="btn btn-search">Search</button>
             </div>
@@ -516,7 +521,7 @@
 
           <!-- Packages -->
           <div class="tab-pane fade" id="packages" role="tabpanel" aria-labelledby="packages-tab">
-           <div class="search-box bg-white">
+            <div class="search-box bg-white">
               <input type="text" class="form-control" placeholder="Search Packages" />
               <button class="btn btn-search">Search</button>
             </div>
@@ -524,32 +529,58 @@
 
           <!-- Umrah -->
           <div class="tab-pane fade" id="umrah" role="tabpanel" aria-labelledby="umrah-tab">
-           <div class="search-box bg-white">
+            <div class="search-box bg-white">
               <input type="text" class="form-control" placeholder="Search Umrah Packages" />
               <button class="btn btn-search">Search</button>
             </div>
           </div>
         </div>
-
-
         <!-- tabs for home banner search br end -->
 
-
-
-
-
-
-
-
-        <!-- <p class="lead text-white">"30,000+ Exciting Adventures Await You!"</p>
-        <div class="search-box bg-white">
-          <input type="text" class="form-control" placeholder="Search World Cities" />
-          <button class="btn btn-search">Search</button>
-        </div> -->
       </div>
     </div>
   </section>
   <!-- header & banner sec end -->
+
+  <!-- home ads section start  -->
+  <section class="home-ads py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="home-ads-card text-white h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-6 p-4">
+                <h5 class="fw-bold">Skip the search, start the fun</h5>
+                <p class="mb-2">400,000+ activities ready for you to explore.</p>
+                <button class="btn text-white p-0">Read More</button>
+              </div>
+              <div class="col-lg-6 col-md-12 p-3 d-flex justify-content-center align-items-center">
+                <img class="img-fluid w-100 m-3" src="img/home-add-img2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="home-ads-card position-relative overflow-hidden">
+            <img class="img-fluid w-100 h-100 object-fit-cover" src="img/home-add-img.png" alt=""
+              style="min-height: 250px;">
+
+            <div
+              class="card-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4">
+              <span class="text-white fs-6">Dream Holiday Homes</span>
+              <h5 class="text-white fw-bold mb-2">Experience the joy of holiday living</h5>
+              <p class="text-white mb-3">Live luxuriously – villas, chalets, and elegant escapes</p>
+              <button class="btn ads-btn text-white btn-sm">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- home ads section end  -->
 
   <!-- world top cities sec start -->
   <section class="world-top-cities py-4">
@@ -606,48 +637,205 @@
     </div>
   </section>
   <!-- world top cities sec end -->
+  <!-- high rated hotel sec start -->
 
-  <!-- overview section start -->
-  <section class="overview-web py-5">
+  <section class="top-rated-hotel p-2 p-md-4 p-xl-5">
     <div class="container">
-      <div class="row g-3">
-        <div class="col-lg-4 col-md-6">
-          <div class="overview-detail d-flex align-items-center justify-content-center flex-column text-center">
-            <div class="circle d-flex align-items-center justify-content-center mb-2">
-              <img src="img/plan.png" alt="">
-            </div>
-            <h5>Your Plans Your Way</h5>
-            <p class="text-center">Plans Changed? No Problem! Get Free <br>
-              Cancellation.</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="top-rated-hotel-heading mb-3">
+            <h3 class="fw-bold">High Rated Hotels</h3>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6">
-          <div class="overview-detail d-flex align-items-center justify-content-center flex-column text-center">
-            <div class="circle d-flex align-items-center justify-content-center mb-2">
-              <img src="img/choice.png" alt="">
+      <div class="owl-carousel card-slider">
+        <div class="card hotel-card-custom">
+          <div class="position-relative">
+            <img src="img/hotel1.png" class="card-img-top tour-image" alt="Desert Safari">
+            <span class="top-rated-badge text-white">Top Rated</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                <small class="location-text text-muted">Lahore</small>
+              </div>
+              <span class="rating-stars ms-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
             </div>
-            <h5>Thousands Of Choices</h5>
-            <p class="text-center">With 45,000+ Experiences, your next
-              adventure is just a click away.</p>
+            <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+              Lahore</h5>
+            <div class="d-flex mb-2">
+
+            </div>
+            <div class="mt-auto">
+              <div class="d-flex flex-wrap align-items-end">
+                <a href="/hotel-detail.html"
+                  class="btn hotel-book-btn border-0 mt-auto d-flex align-items-center text-white fw-medium">Book
+                  Now</a>
+                <div class="ms-auto">
+
+                  <span class="text-muted small me-1">From</span>
+                  <span class="price-current">AED 270.24</span>
+
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="overview-detail d-flex align-items-center justify-content-center flex-column text-center">
-            <div class="circle d-flex align-items-center justify-content-center mb-2">
-              <img src="img/review.png" alt="">
+        <div class="card hotel-card-custom">
+          <div class="position-relative">
+            <img src="img/hotel2.png" class="card-img-top tour-image" alt="Desert Safari">
+            <span class="top-rated-badge text-white">Top Rated</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                <small class="location-text text-muted">Lahore</small>
+              </div>
+              <span class="rating-stars ms-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
             </div>
-            <h5>Trusted Reviews</h5>
-            <p class="text-center">Rated 4.7 Stars by 140,000+ <br>
-              travellers.</p>
+            <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+              Lahore</h5>
+            <div class="d-flex mb-2">
+
+            </div>
+            <div class="mt-auto">
+              <div class="d-flex flex-wrap align-items-end">
+                <a href="/hotel-detail.html"
+                  class="btn hotel-book-btn border-0 mt-auto d-flex align-items-center text-white fw-medium">Book
+                  Now</a>
+                <div class="ms-auto">
+
+                  <span class="text-muted small me-1">From</span>
+                  <span class="price-current">AED 270.24</span>
+
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
+        <div class="card hotel-card-custom">
+          <div class="position-relative">
+            <img src="img/hotel3.png" class="card-img-top tour-image" alt="Desert Safari">
+            <span class="top-rated-badge text-white">Top Rated</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                <small class="location-text text-muted">Lahore</small>
+              </div>
+              <span class="rating-stars ms-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+              Lahore</h5>
+            <div class="d-flex mb-2">
 
+            </div>
+            <div class="mt-auto">
+              <div class="d-flex flex-wrap align-items-end">
+                <a href="/hotel-detail.html"
+                  class="btn hotel-book-btn border-0 mt-auto d-flex align-items-center text-white fw-medium">Book
+                  Now</a>
+                <div class="ms-auto">
+
+                  <span class="text-muted small me-1">From</span>
+                  <span class="price-current">AED 270.24</span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card hotel-card-custom">
+          <div class="position-relative">
+            <img src="img/hotel4.png" class="card-img-top tour-image" alt="Desert Safari">
+            <span class="top-rated-badge text-white">Top Rated</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                <small class="location-text text-muted">Lahore</small>
+              </div>
+              <span class="rating-stars ms-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+              Lahore</h5>
+            <div class="d-flex mb-2">
+
+            </div>
+            <div class="mt-auto">
+              <div class="d-flex flex-wrap align-items-end">
+                <a href="/hotel-detail.html"
+                  class="btn hotel-book-btn border-0 mt-auto d-flex align-items-center text-white fw-medium">Book
+                  Now</a>
+                <div class="ms-auto">
+
+                  <span class="text-muted small me-1">From</span>
+                  <span class="price-current">AED 270.24</span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- high rated hotel sec end -->
+
+  <!-- promotion sec start -->
+  <section class="home-promotion mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div
+            class="home-promotion-custom align-items-start d-flex flex-column justify-content-center text-white p-lg-5 p-md-4 p-3">
+            <h4 class="display-5 fw-semibold">Start Your Journey</h4>
+            <p>Stay in 4-Star Hotels · Explore Yas Island
+              Full City Tours Included</p>
+            <button class="btn home-promotion-btn text-white">Book Now</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- overview section end -->
+
+  <!-- promotion sec end -->
 
   <!-- high rated tour sec start -->
   <section class="high-rated-tour py-5">
@@ -662,7 +850,7 @@
 
       <div class="row g-4 mb-4">
         <!-- card 1 -->
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
           <div class="card h-100 overflow-hidden rounded-4 p-2 high-rated-tour-custom">
             <div class="position-relative">
               <img src="img/desert safari.png" class="card-img-top img-cover" alt="Desert Safari Dubai">
@@ -705,7 +893,7 @@
         </div>
 
         <!-- card 2 -->
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
           <div class="card h-100 overflow-hidden rounded-4 p-2 high-rated-tour-custom">
             <div class="position-relative">
               <img src="img/desert safari 1.png" class="card-img-top img-cover" alt="Desert Safari Dubai">
@@ -749,7 +937,7 @@
         </div>
 
         <!-- card 3 -->
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
           <div class="card h-100 overflow-hidden rounded-4 p-2 high-rated-tour-custom">
             <div class="position-relative">
               <img src="img/desert safari 2.png" class="card-img-top img-cover" alt="Desert Safari Dubai">
@@ -793,7 +981,7 @@
         </div>
 
         <!-- card 4 -->
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
           <div class="card h-100 overflow-hidden rounded-4 p-2 high-rated-tour-custom">
             <div class="position-relative">
               <img src="img/desert safari.png" class="card-img-top img-cover" alt="Desert Safari Dubai">
@@ -836,93 +1024,6 @@
           </div>
         </div>
 
-        <!-- card 5 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 overflow-hidden rounded-4 p-2 high-rated-tour-custom">
-            <div class="position-relative">
-              <img src="img/desert safari 1.png" class="card-img-top img-cover" alt="Desert Safari Dubai">
-              <div class="position-absolute top-0 start-0 m-3">
-                <span class="badge rounded-pill px-3 py-2 fw-medium">Top Rated</span>
-              </div>
-            </div>
-            <div class="card-body d-flex flex-column high-rated-tour-body p-2">
-              <div class="d-flex">
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-geo-alt-fill text-muted me-1"></i>
-                  <span class="text-muted">Dubai</span>
-                </div>
-                <div class="mb-2 ms-auto review-icon">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-              <h5 class="card-title fw-semibold lh-base mb-3">Desert Safari Dubai
-                Tickets Unforgettable Desert...</h5>
-              <div class="mt-auto">
-                <div
-                  class="d-flex justify-content-between align-items-center high-rated-tour-card-footer flex-wrap gap-1">
-                  <button class="btn btn-danger px-3 py-2 rounded-2 fw-medium border-0">View
-                    Detail</button>
-                  <div>
-                    <span class="text-muted small">From</span>
-                    <div class="d-flex align-items-center">
-                      <span class="fw-bold price">AED 270.24</span>
-                      <span class="text-muted text-decoration-line-through ms-2">AED 540</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- card 6 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 overflow-hidden rounded-4 p-2 high-rated-tour-custom">
-            <div class="position-relative">
-              <img src="img/desert safari 2.png" class="card-img-top img-cover" alt="Desert Safari Dubai">
-              <div class="position-absolute top-0 start-0 m-3">
-                <span class="badge rounded-pill px-3 py-2 fw-medium">Top Rated</span>
-              </div>
-            </div>
-            <div class="card-body d-flex flex-column high-rated-tour-body p-2">
-              <div class="d-flex">
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-geo-alt-fill text-muted me-1"></i>
-                  <span class="text-muted">Dubai</span>
-                </div>
-                <div class="mb-2 ms-auto review-icon">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-              <h5 class="card-title fw-semibold lh-base mb-3">Desert Safari Dubai
-                Tickets Unforgettable Desert...</h5>
-              <div class="mt-auto">
-                <div
-                  class="d-flex justify-content-between align-items-center high-rated-tour-card-footer flex-wrap gap-1">
-                  <button class="btn btn-danger px-3 py-2 rounded-2 fw-medium border-0">View
-                    Detail</button>
-                  <div>
-                    <span class="text-muted small">From</span>
-                    <div class="d-flex align-items-center">
-                      <span class="fw-bold price">AED 270.24</span>
-                      <span class="text-muted text-decoration-line-through ms-2">AED 540</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="row">
@@ -937,7 +1038,7 @@
   <!-- high rated tour sec end -->
 
   <!-- our experience sec start -->
-  <section class="our-experience py-5">
+  <!-- <section class="our-experience py-5">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-6">
@@ -982,7 +1083,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- our experience sec end -->
 
   <!-- our blog section start -->
@@ -1648,6 +1749,12 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- jQuery and Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
   <script>
     // Immediately initialize cart functionality
     const cartToggleBtn = document.querySelector('.cart-toggle-btn');

@@ -160,7 +160,7 @@ body {
 }
 
 .hero-content-banner .flight-input-sec {
-   border-radius: 15px;
+    border-radius: 15px;
 
 }
 
@@ -442,7 +442,6 @@ body {
 
 /* visa input sec end */
 
-
 .hotel-card-custom {
     border-radius: 15px;
     overflow: hidden;
@@ -645,6 +644,32 @@ body {
 /* header fixed */
 /* header & banner sec end */
 
+/* home ads section start */
+.home-ads .home-ads-card {
+    min-height: 250px;
+    background-color: var(--secondary-colors);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.home-ads-card .ads-btn {
+    background-color: var(--secondary-colors);
+}
+
+
+/* home ads section end */
+
+
+
+
+
+
+
+
+
+
+
 /* world top cities sec start */
 .world-top-cities {
     background-color: var(--primary-lights);
@@ -660,10 +685,15 @@ body {
 .world-top-cities .world-top-head a {
     color: var(--secondary-colors);
 }
-
-/* .cities-card{
-    min-height: 320px;
+/* 
+.cities-card {
+    height: 280px;
 } */
+
+.cities-card img {
+    object-fit: contain;
+}
+
 @media (max-width: 767.9px) {
     .cities-card {
         height: 200px;
@@ -716,15 +746,83 @@ body {
 
 /* world top cities sec end */
 
-/* overview section start */
-.overview-web .overview-detail .circle {
-    width: 82px;
-    height: 82px;
-    background-color: var(--secondary-lights);
-    border-radius: 50%;
+/* high rated hotel sec start */
+.hotel-card-custom {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--all-border);
+    cursor: pointer;
 }
 
-/* overview section end */
+.hotel-card-custom .btn {
+    background-color: var(--secondary-colors);
+
+}
+
+.hotel-card-custom .btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.hotel-card-custom .tour-image {
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.hotel-card-custom .top-rated-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--secondary-colors);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.hotel-card-custom .rating-stars {
+    color: var(--secondary-colors);
+    font-size: 13px;
+}
+
+.hotel-card-custom .price-current {
+    font-weight: 700;
+    color: var(--primary-colors);
+    font-size: 1.1rem;
+}
+
+.hotel-card-custom .hotel-card-title {
+    font-size: clamp(16px, 1.5vw, 18px);
+    color: var(--primary-colors);
+}
+
+.hotel-card-custom .price-original {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+/* high rated hotel sec end */
+
+
+/* promotion sec start */
+.home-promotion .home-promotion-custom {
+    background-image: url("../img/start-journey.png");
+    background-repeat: no-repeat;
+    background-size: cover;         /* cover = full area fill */
+    background-position: center;    /* center = center alignment */
+    min-height: 418px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.home-promotion .home-promotion-btn{
+    background-color: var(--secondary-colors);
+
+}
+/* promotion sec end */
 
 /* high rated tour section start */
 .high-rated-tour {
@@ -777,7 +875,7 @@ body {
 /* high rated tour section end */
 
 /* our experience sec start */
-
+/* 
 .our-experience .our-experience-custom {
     height: 390px;
 }
@@ -795,7 +893,7 @@ body {
 .our-experience-custom .experience-count h6 {
     color: var(--primary-colors);
 
-}
+} */
 
 /* our experience sec end */
 
