@@ -660,6 +660,93 @@ body {
 /* home ads section end */
 
 
+.home-ads .home-ads-card {
+    min-height: 198px;
+    background-color: var(--secondary-colors);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-ads-card .ads-btn {
+    background-color:var(--secondary-colors);
+    border: 1px solid var(--secondary-colors);
+    transition: all 0.3s ease;
+}
+
+.home-ads-card .ads-btn:hover {
+    background-color: transparent;
+    border-color: var(--all-border);
+}
+
+.home-ads-card .btn:not(.ads-btn) {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-ads .home-ads-card {
+        min-height: 220px;
+    }
+
+    .home-ads-card .card-content {
+        padding: 1.5rem !important;
+    }
+
+    .home-ads-card .card-content h5 {
+        font-size: 1.1rem;
+    }
+
+    .home-ads-card .card-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-ads .home-ads-card {
+        min-height: 200px;
+    }
+
+    .home-ads-card .card-content {
+        padding: 1rem !important;
+    }
+
+    .home-ads-card .card-content h5 {
+        font-size: 1rem;
+    }
+
+    .home-ads-card .card-content p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Ensure equal height on larger screens */
+@media (min-width: 768px) {
+    .home-ads .row {
+        display: flex;
+    }
+
+    .home-ads .col-md-6 {
+        display: flex;
+    }
+
+    .home-ads .home-ads-card {
+        flex: 1;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -684,6 +771,7 @@ body {
 .world-top-cities .world-top-head a {
     color: var(--secondary-colors);
 }
+
 /* 
 .cities-card {
     height: 280px;
@@ -810,17 +898,20 @@ body {
 .home-promotion .home-promotion-custom {
     background-image: url("../img/start-journey.png");
     background-repeat: no-repeat;
-    background-size: cover;         /* cover = full area fill */
-    background-position: center;    /* center = center alignment */
+    background-size: cover;
+    /* cover = full area fill */
+    background-position: center;
+    /* center = center alignment */
     min-height: 418px;
     width: 100%;
     border-radius: 15px;
 }
 
-.home-promotion .home-promotion-btn{
+.home-promotion .home-promotion-btn {
     background-color: var(--secondary-colors);
 
 }
+
 /* promotion sec end */
 
 /* high rated tour section start */
