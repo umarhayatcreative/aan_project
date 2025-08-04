@@ -157,10 +157,7 @@ body {
 
 .hotel-input-sec {
     background-color: var(--primary-lights);
-
 }
-
-
 
 .hotel-input-sec .hotel-input-group .hotel-search-btn {
     background-color: var(--secondary-colors);
@@ -251,15 +248,16 @@ body {
     font-size: clamp(24px, 5vw, 28px);
 }
 
-.top-rated-tour-sec .top-rated-tour-sec-heading h3{
-       color: var(--primary-colors);
+.top-rated-tour-sec .top-rated-tour-sec-heading h3 {
+    color: var(--primary-colors);
     font-size: clamp(24px, 5vw, 28px);
 }
-.top-rated-tour-sec{
+
+.top-rated-tour-sec {
     background-color: var(--primary-lights);
 }
 
-.top-rated-tour-sec .hotel-tour-card{
+.top-rated-tour-sec .hotel-tour-card {
     border: 1px solid var(--all-border);
     border-radius: 15px;
 }

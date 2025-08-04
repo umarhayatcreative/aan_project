@@ -11,10 +11,11 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<style>
-/* Cart Dropdown Styles */
-
-</style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <style>
+    /* Cart Dropdown Styles */
+  </style>
 </head>
 
 <body>
@@ -111,14 +112,440 @@
   <!-- Hero Section -->
   <section class="hero-section-home">
     <div class="hero-overlay"></div>
-    <div class="container h-100">
-      <div class="hero-content">
-        <h1 class="display-4 fw-bold text-white">Your Adventure Starts Now</h1>
-        <p class="lead text-white">"30,000+ Exciting Adventures Await You!"</p>
+    <div class="container h-100 p-0">
+      <div class="hero-content-banner py-lg-5 py-md-3 py-sm-2">
+        <h1 class="display-5 fw-bold text-white">Your Adventure Starts Now</h1>
+        <!-- tabs for home banner search br start -->
+        <div class="nav-tabs-scroll">
+          <ul class="nav nav-tabs border-0 d-flex my-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-white active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel"
+                type="button" role="tab" aria-selected="false"><i class="fa-solid fa-hotel"></i> Hotel</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-white" id="flight-tab" data-bs-toggle="tab" data-bs-target="#flight"
+                type="button" role="tab" aria-selected="true"><i class="fa-solid fa-plane"></i> Flight</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-white" id="activities-tab" data-bs-toggle="tab" data-bs-target="#activities"
+                type="button" role="tab" aria-selected="false"><i class="fa-solid fa-person-hiking"></i>
+                Activities</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-white" id="visa-tab" data-bs-toggle="tab" data-bs-target="#visa"
+                type="button" role="tab" aria-selected="false"><i class="fa-solid fa-id-card"></i> Visa</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-white" id="tours-tab" data-bs-toggle="tab" data-bs-target="#tours"
+                type="button" role="tab" aria-selected="false"><i class="fa-solid fa-suitcase"></i> Tours</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-white" id="packages-tab" data-bs-toggle="tab" data-bs-target="#packages"
+                type="button" role="tab" aria-selected="false"><i class="fa-solid fa-box"></i> Packages</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-white" id="umrah-tab" data-bs-toggle="tab" data-bs-target="#umrah"
+                type="button" role="tab" aria-selected="false"><i class="fa-solid fa-kaaba"></i> Umrah</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Tab Content -->
+        <div class="tab-content pt-2" id="myTabContent">
+          <!-- Hotel -->
+          <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+            <section class="hotel-input-sec px-2 py-4 bg-white">
+              <div class="container">
+                <div class="row g-2">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">Malaysia</option>
+                          <option value="2">Azerbaijan</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Visa For</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-2 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">India</option>
+                          <option value="2">Bangladesh</option>
+                          <option value="3">Sri Lanka</option>
+                        </select>
+                        <label for="floatingSelect">Select Nationality</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-3 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating ">
+                        <input type="text" class="form-control fw-semibold" id="returnRange"
+                          placeholder="Select Date Range" readonly>
+                        <label for="returnRange">Select Date Range</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating">
+                        <button class="form-select border-light-subtle d-flex align-items-center gap-2 fw-semibold"
+                          id="guestRoomBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span>2 Adults, 0 Children - 1 Room</span>
+                        </button>
+                        <label for="guestRoomBtn" class="text-secondary">Guests & Rooms</label>
+                        <div class="dropdown-menu w-100 shadow-sm border-light p-3" id="guestRoomDropdown"
+                          data-bs-auto-close="outside">
+                          <!-- Room 1 -->
+                          <div class="room-container mb-3" id="room1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h6 class="mb-0 fw-medium">Room 1</h6>
+                            </div>
+                            <div class="mb-3">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary">Adults</span>
+                                <div class="d-flex align-items-center">
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('adults', 'decrease', 1)">-</button>
+                                  <span class="mx-3 fw-medium adults-count">2</span>
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('adults', 'increase', 1)">+</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary">Children</span>
+                                <div class="d-flex align-items-center">
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('children', 'decrease', 1)">-</button>
+                                  <span class="mx-3 fw-medium children-count">0</span>
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('children', 'increase', 1)">+</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Children ages section -->
+                            <div id="childrenAgesSection1" class="d-none">
+                              <div class="mb-2">
+                                <div class="d-flex align-items-center">
+                                  <span class="text-secondary">Age of Children</span>
+                                  <i class="fas fa-info-circle ms-1 text-secondary" data-bs-toggle="tooltip"
+                                    title="Please select the age of each child"></i>
+                                </div>
+                              </div>
+                              <div class="row g-2" id="childrenAges1">
+                                <!-- Age dropdowns will be inserted here -->
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Room container for additional rooms -->
+                          <div id="additionalRooms"></div>
+
+                          <!-- Room controls -->
+                          <div class="d-flex justify-content-between mt-3">
+                            <button type="button" class="btn btn-outline-secondary"
+                              onclick="event.stopPropagation(); addRoom()" id="addRoomBtn">+ Add Room</button>
+                            <button type="button" class="btn btn-outline-secondary d-none"
+                              onclick="event.stopPropagation(); removeRoom()" id="removeRoomBtn">- Remove
+                              Room</button>
+                          </div>
+
+                          <!-- Done button always at the bottom -->
+                          <button type="button" class="btn add-guest-btn w-100 text-white mt-3"
+                            onclick="applyGuestRoom()">Done</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-1">
+                    <div class="hotel-input-group h-100">
+                      <a href=""
+                        class="btn hotel-search-btn w-100 h-100 d-flex align-items-center justify-content-center">Search</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+
+          </div>
+
+          <!-- Flight -->
+          <div class="tab-pane fade" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+            <section class="flight-input-sec bg-white px-2 py-4">
+              <div class="container">
+                <div class="flight-form-container bg-white p-3">
+                  <!-- Trip Type Radio Buttons -->
+                  <div class="flight-trip-type-container d-flex gap-2 mb-4 flex-wrap
+                ">
+                    <div class="trip-type-option me-2">
+                      <input type="radio" id="roundtrip-radio" name="tripType" value="roundtrip" checked>
+                      <label for="roundtrip-radio" class="text-nowrap">Round Way</label>
+                    </div>
+                    <div class="trip-type-option me-2">
+                      <input type="radio" id="oneway-radio" name="tripType" value="oneway">
+                      <label for="oneway-radio" class="text-nowrap">One Way</label>
+                    </div>
+                    <div class="trip-type-option me-2">
+                      <input type="radio" id="multicity-radio" name="tripType" value="multicity">
+                      <label for="multicity-radio" class="text-nowrap">Multi City</label>
+                    </div>
+                  </div>
+
+                  <form id="flightBookingForm">
+                    <!-- Round Trip & One Way Form -->
+                    <div id="standard-form" class="flight-trip-content">
+                      <div class="row g-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                          <div class="form-floating">
+                            <input type="text" class="form-control fw-semibold" id="departure-city"
+                              placeholder="Leaving from" value="Lahore, Pakistan">
+                            <label for="departure-city">Leaving from</label>
+                            <div class="city-suggestions-menu bg-white" id="departure-city-suggestions">
+                              <ul></ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                          <div class="form-floating">
+                            <input type="text" class="form-control fw-semibold" id="arrival-city"
+                              placeholder="Going to">
+                            <label for="arrival-city">Going to</label>
+                            <div class="city-suggestions-menu bg-white" id="arrival-city-suggestions">
+                              <ul></ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3" id="date-field-container">
+                          <div class="form-floating">
+                            <input type="text" class="form-control date-range-input fw-semibold" id="date-range"
+                              placeholder="Jul 23    Jul 25 2025" readonly>
+                            <label for="date-range" id="date-label">Depart , Return</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                          <div class="travelers-dropdown">
+                            <div class="form-floating">
+                              <input type="text" class="form-control travelers-toggle fw-semibold"
+                                id="travelers-display" placeholder="Travelers & Class" readonly
+                                value="1 Adults Economy">
+                              <label for="travelers-display">Travelers & Class</label>
+                            </div>
+                            <div class="travelers-menu" id="travelers-menu">
+                              <div class="traveler-row text-muted">
+                                <span>Adults</span>
+                                <div class="traveler-controls">
+                                  <button type="button" class="counter-btn">-</button>
+                                  <span class="counter-value" id="adults-count">1</span>
+                                  <button type="button" class="counter-btn">+</button>
+                                </div>
+                              </div>
+                              <div class="traveler-row">
+                                <span>Children</span>
+                                <div class="traveler-controls">
+                                  <button type="button" class="counter-btn">-</button>
+                                  <span class="counter-value" id="children-count">0</span>
+                                  <button type="button" class="counter-btn">+</button>
+                                </div>
+                              </div>
+                              <div class="traveler-row">
+                                <span>Infants</span>
+                                <div class="traveler-controls">
+                                  <button type="button" class="counter-btn">-</button>
+                                  <span class="counter-value" id="infants-count">0</span>
+                                  <button type="button" class="counter-btn">+</button>
+                                </div>
+                              </div>
+                              <div class="class-options">
+                                <div class="class-option">
+                                  <input type="radio" id="economy" name="class" value="economy" checked>
+                                  <label for="economy">Economy</label>
+                                </div>
+                                <div class="class-option">
+                                  <input type="radio" id="business" name="class" value="business">
+                                  <label for="business">Business Class</label>
+                                </div>
+                                <div class="class-option">
+                                  <input type="radio" id="first" name="class" value="first">
+                                  <label for="first">First Class</label>
+                                </div>
+                              </div>
+                              <button type="button" class="apply-btn text-white">Apply</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 ms-auto">
+                          <div class="d-flex align-items-center justify-content-end">
+                            <a type="submit" href="/flight-detail.html"
+                              class="btn flight-search-btn w-100 py-3 d-flex align-items-center justify-content-center text-white">Search</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Multi City Form -->
+                    <div id="multicity-form" class="flight-trip-content" style="display: none;">
+                      <div id="multicity-rows"></div>
+                      <div class="row mt-2 g-2" id="multicity-actions-row">
+                        <div class="col-md-6 col-lg-9 col-xl-9 d-flex justify-content-start">
+                          <button type="button" class="add-flight-btn w-100" id="add-multicity-flight-btn">
+                            <i class="bi bi-plus"></i> Add another flight
+                          </button>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-end">
+                          <button type="submit" class="btn flight-search-btn px-5 py-3 text-white w-100">Search</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+
+          <!-- Activities -->
+          <div class="tab-pane fade" id="activities" role="tabpanel" aria-labelledby="activities-tab">
+            <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search World Cities" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+
+          <!-- Visa -->
+          <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="visa-tab">
+            <section class="visa-input-sec px-2 py-4 bg-white">
+              <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-2">
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">Malaysia</option>
+                          <option value="2">Azerbaijan</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Visa For</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>United Arab Emirates</option>
+                          <option value="1">United Kingdom</option>
+                        </select>
+                        <label for="floatingSelect">Select Living</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">India</option>
+                          <option value="2">Bangladesh</option>
+                          <option value="3">Sri Lanka</option>
+                        </select>
+                        <label for="floatingSelect">Select Nationality</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <form class="form-floating flotingg w-100 date-picker-container">
+                        <input class="form-control fw-semibold" type="text" id="checkInDate" placeholder="Check In"
+                          readonly="readonly">
+                        <label for="checkInDate">Check In</label>
+                      </form>
+
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group h-100">
+                      <a href="/visa-detail.html"
+                        class="btn visa-search-btn w-100 h-100 d-flex align-items-center justify-content-center">Search</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+          </div>
+
+          <!-- Tours -->
+          <div class="tab-pane fade" id="tours" role="tabpanel" aria-labelledby="tours-tab">
+          <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search World Cities" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+
+          <!-- Packages -->
+          <div class="tab-pane fade" id="packages" role="tabpanel" aria-labelledby="packages-tab">
+           <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search World Cities" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+
+          <!-- Umrah -->
+          <div class="tab-pane fade" id="umrah" role="tabpanel" aria-labelledby="umrah-tab">
+           <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search World Cities" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- tabs for home banner search br end -->
+
+
+
+
+
+
+
+
+        <!-- <p class="lead text-white">"30,000+ Exciting Adventures Await You!"</p>
         <div class="search-box bg-white">
           <input type="text" class="form-control" placeholder="Search World Cities" />
           <button class="btn btn-search">Search</button>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -1095,7 +1522,7 @@
             <!-- Divider -->
             <div class="divider">
               <span class="text-muted">Or Sign in with Email</span>
-              
+
             </div>
 
             <!-- Login Form -->
@@ -1220,7 +1647,7 @@
   <!-- footer section end -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
     // Immediately initialize cart functionality
     const cartToggleBtn = document.querySelector('.cart-toggle-btn');
@@ -1228,30 +1655,31 @@
     const closeBtn = document.querySelector('.dropdown-close-btn');
 
     if (cartToggleBtn && cartDropdown && closeBtn) {
-        // Toggle cart dropdown on cart icon click
-        cartToggleBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            cartDropdown.classList.toggle('d-none');
-        });
+      // Toggle cart dropdown on cart icon click
+      cartToggleBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        cartDropdown.classList.toggle('d-none');
+      });
 
-        // Close dropdown when close button is clicked
-        closeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            cartDropdown.classList.add('d-none');
-        });
+      // Close dropdown when close button is clicked
+      closeBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        cartDropdown.classList.add('d-none');
+      });
 
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!cartDropdown.contains(e.target) && !cartToggleBtn.contains(e.target)) {
-                cartDropdown.classList.add('d-none');
-            }
-        });
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function (e) {
+        if (!cartDropdown.contains(e.target) && !cartToggleBtn.contains(e.target)) {
+          cartDropdown.classList.add('d-none');
+        }
+      });
     }
   </script>
 
   <script src="js/index.js"></script>
+  <script src="js/home-banner.js"></script>
 </body>
 
 </html>
