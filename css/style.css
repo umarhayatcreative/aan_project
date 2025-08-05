@@ -670,7 +670,7 @@ body {
 }
 
 .home-ads-card .ads-btn {
-    background-color:var(--secondary-colors);
+    background-color: var(--secondary-colors);
     border: 1px solid var(--secondary-colors);
     transition: all 0.3s ease;
 }
@@ -834,6 +834,12 @@ body {
 /* world top cities sec end */
 
 /* high rated hotel sec start */
+
+.top-rated-hotel-heading h3{
+    color: var(--primary-colors);
+    font-size: clamp(24px, 5vw, 30px);
+    font-weight: 600;s
+}
 .hotel-card-custom {
     border-radius: 15px;
     overflow: hidden;
@@ -869,6 +875,8 @@ body {
     font-size: 0.75rem;
     font-weight: 500;
 }
+
+
 
 .hotel-card-custom .rating-stars {
     color: var(--secondary-colors);
@@ -915,51 +923,74 @@ body {
 /* promotion sec end */
 
 /* high rated tour section start */
-.high-rated-tour {
-    background-color: var(--primary-lights);
+
+.high-rated-tour .tour-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--all-border);
+    cursor: pointer;
 }
 
-.high-rated-tour .high-rated-tour-head h2 {
+.high-rated-tour .tour-image {
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.high-rated-tour .top-rated-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--secondary-colors);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.high-rated-tour .top-rated-badge-star {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary-colors-low-opacity);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.high-rated-tour .rating-stars {
+    color: var(--secondary-colors);
+    font-size: 13px;
+}
+
+.high-rated-tour .price-current {
+    font-weight: 700;
+    color: var(--primary-colors);
+    font-size: 1.1rem;
+}
+
+.high-rated-tour .activity-card-title {
+    font-size: 16px;
+    color: var(--primary-colors);
+}
+
+.high-rated-tour .price-original {
+    text-decoration: line-through;
+    margin-bottom: -5px;
+}
+
+.high-rated-tour .view-more-high-rated .btn {
+    border: 1px solid var(--primary-colors);
+}
+
+.high-rated-tour-head h2 {
     color: var(--primary-colors);
     font-size: clamp(24px, 5vw, 30px);
     font-weight: 600;
-}
-
-.high-rated-tour-custom {
-    border: 1px solid var(--all-border);
-}
-
-.high-rated-tour-custom .badge {
-    background-color: var(--primary-colors-low-opacity);
-    font-size: 12px;
-
-}
-
-
-.high-rated-tour-custom .high-rated-tour-body .review-icon {
-    color: var(--secondary-colors);
-}
-
-.high-rated-tour-custom .high-rated-tour-body .card-title {
-    color: var(--primary-colors);
-    font-size: 18px;
-}
-
-.high-rated-tour-custom .high-rated-tour-card-footer .price {
-    color: var(--primary-colors);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.high-rated-tour-custom .high-rated-tour-card-footer .btn {
-    background-color: var(--secondary-colors);
-    border: 0;
-}
-
-.high-rated-tour .btn {
-    border: 1px solid var(--primary-colors-low-opacity);
-    border-radius: 5px;
-
 }
 
 /* high rated tour section end */

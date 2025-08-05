@@ -2,170 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AAN Tourism Activities</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/visa.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Visa Application - Modern Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        :root {
+            --primary-colors: #000026;
+            --secondary-colors: #FB5B32;
+            --primary-lights: #F9F9FF;
+            --secondary-lights: #FFEFEB;
+            --color-white: #fff;
+            --primary-colors-low-opacity: rgba(0, 0, 38, 0.5);
+            --all-border: #E6E6E6;
+        }
 
+
+
+        /* Modern Visa Card Design */
+        .visa-section .modern-visa-card {
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            border: 1px solid var(--all-border);
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+        }
+
+
+
+        .visa-section .card-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+
+            height: 180px;
+        }
+
+        .visa-section .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .visa-section .country-flag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary-colors-low-opacity);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .visa-section .processing-time {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--secondary-colors);
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .visa-section .card-content {
+            padding: 25px;
+        }
+
+        .visa-section .visa-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-colors);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .visa-section .visa-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .visa-section .info-item {
+            display: flex;
+            align-items: center;
+            padding: 7px 15px;
+            background: var(--primary-lights);
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .visa-section .info-item i {
+            color: var(--secondary-colors);
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+
+        .visa-section .info-item .info-label {
+            font-weight: 600;
+            color: var(--primary-colors);
+            margin-right: 5px;
+        }
+
+        .visa-section .info-item .info-value {}
+
+        .visa-section .visa-description {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .visa-section .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .visa-section .feature-tag {
+            background: var(--secondary-lights);
+            color: var(--primary-colors);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid var(--all-border);
+        }
+
+        .visa-section .apply-btn {
+            background-color: var(--secondary-colors);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1rem;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        /* Modal Styles */
+        .visa-section .visa-modal .modal-content {
+            border-radius: 15px;
+            border: none;
+
+            overflow: hidden;
+        }
+
+        .visa-section .visa-modal .modal-header {
+            background-color: var(--primary-lights);
+            border: none;
+        }
+
+        .visa-section .visa-modal .modal-title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-colors);
+        }
+
+
+        .visa-section .visa-modal .modal-body {
+            padding: 30px;
+        }
+
+        .visa-section .visa-modal .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .visa-section .visa-modal .form-select,
+        .visa-section .visa-modal .form-control {
+            border: 2px solid var(--all-border);
+            border-radius: 5px;
+            padding: 12px 15px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .visa-section .visa-modal .form-select:focus,
+        .visa-section .visa-modal .form-control:focus {
+            border-color: var(--secondary-colors);
+
+        }
+
+        .visa-section .visa-modal .search-btn {
+            background: var(--secondary-colors);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .visa-section .visa-info-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+
+
+            .visa-section .card-content {
+                padding: 20px;
+            }
+
+            .visa-section .apply-hassle-visa-heading {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .visa-section .features-list {
+                justify-content: center;
+            }
+
+            .visa-section .info-item {
+                padding: 7px 12px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- header & banner sec start -->
-    <section class="header-home">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100 navbar-scroll">
-            <div class="container d-flex align-items-center py-2 flex-nowrap">
-
-                <!-- Logo -->
-                <a class="navbar-brand fw-bold me-4 flex-shrink-0" href="/index.html">Logo</a>
-
-                <!-- Menu Items (centered on large screens) -->
-                <div class="collapse navbar-collapse justify-content-center flex-grow-1" id="mainMenu">
-                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
-                        <li class="nav-item"><a class="nav-link text-white" href="/flight.html">Flight</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="/hotel.html">Hotel</a></li>
-                        <li class="nav-item"><a class="nav-link text-white"
-                                href="/activities-detail-page.html">Activities</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="/combo-tour.html">Combo
-                                Tours</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="/packages.html">Packages</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="/umrah.html">Umrah</a></li>
-                        <li class="nav-item"><a class="nav-link active text-white" href="/visa.html">Visa</a></li>
-                    </ul>
-                </div>
-
-                <!-- Right Side: Contact Us, Log in, Cart -->
-                <div class="d-flex align-items-center ms-auto flex-shrink-0">
-                    <div class="d-none d-lg-flex align-items-center gap-2">
-                        <a href="/contact-us.html" class="nav-link text-white me-2">Contact Us</a>
-                        <a href="#" class="btn btn-outline-light py-1 px-3 me-2">Log in</a>
-                    </div>
-                    <!-- Cart icon always visible -->
-                    <a href="#" class="nav-link text-white fs-5 d-flex align-items-center ms-2" id="cartIcon"><i
-                            class="bi bi-cart"></i></a>
-                    <!-- Toggler (hamburger icon) for mobile -->
-                    <button class="navbar-toggler ms-2 border-white d-lg-none" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#mobileMenu">
-                        <span class="navbar-toggler-icon border-white"></span>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </section>
-
-    <!-- Offcanvas Mobile Menu -->
-    <div class="home-for-mobileview">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <div class="offcanvas-body p-0">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="/flight.html" class="text-decoration-none"><i
-                                class="bi bi-airplane me-2 offcanvas-icon"></i>Flight</a></li>
-                    <li class="list-group-item"><a href="/hotel.html" class="text-decoration-none"><i
-                                class="bi bi-bank me-2 offcanvas-icon"></i>Hotel</a></li>
-                    <li class="list-group-item"><a href="/activities.html" class="text-decoration-none"><i
-                                class="bi bi-camera me-2 offcanvas-icon"></i>Activities</a></li>
-                    <li class="list-group-item"><a href="/combo-tour.html" class="text-decoration-none"><i
-                                class="bi bi-box me-2 offcanvas-icon"></i>Combo Tour</a></li>
-                    <li class="list-group-item"><a href="/packages.html" class="text-decoration-none"><i
-                                class="bi bi-boxes me-2 offcanvas-icon"></i>Packages</a></li>
-                    <li class="list-group-item"><a href="/umrah.html" class="text-decoration-none"><i
-                                class="bi bi-box me-2 offcanvas-icon"></i>Umrah</a></li>
-                    <li class="list-group-item"><a href="/visa.html" class="text-decoration-none"><i
-                                class="bi bi-grid me-2 offcanvas-icon"></i>Visa</a></li>
-                    <li class="list-group-item"><a href="/contact-us.html" class="text-decoration-none"><i
-                                class="bi bi-telephone me-2 offcanvas-icon"></i>Contact Us</a></li>
-                    <li class="list-group-item me-2"><a href="" class="text-decoration-none" data-bs-toggle="modal"
-                            data-bs-target="#loginModal"><i class="bi bi-person me-2 offcanvas-icon"></i>Log In</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- header & banner sec end -->
-
-    <!-- visa input start -->
-    <section class="visa-input-sec py-5">
+    <section class="visa-section apply-hassle-visa py-5">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-2">
-                <div class="col">
-                    <div class="visa-input-group">
-                        <div class="form-floating">
-                            <select class="form-select fw-semibold" id="floatingSelect"
-                                aria-label="Floating label select example">
-                                <option selected>Pakistan</option>
-                                <option value="1">Malaysia</option>
-                                <option value="2">Azerbaijan</option>
-                                <option value="3">Turkey</option>
-                            </select>
-                            <label for="floatingSelect">Visa For</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="visa-input-group">
-                        <div class="form-floating">
-                            <select class="form-select fw-semibold" id="floatingSelect"
-                                aria-label="Floating label select example">
-                                <option selected>United Arab Emirates</option>
-                                <option value="1">United Kingdom</option>
-                            </select>
-                            <label for="floatingSelect">Select Living</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="visa-input-group">
-                        <div class="form-floating">
-                            <select class="form-select fw-semibold" id="floatingSelect"
-                                aria-label="Floating label select example">
-                                <option selected>Pakistan</option>
-                                <option value="1">India</option>
-                                <option value="2">Bangladesh</option>
-                                <option value="3">Sri Lanka</option>
-                            </select>
-                            <label for="floatingSelect">Select Nationality</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="visa-input-group">
-                        <form class="form-floating flotingg w-100 date-picker-container">
-                            <input class="form-control fw-semibold" type="text" id="checkInDate" placeholder="Check In"
-                                readonly="readonly">
-                            <label for="checkInDate">Check In</label>
-                        </form>
-
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="visa-input-group h-100">
-                        <a href="/visa-detail.html"
-                            class="btn visa-search-btn w-100 h-100 d-flex align-items-center justify-content-center">Search</a>
+            <!-- Section Header -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header">
+                        <h3 class="apply-hassle-visa-heading">Apply Hassle Free E-visas</h3>
+                        <p class="section-subtitle">
+                            Hassle-Free travel with E-Visa: Your international gateway awaits! Fast, secure, and
+                            convenient visa processing.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Apply Hassle Free E-visas sec start -->
-    <section class="apply-hassle-visa py-5">
-        <div class="container">
+            <!-- Visa Cards Grid -->
             <div class="row g-4">
                 <!-- Visa Card 1 - Azerbaijan -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3 d-flex flex-column">
+                    <div class="modern-visa-card p-3">
                         <div class="card-image-wrapper mb-2">
                             <img src="/img/visa-card-img.png" alt="Armenia evisa">
                             <div class="processing-time text-white">3-5 Days</div>
@@ -206,17 +301,18 @@
                                 <span class="feature-tag">Business Visa</span>
                                 <span class="feature-tag">Online Process</span>
                             </div>
+
+                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
+                                data-country="Azerbaijan" data-flag="🇦🇿">
+                                <i class="bi bi-airplane me-2"></i>Apply Now
+                            </button>
                         </div>
-                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal" data-bs-target="#visaModal"
-                            data-country="Azerbaijan" data-flag="🇦🇿">
-                            <i class="bi bi-airplane me-2"></i>Apply Now
-                        </button>
                     </div>
                 </div>
 
                 <!-- Visa Card 2 - Turkey -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3 d-flex flex-column">
+                    <div class="modern-visa-card p-3">
                         <div class="card-image-wrapper mb-2">
                             <img src="/img/visa-card-img.png" alt="Armenia evisa">
 
@@ -258,17 +354,18 @@
                                 <span class="feature-tag">Tourist Visa</span>
                                 <span class="feature-tag">Fast Process</span>
                             </div>
+
+                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
+                                data-country="Turkey" data-flag="🇹🇷">
+                                <i class="bi bi-airplane me-2"></i>Apply Now
+                            </button>
                         </div>
-                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal" data-bs-target="#visaModal"
-                            data-country="Azerbaijan" data-flag="🇦🇿">
-                            <i class="bi bi-airplane me-2"></i>Apply Now
-                        </button>
                     </div>
                 </div>
 
                 <!-- Visa Card 3 - Georgia -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3 d-flex flex-column">
+                    <div class="modern-visa-card p-3">
                         <div class="card-image-wrapper mb-2">
                             <img src="/img/visa-card-img.png" alt="Georgia evisa">
 
@@ -311,17 +408,17 @@
                                 <span class="feature-tag">Reliable</span>
                             </div>
 
+                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
+                                data-country="Georgia" data-flag="🇬🇪">
+                                <i class="bi bi-airplane me-2"></i>Apply Now
+                            </button>
                         </div>
-                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal" data-bs-target="#visaModal"
-                            data-country="Azerbaijan" data-flag="🇦🇿">
-                            <i class="bi bi-airplane me-2"></i>Apply Now
-                        </button>
                     </div>
                 </div>
 
                 <!-- Visa Card 4 - Armenia -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3 d-flex flex-column">
+                    <div class="modern-visa-card p-3">
                         <div class="card-image-wrapper mb-2">
                             <img src="/img/visa-card-img.png" alt="Armenia evisa">
                             <div class="processing-time text-white">5-7 Days</div>
@@ -363,17 +460,17 @@
                                 <span class="feature-tag">Cultural</span>
                             </div>
 
+                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
+                                data-country="Armenia" data-flag="🇦🇲">
+                                <i class="bi bi-airplane me-2"></i>Apply Now
+                            </button>
                         </div>
-                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal" data-bs-target="#visaModal"
-                            data-country="Azerbaijan" data-flag="🇦🇿">
-                            <i class="bi bi-airplane me-2"></i>Apply Now
-                        </button>
                     </div>
                 </div>
 
                 <!-- Visa Card 5 - Kyrgyzstan -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3 d-flex flex-column">
+                    <div class="modern-visa-card p-3">
                         <div class="card-image-wrapper mb-2">
                             <img src="/img/visa-card-img.png" alt="Armenia evisa">
                             <div class="processing-time text-white">3-5 Days</div>
@@ -414,17 +511,18 @@
                                 <span class="feature-tag">Nature</span>
                                 <span class="feature-tag">Budget Friendly</span>
                             </div>
+
+                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
+                                data-country="Kyrgyzstan" data-flag="🇰🇬">
+                                <i class="bi bi-airplane me-2"></i>Apply Now
+                            </button>
                         </div>
-                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal" data-bs-target="#visaModal"
-                            data-country="Azerbaijan" data-flag="🇦🇿">
-                            <i class="bi bi-airplane me-2"></i>Apply Now
-                        </button>
                     </div>
                 </div>
 
                 <!-- Visa Card 6 - Uzbekistan -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3 d-flex flex-column">
+                    <div class="modern-visa-card p-3">
                         <div class="card-image-wrapper mb-2">
                             <img src="/img/visa-card-img.png" alt="Armenia evisa">
 
@@ -466,15 +564,15 @@
                                 <span class="feature-tag">Historical</span>
                                 <span class="feature-tag">Cultural</span>
                             </div>
+
+                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
+                                data-country="Uzbekistan" data-flag="🇺🇿">
+                                <i class="bi bi-airplane me-2"></i>Apply Now
+                            </button>
                         </div>
-                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal" data-bs-target="#visaModal"
-                            data-country="Azerbaijan" data-flag="🇦🇿">
-                            <i class="bi bi-airplane me-2"></i>Apply Now
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
         <!-- Enhanced Modal -->
@@ -520,8 +618,8 @@
                                         <i class="bi bi-calendar-event me-2"></i>Preferred Travel Date:
                                     </label>
                                     <div class="position-relative">
-                                       <input class="form-control fw-semibold" type="text" id="checkInDateM" placeholder="Check In"
-                                readonly="readonly">
+                                        <input class="form-control datepicker-input" type="text" id="SelectDatemodal"
+                                            placeholder="Select Date" readonly>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
@@ -552,86 +650,15 @@
             </div>
         </div>
     </section>
-    <!-- Apply Hassle Free E-visas sec end -->
 
-    <!-- visa input end-->
-
-
-
-    <!-- footer section start -->
-    <footer class="footer-sec pt-5">
-        <div class="container py-3">
-            <div class="row gy-4">
-                <!-- Logo and Description -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-custom">
-                        <h5 class="fw-bold text-white mb-4 fs-4">Logo</h5>
-                        <p class="small text-white">
-                            From flights to tours, Umrah to visa — Tourism offers personalized services for your ideal
-                            trip. Smart
-                            planning for better travel experiences.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Services -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-custom">
-                        <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
-                        <ul class="list-unstyled small text-white">
-                            <li><a href="#" class="text-white text-decoration-none">Visas</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Activities</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Tours</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Hotel</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Links -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-custom">
-                        <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
-                        <ul class="list-unstyled small">
-                            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Blogs</a></li>
-                            <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-custom">
-                        <h6 class="fw-bold text-white mb-4 fs-5">Get In Touch:</h6>
-                        <ul class="list-unstyled small text-white social-icons">
-                            <li class="d-flex align-items-center mb-2">
-                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
-                                    class="text-decoration-none text-white">+971 12 345
-                                    6789</a>
-                            </li>
-                            <li class="d-flex align-items-center mb-2">
-                                <i class="bi bi-envelope-fill me-2"></i> <a href=""
-                                    class="text-decoration-none text-white">info__gmail.com</a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <i class="bi bi-geo-alt-fill me-2"></i> Street 1, Lahore
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom bar -->
-        <div class="privacy-policy text-center py-2 mt-4">
-            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
-        </div>
-    </footer>
-    <!-- footer section end -->
-    <script src="js/visa.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr(".datepicker-input", {
+            dateFormat: "Y-m-d",
+            allowInput: false
+        });
+    </script>
 
 </body>
 

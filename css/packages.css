@@ -181,215 +181,27 @@ body {
 /* header fixed */
 
 /* header & banner sec end */
-.desktop-packages-filters .custom-enquiry-btn {
-    background-color: var(--secondary-colors);
+.travel-packages-section .filter-section {
+    border-radius: 15px;
+    padding: 20px;
+    /* border: 1px solid var(--all-border); */
+    background-color: var(--primary-lights);
 }
 
-.packages-list .packages-filter-view {
-    width: 300px;
-    max-width: 90vw;
-}
-
-.packages-list .packages-filter-view .apply-filter-close-btn {
-    background-color: var(--secondary-colors);
-    border-color: var(--secondary-colors);
-}
-
-.packages-list .packages-filter-view .filter-close {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: auto;
-    padding: 5px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-
-
-
-.packages-list .filter-section {
-    background: var(--primary-lights);
-    border-radius: 12px;
-    padding: 1.5rem;
-}
-
-.packages-list .filter-title {
+.travel-packages-section .filter-title {
     font-weight: 600;
     color: var(--primary-colors);
     margin-bottom: 1rem;
     font-size: 1rem;
 }
 
-.packages-list .form-check-input:checked {
-    background-color: var(--secondary-colors);
-    border-color: var(--secondary-colors);
-}
-
-
-.packages-list .paginations-combo .pagination .page-item .page-link {
-    color: var(--primary-colors);
-}
-
-.packages-list .paginations-combo .pagination .page-item .page-link.active {
-    background-color: var(--secondary-colors);
-    color: var(--color-white);
-    border: 1px solid var(--secondary-colors);
-}
-
-.packages-list .btn-outline-secondary {
-    border-color: var(--all-border);
-    color: var(--primary-colors);
-}
-
-.packages-list .btn-outline-secondary:hover {
-    background-color: var(--secondary-colors);
-    border-color: var(--secondary-colors);
-    color: var(--color-white);
-}
-
-/* Mobile Filter Styles */
-.mobile-filter-btn {
-    display: none;
-}
-
-.packages-list .filter-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1040;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-.packages-list .filter-overlay.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.packages-list .filter-sidebar {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    /* width: 300px; */
-    height: 100%;
-    background: var(--color-white);
-    z-index: 1050;
-    transition: left 0.3s ease;
-    overflow-y: auto;
-    padding: 20px;
-}
-
-.packages-list .filter-sidebar.show {
-    left: 0;
-}
-
-.packages-list .filter-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--all-border);
-}
-
-
-
-/* Tablet Filter Styles */
-@media (max-width: 991.98px) {
-    .packages-list .mobile-filter-btn {
-        display: block;
-    }
-
-    .packages-list .desktop-packages-filters {
-        display: none;
-    }
-}
-
-/* Additional tablet-specific styles */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .packages-list .filter-sidebar {
-        width: 350px;
-    }
-
-    .packages-list .mobile-filter-btn {
-        margin-bottom: 1rem;
-    }
-
-    .packages-list .mobile-filter-btn .btn {
-        font-size: 1rem;
-        padding: 0.75rem 1rem;
-    }
-}
-
-
-.packages-card-custom .packages-card-btn {
-    background-color: var(--secondary-colors);
-}
-
-.packages-card-custom {
-    border: 1px solid var(--all-border);
-    border-radius: 15px;
-}
-
-.packages-card-custom .rating-stars i {
-    color: var(--secondary-colors) !important;
-}
-
-.packages-card-custom h5 {
-    color: var(--primary-colors);
-    font-size: clamp(18px, 2vw, 20px);
-
-}
-
-.packages-card-custom .price-name {
-    color: var(--primary-colors);
-}
-
-.packages-card-custom .packages-card-custom-img img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    height: auto;
-}
-
-@media (max-width: 992px) {
-    .packages-card-custom .packages-card-custom-img img {
-        height: 220px;
-    }
-}
-
-@media (max-width: 576px) {
-    .packages-card-custom .packages-card-custom-img img {
-        height: 180px;
-    }
-
-    .packages-card-description {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        /* Limit to 2 lines */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-
-
-
-/* filter css */
-.price-range-filter .range-slider {
+/* Range Slider Styles */
+.travel-packages-section .price-range-filter .range-slider {
     position: relative;
-    /* height: 40px; */
     margin: 2rem 0;
 }
 
-.price-range-filter .range-input {
+.travel-packages-section .price-range-filter .range-input {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -402,7 +214,7 @@ body {
     z-index: 2;
 }
 
-.price-range-filter .range-input::-webkit-slider-thumb {
+.travel-packages-section .price-range-filter .range-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -412,56 +224,396 @@ body {
     cursor: pointer;
     pointer-events: auto;
     border: none;
-    z-index: 3;
+
 }
 
-.price-range-filter .range-input::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--secondary-colors);
-    cursor: pointer;
-    pointer-events: auto;
-    border: none;
-    z-index: 3;
-}
-
-.price-range-filter .range-input::-webkit-slider-track {
-    background: transparent;
-}
-
-.price-range-filter .range-input::-moz-range-track {
-    background: transparent;
-}
-
-.price-range-filter .range-track {
+.travel-packages-section .price-range-filter .range-track {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     height: 4px;
-    background: var(--primary-colors);
     border-radius: 2px;
     z-index: 1;
 }
 
-.price-range-filter .range-fill {
+.travel-packages-section .price-range-filter .range-fill {
     position: absolute;
     height: 100%;
-    background: var(--primary-colors);
+    background: var(--secondary-colors);
     border-radius: 2px;
     z-index: 1;
 }
 
-.price-range-filter #maxRange {
-    z-index: 2;
+/* Unique Package Card Styles */
+.travel-packages-section .unique-package-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--all-border);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    height: 100%;
 }
 
-.price-range-filter #minRange {
-    z-index: 3;
+.travel-packages-section .card-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 200px;
 }
 
-/* filter css */
+.travel-packages-section .card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+.travel-packages-section .price-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--primary-colors-low-opacity);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
+.travel-packages-section .duration-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--secondary-colors);
+    color: var(--color-white);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.travel-packages-section .package-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-colors);
+    margin-bottom: 10px;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.travel-packages-section .location-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.travel-packages-section .rating-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.travel-packages-section .stars-container {
+    display: flex;
+    align-items: center;
+}
+
+.travel-packages-section .stars-container i {
+    color: var(--secondary-colors);
+    font-size: 0.9rem;
+    margin-right: 2px;
+}
+
+.travel-packages-section .rating-text {
+    margin-left: 8px;
+
+}
+
+.travel-packages-section .package-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.travel-packages-section .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.travel-packages-section .feature-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: var(--secondary-lights);
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: var(--primary-colors);
+}
+
+.travel-packages-section .feature-item i {
+    color: var(--secondary-colors);
+    margin-right: 6px;
+    font-size: 1rem;
+}
+
+.travel-packages-section .price-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.travel-packages-section .price-label {
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.travel-packages-section .price-amount {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary-colors);
+    line-height: 1;
+}
+
+.travel-packages-section .book-btn {
+    background: linear-gradient(135deg, var(--secondary-colors) 0%, #e55a2b 100%);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: var(--all-border);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+
+}
+
+.travel-packages-section .book-btn:hover {
+    transform: translateY(-2px);
+
+
+    color: var(--color-white);
+}
+
+/* Mobile Filter Styles */
+.travel-packages-section .mobile-filter-btn {
+    display: none;
+}
+
+.travel-packages-section .filter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.travel-packages-section .filter-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.travel-packages-section .filter-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 350px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    z-index: 1050;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.travel-packages-section .filter-sidebar.show {
+    left: 0;
+}
+
+.travel-packages-section .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--all-border);
+}
+
+.travel-packages-section .filter-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Pagination Styles */
+.travel-packages-section .pagination .page-link {
+    color: var(--primary-colors);
+    border-color: var(--all-border);
+    border-radius: 10px;
+    margin: 0 3px;
+    padding: 10px 15px;
+}
+
+.travel-packages-section .pagination .page-item.active .page-link {
+    background: var(--gradient-1);
+    border-color: transparent;
+
+}
+
+.travel-packages-section .pagination .page-link:hover {
+    background: var(--secondary-colors);
+    border-color: var(--secondary-colors);
+
+}
+
+/* Button Styles */
+.travel-packages-section .btn-outline-secondary {
+    border-color: var(--all-border);
+    color: var(--primary-colors);
+}
+
+.travel-packages-section .btn-outline-secondary:hover {
+    background-color: var(--secondary-colors);
+    border-color: var(--secondary-colors);
+
+}
+
+.travel-packages-section .apply-filter-btn {
+    background: var(--gradient-1);
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+
+    font-weight: 600;
+}
+
+.travel-packages-section .apply-filter-btn:hover {
+    background: var(--gradient-2);
+
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+    .travel-packages-section .mobile-filter-btn {
+        display: block;
+    }
+
+    .travel-packages-section .desktop-packages-filters {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .travel-packages-section .filter-sidebar {
+        width: 100%;
+    }
+
+    .travel-packages-section .unique-package-card {
+        margin-bottom: 20px;
+    }
+
+    .travel-packages-section .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .travel-packages-section .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .travel-packages-section .book-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .travel-packages-section .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .travel-packages-section .section-title p {
+        font-size: 1rem;
+    }
+}
+
+/* Additional specific targeting */
+.travel-packages-section .packages-list {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.travel-packages-section .container {
+    position: relative;
+}
+
+.travel-packages-section .row {
+    position: relative;
+}
+
+
+/* Form elements */
+.travel-packages-section input[type="range"] {
+    outline: none;
+}
+
+.travel-packages-section .minValue,
+.travel-packages-section .maxValue {
+    font-weight: 600;
+    color: var(--primary-colors);
+}
+
+/* Focus states */
+.travel-packages-section .book-btn:focus,
+.travel-packages-section .apply-filter-btn:focus,
+.travel-packages-section .btn-outline-secondary:focus {
+    outline: 2px solid var(--secondary-colors);
+    outline-offset: 2px;
+}
+
+/* Loading states */
+.travel-packages-section .unique-package-card.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+.travel-packages-section .paginations-packages .pagination .page-item .page-link {
+    color: var(--primary-colors);
+}
+
+.travel-packages-section .paginations-packages .pagination .page-item .page-link.active {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border: 1px solid var(--secondary-colors);
+}
+
 /* packages detail sec end */
 
 /* footer section start */

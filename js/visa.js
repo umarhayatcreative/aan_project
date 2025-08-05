@@ -14,12 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // // visa modal date
-
 document.addEventListener('DOMContentLoaded', function () {
-    const dateInput = document.getElementById('SelectDatemodal');
-    if (dateInput) {
+    const checkInInput = document.getElementById('checkInDateM');
+    if (checkInInput) {
         const today = new Date();
-        flatpickr(dateInput, {
+        flatpickr(checkInInput, {
             minDate: "today",
             dateFormat: "Y-m-d",
             defaultDate: today
@@ -27,8 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-    function selectTimeSlot(element, timeSlot) {
-        const button = element.closest('.dropdown').querySelector('.btn');
-        button.textContent = timeSlot;
-    }
-// // visa modal date

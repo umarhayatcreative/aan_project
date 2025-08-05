@@ -10,135 +10,86 @@ window.addEventListener("scroll", function () {
 
 //  header fixed
 
-
-// filter javascript
-// Add some interactivity
-        document.addEventListener('DOMContentLoaded', function () {
-            // Mobile filter functionality
-            const mobileFilterBtn = document.getElementById('mobileFilterBtn');
-            const filterOverlay = document.getElementById('filterOverlay');
-            const filterSidebar = document.getElementById('filterSidebar');
-            const filterClose = document.getElementById('filterClose');
-            const applyFilters = document.getElementById('applyFilters');
-
-            // Open mobile filter
-            if (mobileFilterBtn) {
-                mobileFilterBtn.addEventListener('click', function () {
-                    filterOverlay.classList.add('show');
-                    filterSidebar.classList.add('show');
-                    document.body.style.overflow = 'hidden';
-                });
-            }
-
-            // Close mobile filter
-            function closeMobileFilter() {
-                filterOverlay.classList.remove('show');
-                filterSidebar.classList.remove('show');
-                document.body.style.overflow = '';
-            }
-
-            if (filterClose) {
-                filterClose.addEventListener('click', closeMobileFilter);
-            }
-
-            if (filterOverlay) {
-                filterOverlay.addEventListener('click', closeMobileFilter);
-            }
-
-            if (applyFilters) {
-                applyFilters.addEventListener('click', function () {
-                    // Apply filters and close sidebar
-                    console.log('Filters applied');
-                    closeMobileFilter();
-                });
-            }
-
-            // Filter functionality
-            const checkboxes = document.querySelectorAll('.form-check-input');
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', function () {
-                    // Here you would typically filter the results
-                    console.log('Filter changed:', this.id, this.checked);
-                });
-            });
-
-            // Sort functionality
-            const sortDropdown = document.querySelector('.dropdown-menu');
-            if (sortDropdown) {
-                sortDropdown.addEventListener('click', function (e) {
-                    if (e.target.classList.contains('dropdown-item')) {
-                        e.preventDefault();
-                        console.log('Sort by:', e.target.textContent);
-                        // Update button text
-                        document.querySelector('.dropdown-toggle').textContent = e.target.textContent;
-                    }
-                });
-            }
-
-            // Card hover effects are handled by CSS
-            const tourCards = document.querySelectorAll('.tour-card, .activities-tour-card');
-            tourCards.forEach(card => {
-                card.addEventListener('click', function () {
-                    const cardTitle = this.querySelector('.card-title');
-                    if (cardTitle) {
-                        console.log('Tour selected:', cardTitle.textContent);
-                    }
-                });
-            });
+    // Mobile Filter Toggle
+        document.getElementById('mobileFilterBtn').addEventListener('click', function () {
+            document.getElementById('filterSidebar').classList.add('show');
+            document.getElementById('filterOverlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
         });
-// filter javascript
 
+        document.getElementById('filterClose').addEventListener('click', closeFilter);
+        document.getElementById('filterOverlay').addEventListener('click', closeFilter);
+        document.getElementById('applyFilters').addEventListener('click', closeFilter);
 
-
-// price range slider  filter
-        const minRange = document.getElementById('minRange');
-        const maxRange = document.getElementById('maxRange');
-        const rangeFill = document.getElementById('rangeFill');
-        const minValue = document.getElementById('minValue');
-        const maxValue = document.getElementById('maxValue');
-        
-        function updateSlider() {
-            let minVal = parseInt(minRange.value);
-            let maxVal = parseInt(maxRange.value);
-            
-            // Ensure min doesn't exceed max
-            if (minVal >= maxVal) {
-                minVal = maxVal - 1000;
-                minRange.value = minVal;
-            }
-            
-            // Ensure max doesn't go below min
-            if (maxVal <= minVal) {
-                maxVal = minVal + 1000;
-                maxRange.value = maxVal;
-            }
-            
-            const minPercent = (minVal / 50000) * 100;
-            const maxPercent = (maxVal / 50000) * 100;
-            
-            rangeFill.style.left = minPercent + '%';
-            rangeFill.style.width = (maxPercent - minPercent) + '%';
-            
-            // Update display values
-            minValue.textContent = minVal;
-            maxValue.textContent = maxVal;
+        function closeFilter() {
+            document.getElementById('filterSidebar').classList.remove('show');
+            document.getElementById('filterOverlay').classList.remove('show');
+            document.body.style.overflow = 'auto';
         }
-        
-        // Handle z-index for better interaction
-        minRange.addEventListener('mousedown', function() {
-            this.style.zIndex = '4';
-            maxRange.style.zIndex = '2';
-        });
-        
-        maxRange.addEventListener('mousedown', function() {
-            this.style.zIndex = '4';
-            minRange.style.zIndex = '2';
-        });
-        
-        minRange.addEventListener('input', updateSlider);
-        maxRange.addEventListener('input', updateSlider);
-        
-        // Initialize the slider
-        updateSlider();
 
-// price range slider  filter
+        // Range Slider Functionality
+        function initRangeSlider(minId, maxId, fillId, minValueId, maxValueId) {
+            const minRange = document.getElementById(minId);
+            const maxRange = document.getElementById(maxId);
+            const rangeFill = document.getElementById(fillId);
+            const minValue = document.getElementById(minValueId);
+            const maxValue = document.getElementById(maxValueId);
+
+            if (!minRange || !maxRange || !rangeFill || !minValue || !maxValue) return;
+
+            function updateSlider() {
+                const minVal = parseInt(minRange.value);
+                const maxVal = parseInt(maxRange.value);
+                const minPercent = ((minVal - minRange.min) / (minRange.max - minRange.min)) * 100;
+                const maxPercent = ((maxVal - minRange.min) / (minRange.max - minRange.min)) * 100;
+
+                rangeFill.style.left = minPercent + '%';
+                rangeFill.style.width = (maxPercent - minPercent) + '%';
+
+                minValue.textContent = minVal;
+                maxValue.textContent = maxVal;
+            }
+
+            minRange.addEventListener('input', updateSlider);
+            maxRange.addEventListener('input', updateSlider);
+            updateSlider();
+        }
+
+        // Initialize all range sliders
+        initRangeSlider('minRange1', 'maxRange1', 'rangeFill1', 'minValue1', 'maxValue1');
+        initRangeSlider('minRange2', 'maxRange2', 'rangeFill2', 'minValue2', 'maxValue2');
+        initRangeSlider('minRange3', 'maxRange3', 'rangeFill3', 'minValue3', 'maxValue3');
+        initRangeSlider('minRange4', 'maxRange4', 'rangeFill4', 'minValue4', 'maxValue4');
+        initRangeSlider('minRange5', 'maxRange5', 'rangeFill5', 'minValue5', 'maxValue5');
+
+        // Initialize mobile range sliders
+        initRangeSlider('minRangeMobile1', 'maxRangeMobile1', 'rangeFillMobile1', 'minValueMobile1', 'maxValueMobile1');
+
+        // Close filter on escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeFilter();
+            }
+        });
+
+        // Pagination functionality
+        document.querySelectorAll('.travel-packages-section .pagination .page-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (!this.parentElement.classList.contains('disabled')) {
+                    document.querySelector('.travel-packages-section .pagination .page-item.active')?.classList.remove('active');
+                    this.parentElement.classList.add('active');
+                }
+            });
+        });
+
+        // Card hover effects
+        document.querySelectorAll('.travel-packages-section .unique-package-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.zIndex = '10';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.zIndex = '1';
+            });
+        });

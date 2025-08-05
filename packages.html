@@ -105,11 +105,12 @@
     <!-- header & banner sec end -->
 
     <!-- combo list sec start -->
-    <section class="packages-list py-4">
+    <section class="travel-packages-section packages-list py-5">
         <div class="container">
+            <!-- Section Title -->
             <div class="row">
                 <!-- Mobile Filter Button -->
-                <div class="col-12 mobile-filter-btn mb-3">
+                <div class="col-12 mobile-filter-btn mb-4">
                     <button class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center"
                         id="mobileFilterBtn">
                         <i class="bi bi-funnel me-2"></i>
@@ -117,15 +118,14 @@
                     </button>
                 </div>
 
-                <!-- Filters Sidebar -->
+                <!-- Desktop Filters Sidebar -->
                 <div class="col-lg-3 col-md-4 mb-4 desktop-packages-filters">
-
                     <!-- Price per traveler -->
                     <div class="filter-section price-range-filter mb-4">
                         <h6 class="filter-title">Price Per Traveler:</h6>
                         <div class="d-flex justify-content-between mt-2">
-                            <span>Min: $<span class="minValue" id="minValue1">0</span></span>
-                            <span>Max: $<span class="maxValue" id="maxValue1">50000</span></span>
+                            <span>Min: AED<span class="minValue ps-1" id="minValue1">0</span></span>
+                            <span>Max: AED<span class="maxValue ps-1" id="maxValue1">50000</span></span>
                         </div>
                         <div class="range-slider">
                             <div class="range-track">
@@ -156,7 +156,7 @@
                         </div>
                     </div>
 
-                    <!-- Infants Age -->
+                    <!-- Infant Age -->
                     <div class="filter-section price-range-filter mb-4">
                         <h6 class="filter-title">Infant Age:</h6>
                         <div class="d-flex justify-content-between mt-2">
@@ -174,7 +174,7 @@
                         </div>
                     </div>
 
-                    <!-- Nights -->
+                    <!-- Number of Nights -->
                     <div class="filter-section price-range-filter mb-4">
                         <h6 class="filter-title">Number of Nights:</h6>
                         <div class="d-flex justify-content-between mt-2">
@@ -192,7 +192,7 @@
                         </div>
                     </div>
 
-                    <!-- Days -->
+                    <!-- Number of Days -->
                     <div class="filter-section price-range-filter mb-4">
                         <h6 class="filter-title">Number of Days:</h6>
                         <div class="d-flex justify-content-between mt-2">
@@ -209,386 +209,300 @@
                                 step="1">
                         </div>
                     </div>
-
                 </div>
-                <!-- Main Content -->
+
+                <!-- Main Content - Two Cards Per Row -->
                 <div class="col-lg-9 col-md-12">
                     <div class="row">
-                        <!-- packages card 1 -->
-                        <div class="col-lg-12 mb-4">
-                            <div class="card packages-card-custom p-2">
-                                <div class="row g-0">
-                                    <!-- Image -->
-                                    <div class="col-md-4">
-                                        <div class="packages-card-custom-img">
-                                            <img src="/img/packages1.png"
-                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
-                                        </div>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="col-md-8 d-flex flex-column p-2 ps-3">
-                                        <!-- Stars -->
-                                        <h5 class="mb-2 fw-medium packages-card-custom-heading">5 day 4 Night Dubai
-                                            Package - Five Star Accommodation
-                                        </h5>
-                                        <div class="location text-muted mb-1"><i class="bi bi-geo-alt-fill"></i> Dubai
-                                        </div>
-                                        <div class="mb-2">
-                                            <span class="rating-stars mb-1 me-3">
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                            </span>
-                                            <span class="mb-2 text-muted">4.5 reviews</span>
-                                        </div>
-                                        <!-- Title -->
-
-                                        <!-- Description -->
-                                        <p class="mb-3 text-muted packages-card-description">Looking for an affordable
-                                            Dubai vacation? We've got you covered with our amazing 5-day, 4-night
-                                            package!  Stay at a comfortable...</p>
-
-                                        <!-- Icons -->
-                                        <div class="packages-services-icon d-flex flex-wrap gap-3 mb-3">
-
-                                            <img src="/img/private-shared.svg" alt="" width="24">
-
-
-                                            <img src="/img/with-visa.svg" alt="" width="24">
-
-
-                                            <img src="/img/private-ticket.svg" alt="" width="24">
-
-                                            <img src="/img/5-star.svg" alt="" width="24">
-
-                                        </div>
-
-                                        <!-- Price + Button -->
-                                        <div class="d-flex align-items-center mt-auto flex-wrap">
-                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
-                                            <a href="/packages-detail.html"
-                                                class="btn packages-card-btn ms-auto text-white fw-medium py-2 px-3">Book
-                                                Now</a>
-                                        </div>
-                                    </div>
+                        <!-- Package Card 1 -->
+                        <div class="col-lg-6 col-md-6 mb-4">
+                            <div class="unique-package-card d-flex flex-column p-3">
+                                <div class="card-image-container mb-2">
+                                    <img src="/img/packages1.png" alt="Dubai Package">
+                                    <div class="image-overlay"></div>
+                                    <div class="duration-badge">Top</div>
+                                    <div class="price-badge text-white">AED 250.20</div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- packages card 2 -->
-                        <div class="col-lg-12 mb-4">
-                            <div class="card packages-card-custom p-2">
-                                <div class="row g-0">
-                                    <!-- Image -->
-                                    <div class="col-md-4">
-                                        <div class="packages-card-custom-img">
-                                            <img src="/img/packages2.png"
-                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
+                                <div class="card-content p-2">
+                                    <h3 class="package-title">Dubai Luxury Experience - Five Star Accommodation</h3>
+                                    <div class="location-info text-muted">
+                                        <i class="bi bi-geo-alt-fill me-2"></i>
+                                        <span>Dubai Downtown, UAE</span>
+                                    </div>
+                                    <div class="rating-section">
+                                        <div class="stars-container">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <span class="rating-text small text-muted">4.8 (124 reviews)</span>
+                                        </div>
+                                    </div>
+                                    <p class="package-description text-muted">
+                                        Experience the ultimate Dubai getaway with luxury accommodations, desert safari
+                                        adventures, and exclusive city tours. Perfect for couples and families seeking
+                                        premium comfort.
+                                    </p>
+                                    <div class="features-grid">
+                                        <div class="feature-item">
+                                            <i class="bi bi-airplane"></i>
+                                            <span>Flight Included</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-building"></i>
+                                            <span>5-Star Hotel</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-car-front"></i>
+                                            <span>Private Transfer</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-passport"></i>
+                                            <span>Visa Assistance</span>
                                         </div>
                                     </div>
 
-                                    <!-- Content -->
-                                    <div class="col-md-8 d-flex flex-column p-2 ps-3">
-                                        <!-- Stars -->
-                                        <h5 class="mb-2 fw-medium">5 day 4 Night Dubai Package - Five Star Accommodation
-                                        </h5>
-                                        <div class="location text-muted mb-1"><i class="bi bi-geo-alt-fill"></i> Dubai
-                                        </div>
-                                        <div class="mb-2">
-                                            <span class="rating-stars mb-1 me-3">
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                            </span>
-                                            <span class="mb-2 text-muted">4.5 reviews</span>
-                                        </div>
-                                        <!-- Title -->
-
-                                        <!-- Description -->
-                                        <p class="mb-3 text-muted packages-card-description">Looking for an affordable
-                                            Dubai vacation? We've got you covered with our amazing 5-day, 4-night
-                                            package!  Stay at a comfortable...</p>
-
-                                        <!-- Icons -->
-                                        <div class="packages-services-icon d-flex flex-wrap gap-3 mb-3">
-
-                                            <img src="/img/private-shared.svg" alt="" width="24">
-
-
-                                            <img src="/img/with-visa.svg" alt="" width="24">
-
-
-                                            <img src="/img/private-ticket.svg" alt="" width="24">
-
-                                            <img src="/img/5-star.svg" alt="" width="24">
-
-                                        </div>
-
-                                        <!-- Price + Button -->
-                                        <div class="d-flex align-items-center mt-auto flex-wrap">
-                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
-                                            <a href="/packages-detail.html"
-                                                class="btn packages-card-btn ms-auto text-white fw-medium py-2 px-3">Book
-                                                Now</a>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- packages card 3 -->
-                        <div class="col-lg-12 mb-4">
-                            <div class="card packages-card-custom p-2">
-                                <div class="row g-0">
-                                    <!-- Image -->
-                                    <div class="col-md-4">
-                                        <div class="packages-card-custom-img">
-                                            <img src="/img/packages1.png"
-                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
-                                        </div>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="col-md-8 d-flex flex-column p-2 ps-3">
-                                        <!-- Stars -->
-                                        <h5 class="mb-2 fw-medium">5 day 4 Night Dubai Package - Five Star Accommodation
-                                        </h5>
-                                        <div class="location text-muted mb-1"><i class="bi bi-geo-alt-fill"></i> Dubai
-                                        </div>
-                                        <div class="mb-2">
-                                            <span class="rating-stars mb-1 me-3">
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                            </span>
-                                            <span class="mb-2 text-muted">4.5 reviews</span>
-                                        </div>
-                                        <!-- Title -->
-
-                                        <!-- Description -->
-                                        <p class="mb-3 text-muted packages-card-description">Looking for an affordable
-                                            Dubai vacation? We've got you covered with our amazing 5-day, 4-night
-                                            package!  Stay at a comfortable...</p>
-
-                                        <!-- Icons -->
-                                        <div class="packages-services-icon d-flex flex-wrap gap-3 mb-3">
-
-                                            <img src="/img/private-shared.svg" alt="" width="24">
-
-
-                                            <img src="/img/with-visa.svg" alt="" width="24">
-
-
-                                            <img src="/img/private-ticket.svg" alt="" width="24">
-
-                                            <img src="/img/5-star.svg" alt="" width="24">
-
-                                        </div>
-
-                                        <!-- Price + Button -->
-                                        <div class="d-flex align-items-center mt-auto flex-wrap">
-                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
-                                            <a href="/packages-detail.html"
-                                                class="btn packages-card-btn ms-auto text-white fw-medium py-2 px-3">Book
-                                                Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- packages card 4 -->
-                        <div class="col-lg-12 mb-4">
-                            <div class="card packages-card-custom p-2">
-                                <div class="row g-0">
-                                    <!-- Image -->
-                                    <div class="col-md-4">
-                                        <div class="packages-card-custom-img">
-                                            <img src="/img/packages2.png"
-                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
-                                        </div>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="col-md-8 d-flex flex-column p-2 ps-3">
-                                        <!-- Stars -->
-                                        <h5 class="mb-2 fw-medium">5 day 4 Night Dubai Package - Five Star Accommodation
-                                        </h5>
-                                        <div class="location text-muted mb-1"><i class="bi bi-geo-alt-fill"></i> Dubai
-                                        </div>
-                                        <div class="mb-2">
-                                            <span class="rating-stars mb-1 me-3">
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                                <i class="bi bi-star-fill text-warning"></i>
-                                            </span>
-                                            <span class="mb-2 text-muted">4.5 reviews</span>
-                                        </div>
-                                        <!-- Title -->
-
-                                        <!-- Description -->
-                                        <p class="mb-3 text-muted packages-card-description">Looking for an affordable
-                                            Dubai vacation? We've got you covered with our amazing 5-day, 4-night
-                                            package!  Stay at a comfortable...</p>
-
-                                        <!-- Icons -->
-                                        <div class="packages-services-icon d-flex flex-wrap gap-3 mb-3">
-
-                                            <img src="/img/private-shared.svg" alt="" width="24">
-
-
-                                            <img src="/img/with-visa.svg" alt="" width="24">
-
-
-                                            <img src="/img/private-ticket.svg" alt="" width="24">
-
-                                            <img src="/img/5-star.svg" alt="" width="24">
-
-                                        </div>
-
-                                        <!-- Price + Button -->
-                                        <div class="d-flex align-items-center mt-auto flex-wrap">
-                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
-                                            <a href="/packages-detail.html"
-                                                class="btn packages-card-btn ms-auto text-white fw-medium py-2 px-3">Book
-                                                Now</a>
-                                        </div>
-                                    </div>
+                                <div class="card-footer-section">
+                                    <button class="book-btn w-100 fw-medium">
+                                        <i class="bi bi-calendar-check me-2"></i>Book Now
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Package Card 2 -->
+                        <div class="col-lg-6 col-md-6 mb-4">
+                            <div class="unique-package-card d-flex flex-column p-3">
+                                <div class="card-image-container mb-2">
+                                    <img src="/img/packages2.png" alt="Dubai Beach Package">
+                                    <div class="image-overlay"></div>
+                                    <div class="duration-badge">Top</div>
+                                    <div class="price-badge text-white">AED 250.20</div>
+                                </div>
+                                <div class="card-content p-2">
+                                    <h3 class="package-title">Dubai Beach Resort Premium Package</h3>
+                                    <div class="location-info text-muted">
+                                        <i class="bi bi-geo-alt-fill me-2"></i>
+                                        <span>Dubai Downtown, UAE</span>
+                                    </div>
+                                    <div class="rating-section">
+                                        <div class="stars-container">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            <span class="rating-text small text-muted">4.6 (89 reviews)</span>
+                                        </div>
+                                    </div>
+                                    <p class="package-description text-muted">
+                                        Relax at Dubai's finest beach resort with oceanfront views, water sports, spa
+                                        treatments, and gourmet dining. Includes yacht tours and shopping experiences.
+                                    </p>
+                                    <div class="features-grid">
+                                        <div class="feature-item">
+                                            <i class="bi bi-water"></i>
+                                            <span>Beach Access</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-cup-hot"></i>
+                                            <span>All Meals</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-bicycle"></i>
+                                            <span>Water Sports</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-heart"></i>
+                                            <span>Spa Access</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer-section mt-auto">
+                                    <button class="book-btn w-100 fw-medium">
+                                        <i class="bi bi-calendar-check me-2"></i>Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Package Card 3 -->
+                        <div class="col-lg-6 col-md-6 mb-4">
+                            <div class="unique-package-card d-flex flex-column p-3">
+                                <div class="card-image-container mb-2">
+                                    <img src="/img/packages2.png" alt="Dubai Desert Package">
+                                    <div class="image-overlay"></div>
+                                    <div class="duration-badge">Top</div>
+                                    <div class="price-badge text-white">AED 250.20</div>
+                                </div>
+                                <div class="card-content p-2">
+                                    <h3 class="package-title">Dubai Desert Adventure & Culture Experience</h3>
+                                    <div class="location-info text-muted">
+                                        <i class="bi bi-geo-alt-fill me-2"></i>
+                                        <span>Dubai Downtown, UAE</span>
+                                    </div>
+                                    <div class="rating-section">
+                                        <div class="stars-container">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <span class="rating-text small text-muted">4.9 (156 reviews)</span>
+                                        </div>
+                                    </div>
+                                    <p class="package-description text-muted">
+                                        Immerse yourself in authentic Bedouin culture with camel rides, traditional
+                                        dining, and overnight desert camping under the stars. Adventure and culture
+                                        combined.
+                                    </p>
+                                    <div class="features-grid">
+                                        <div class="feature-item">
+                                            <i class="bi bi-moon-stars"></i>
+                                            <span>Desert Camping</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-truck"></i>
+                                            <span>Dune Bashing</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-camera"></i>
+                                            <span>Camel Riding</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-music-note"></i>
+                                            <span>Cultural Show</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer-section">
+                                    <button class="book-btn w-100 fw-medium">
+                                        <i class="bi bi-calendar-check me-2"></i>Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Package Card 4 -->
+                        <div class="col-lg-6 col-md-6 mb-4">
+                            <div class="unique-package-card d-flex flex-column p-3">
+                                <div class="card-image-container mb-2">
+                                    <img src="/img/packages1.png" alt="Dubai Luxury Package">
+                                    <div class="image-overlay"></div>
+                                    <div class="duration-badge">Top</div>
+                                    <div class="price-badge text-white">AED 250.20</div>
+                                </div>
+                                <div class="card-content p-2">
+                                    <h3 class="package-title">Dubai Ultimate Luxury & Marina Experience</h3>
+                                    <div class="location-info text-muted">
+                                        <i class="bi bi-geo-alt-fill me-2"></i>
+                                        <span>Dubai Downtown, UAE</span>
+                                    </div>
+                                    <div class="rating-section">
+                                        <div class="stars-container">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <span class="rating-text small text-muted">5.0 (67 reviews)</span>
+                                        </div>
+                                    </div>
+                                    <p class="package-description text-muted">
+                                        The ultimate Dubai luxury experience with penthouse suites, private yacht
+                                        charters, helicopter tours, and exclusive access to premium attractions and
+                                        dining.
+                                    </p>
+                                    <div class="features-grid">
+                                        <div class="feature-item">
+                                            <i class="bi bi-gem"></i>
+                                            <span>Luxury Suite</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-helicopter"></i>
+                                            <span>Helicopter Tour</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-ship"></i>
+                                            <span>Private Yacht</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-award"></i>
+                                            <span>VIP Access</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer-section">
+                                    <button class="book-btn w-100 fw-medium">
+                                        <i class="bi bi-calendar-check me-2"></i>Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Pagination -->
-                    <div class="paginations-combo">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="paginations-packages">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Mobile Filter Sidebar -->
-        <div class="filter-overlay" id="filterOverlay"></div>
-        <div class="filter-sidebar packages-filter-view" id="filterSidebar">
-            <div class="filter-header">
-                <h5 class="mb-0">Filter Options</h5>
-                <button class="filter-close border-0" id="filterClose">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-            </div>
+            <!-- Mobile Filter Overlay -->
+            <div class="filter-overlay" id="filterOverlay"></div>
 
-            <!-- Price per traveler -->
-            <div class="filter-section price-range-filter mb-4">
-                <h6 class="filter-title">Price Per Traveler:</h6>
-                <div class="d-flex justify-content-between mt-2">
-                    <span>Min: $<span class="minValue" id="minValue1">0</span></span>
-                    <span>Max: $<span class="maxValue" id="maxValue1">50000</span></span>
+            <!-- Mobile Filter Sidebar -->
+            <div class="filter-sidebar" id="filterSidebar">
+                <div class="filter-header">
+                    <h5 class="mb-0">Filter Options</h5>
+                    <button class="filter-close" id="filterClose">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
                 </div>
-                <div class="range-slider">
-                    <div class="range-track">
-                        <div class="range-fill" id="rangeFill1"></div>
+
+                <!-- Mobile Filter Content (Same as desktop) -->
+                <div class="filter-section price-range-filter mb-4">
+                    <h6 class="filter-title">Price Per Traveler:</h6>
+                    <div class="d-flex justify-content-between mt-2">
+                        <span>Min: AED<span class="minValue ps-1" id="minValueMobile1">0</span></span>
+                        <span>Max: AED<span class="maxValue ps-1" id="maxValueMobile1">50000</span></span>
                     </div>
-                    <input type="range" class="range-input minRange" id="minRange1" min="0" max="50000" value="0"
-                        step="1000">
-                    <input type="range" class="range-input maxRange" id="maxRange1" min="0" max="50000" value="50000"
-                        step="1000">
-                </div>
-            </div>
-
-            <!-- Child Age -->
-            <div class="filter-section price-range-filter mb-4">
-                <h6 class="filter-title">Child Age:</h6>
-                <div class="d-flex justify-content-between mt-2">
-                    <span>Min: <span class="minValue" id="minValue2">0</span></span>
-                    <span>Max: <span class="maxValue" id="maxValue2">18</span></span>
-                </div>
-                <div class="range-slider">
-                    <div class="range-track">
-                        <div class="range-fill" id="rangeFill2"></div>
+                    <div class="range-slider">
+                        <div class="range-track">
+                            <div class="range-fill" id="rangeFillMobile1"></div>
+                        </div>
+                        <input type="range" class="range-input minRange" id="minRangeMobile1" min="0" max="50000"
+                            value="0" step="1000">
+                        <input type="range" class="range-input maxRange" id="maxRangeMobile1" min="0" max="50000"
+                            value="50000" step="1000">
                     </div>
-                    <input type="range" class="range-input minRange" id="minRange2" min="0" max="18" value="0" step="1">
-                    <input type="range" class="range-input maxRange" id="maxRange2" min="0" max="18" value="18"
-                        step="1">
+                </div>
+
+                <div class="d-grid mt-4">
+                    <button class="btn apply-filter-btn text-white" id="applyFilters">
+                        Apply Filters
+                    </button>
                 </div>
             </div>
-
-            <!-- Infants Age -->
-            <div class="filter-section price-range-filter mb-4">
-                <h6 class="filter-title">Infant Age:</h6>
-                <div class="d-flex justify-content-between mt-2">
-                    <span>Min: <span class="minValue" id="minValue3">0</span></span>
-                    <span>Max: <span class="maxValue" id="maxValue3">2</span></span>
-                </div>
-                <div class="range-slider">
-                    <div class="range-track">
-                        <div class="range-fill" id="rangeFill3"></div>
-                    </div>
-                    <input type="range" class="range-input minRange" id="minRange3" min="0" max="2" value="0" step="1">
-                    <input type="range" class="range-input maxRange" id="maxRange3" min="0" max="2" value="2" step="1">
-                </div>
-            </div>
-
-            <!-- Nights -->
-            <div class="filter-section price-range-filter mb-4">
-                <h6 class="filter-title">Number of Nights:</h6>
-                <div class="d-flex justify-content-between mt-2">
-                    <span>Min: <span class="minValue" id="minValue4">1</span></span>
-                    <span>Max: <span class="maxValue" id="maxValue4">30</span></span>
-                </div>
-                <div class="range-slider">
-                    <div class="range-track">
-                        <div class="range-fill" id="rangeFill4"></div>
-                    </div>
-                    <input type="range" class="range-input minRange" id="minRange4" min="1" max="30" value="1" step="1">
-                    <input type="range" class="range-input maxRange" id="maxRange4" min="1" max="30" value="30"
-                        step="1">
-                </div>
-            </div>
-
-            <!-- Days -->
-            <div class="filter-section price-range-filter mb-4">
-                <h6 class="filter-title">Number of Days:</h6>
-                <div class="d-flex justify-content-between mt-2">
-                    <span>Min: <span class="minValue" id="minValue5">1</span></span>
-                    <span>Max: <span class="maxValue" id="maxValue5">31</span></span>
-                </div>
-                <div class="range-slider">
-                    <div class="range-track">
-                        <div class="range-fill" id="rangeFill5"></div>
-                    </div>
-                    <input type="range" class="range-input minRange" id="minRange5" min="1" max="31" value="1" step="1">
-                    <input type="range" class="range-input maxRange" id="maxRange5" min="1" max="31" value="31"
-                        step="1">
-                </div>
-            </div>
-
-
-            <!-- Apply Filters Button -->
-            <div class="d-grid">
-                <button class="btn btn-primary apply-filter-close-btn " id="applyFilters">
-                    Apply Filters
-                </button>
-            </div>
-        </div>
     </section>
     <!-- combo list sec end -->
 

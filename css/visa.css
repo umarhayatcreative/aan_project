@@ -150,7 +150,7 @@ body {
 /* header & banner sec end */
 
 .form-select:focus {
- 
+
     outline: 0;
     box-shadow: none;
 }
@@ -171,34 +171,223 @@ body {
 
 }
 
-.apply-hassle-visa .visa-card-custom {
-    border: 1px solid var(--all-border);
+
+/* Modern Visa Card Design */
+.apply-hassle-visa .modern-visa-card {
+    backdrop-filter: blur(15px);
     border-radius: 15px;
+    border: 1px solid var(--all-border);
+    overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
-.apply-hassle-visa .visa-card-custom .visa-card-btn {
+
+
+.apply-hassle-visa .card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    height: 180px;
+}
+
+.apply-hassle-visa .card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.apply-hassle-visa .country-flag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-colors-low-opacity);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.apply-hassle-visa .processing-time {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--secondary-colors);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.apply-hassle-visa .card-content {
+    padding: 25px;
+}
+
+.apply-hassle-visa .visa-title {
+    font-size: clamp(18px, 2.2vw, 22px);
+    font-weight: 700;
+    color: var(--primary-colors);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.apply-hassle-visa .visa-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+}
+
+.apply-hassle-visa .info-item {
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+    background: var(--primary-lights);
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.apply-hassle-visa .info-item i {
+    color: var(--secondary-colors);
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.apply-hassle-visa .info-item .info-label {
+    font-weight: 600;
+    color: var(--primary-colors);
+    margin-right: 5px;
+}
+
+.apply-hassle-visa .info-item .info-value {}
+
+.apply-hassle-visa .visa-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.apply-hassle-visa .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+    justify-content: start;
+}
+
+.apply-hassle-visa .feature-tag {
+    background: var(--secondary-lights);
+    color: var(--primary-colors);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.apply-hassle-visa .apply-btn {
     background-color: var(--secondary-colors);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Modal Styles */
+.apply-hassle-visa .visa-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+
+    overflow: hidden;
+}
+
+.apply-hassle-visa .visa-modal .modal-header {
+    background-color: var(--primary-lights);
+    border: none;
+}
+
+.apply-hassle-visa .visa-modal .modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-colors);
+}
+
+
+.apply-hassle-visa .visa-modal .modal-body {
+    padding: 30px;
+}
+
+.apply-hassle-visa .visa-modal .form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.apply-hassle-visa .visa-modal .form-select,
+.apply-hassle-visa .visa-modal .form-control {
+    border: 2px solid var(--all-border);
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.apply-hassle-visa .visa-modal .form-select:focus,
+.apply-hassle-visa .visa-modal .form-control:focus {
+    border-color: var(--secondary-colors);
+
+}
+
+.apply-hassle-visa .visa-modal .search-btn {
+    background: var(--secondary-colors);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ 
+
+
+    .apply-hassle-visa .card-content {
+        padding: 20px;
+    }
+
+    .apply-hassle-visa .apply-hassle-visa-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .apply-hassle-visa .info-item {
+        padding: 7px 12px;
+        font-size: 0.85rem;
+    }
 }
 
 .apply-hassle-visa-heading {
     font-size: clamp(20px, 2vw, 28px);
 
 }
-
-.visa-card-custom-modal .modal-header {
-    background-color: var(--primary-lights);
-}
-
-.visa-card-custom-modal .visa-card-custom-modal-btn {
-    background-color: var(--secondary-colors);
-}
-
-.visa-card-custom-modal .visa-card-custom-modal-btn:hover {
-    background-color: var(--secondary-colors);
-}
-
-
-
 
 
 /* footer section start */
@@ -238,10 +427,11 @@ body {
 
 /* for all date picker */
 .flatpickr-day.selected {
-    background: var(--secondary-colors)!important;
+    background: var(--secondary-colors) !important;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: var(--color-white);
-    border-color: var(--secondary-colors)!important;
+    border-color: var(--secondary-colors) !important;
 }
+
 /* for all date picker */

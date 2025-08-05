@@ -180,13 +180,31 @@ body {
 
 /* header fixed */
 
+
+/* our experience sec start */
+
+.our-experience .our-experience-custom {
+    height: 390px;
+}
+
+.our-experience-custom h5 {
+    font-size: 30px;
+    color: var(--primary-colors);
+}
+
+.our-experience-custom .experience-count h4 {
+    color: var(--secondary-colors);
+
+}
+
+.our-experience-custom .experience-count h6 {
+    color: var(--primary-colors);
+
+}
+
+/* our experience sec end */
+
 /* header & banner sec end */
-
-
-
-
-
-
 .our-mission .our-mission-detail-icon {
     background-color: var(--secondary-lights);
     width: 70px;
@@ -236,7 +254,9 @@ body {
     color: var(--primary-colors);
 }
 
-
+.our-journey{
+    background-color: var(--primary-lights);
+}
 .our-journey-heading {
     color: var(--primary-colors);
 }

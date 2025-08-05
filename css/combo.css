@@ -244,7 +244,7 @@ body {
 
 .combo-list .rating-stars {
     color: var(--secondary-colors);
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .combo-list .price-current {
@@ -253,6 +253,9 @@ body {
     font-size: 1.1rem;
 }
 
+.combo-list .from-price{
+    margin-bottom: -5px;
+}
 .combo-card-title {
     font-size: 16px;
     color: var(--primary-colors);
