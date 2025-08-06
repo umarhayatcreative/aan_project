@@ -182,8 +182,16 @@ body {
 
 /* header & banner sec end */
 .desktop-umrah-filters .custom-enquiry-btn {
-    background-color: var(--secondary-colors);
+   border: 1px solid var(--primary-colors);
+   color: var(--primary-colors);
 }
+
+.desktop-umrah-filters .custom-enquiry-btn:hover{
+   background-color: var(--secondary-colors);
+   border: 1px solid var(--secondary-colors);
+   color: var(--color-white);
+}
+
 
 .umrah-list .combo-filter-view {
     width: 300px;
@@ -337,16 +345,46 @@ body {
     border-radius: 15px;
 }
 
-.umrah-card-custom .rating-stars i {
-    color: var(--secondary-colors) !important;
+.umrah-card-custom .umrah-days {
+    border: 1px solid var(--all-border);
+    border-radius: 10px;
+    color: var(--primary-colors);
+}
+.umrah-card-custom .umrah-days img{
+    width: 25px;
 }
 
+.umrah-card-custom .rating-stars i {
+    color: var(--secondary-colors);
+    font-size: 13px;
+}
+.umrah-card-custom-img{
+    position: relative;
+}
+
+.umrah-card-custom-img .review-badge{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--secondary-colors);
+    color: var(--color-white);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.starting-price{
+    margin-bottom: -8px;
+}
 .umrah-card-custom h5 {
     color: var(--primary-colors);
-    font-size: clamp(18px, 2vw, 20px);
+    font-size: clamp(18px, 2vw, 22px);
 
 }
-
+.umrah-services i{
+    color: var(--secondary-colors);
+}
 .umrah-card-custom .price-name {
     color: var(--primary-colors);
 }
@@ -368,19 +406,15 @@ body {
     .umrah-card-custom .umrah-card-custom-img img {
         height: 180px;
     }
-
+/* 
     .umrah-card-description {
         display: -webkit-box;
         -webkit-line-clamp: 2;
-        /* Limit to 2 lines */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
+    } */
 }
-
-
-
 
 /* filter css */
 .price-range-filter .range-slider {

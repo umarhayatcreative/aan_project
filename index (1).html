@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Visa Application - Modern Design</title>
+    <title>Bootstrap Umrah Packages</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
+        /* Minimal Custom CSS - Only for unique styling */
         :root {
             --primary-colors: #000026;
             --secondary-colors: #FB5B32;
@@ -19,632 +19,335 @@
             --all-border: #E6E6E6;
         }
 
-
-
-        /* Modern Visa Card Design */
-        .visa-section .modern-visa-card {
-            backdrop-filter: blur(15px);
-            border-radius: 15px;
-            border: 1px solid var(--all-border);
-            overflow: hidden;
-            position: relative;
-            height: 100%;
+        .umrah-packages-section .card-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
         }
 
-
-
-        .visa-section .card-image-wrapper {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-
-            height: 180px;
+        .umrah-packages-section .img-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
 
-        .visa-section .card-image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .visa-section .country-flag {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: var(--primary-colors-low-opacity);
-            backdrop-filter: blur(10px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .visa-section .processing-time {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--secondary-colors);
-            padding: 6px 12px;
-            border-radius: 5px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .visa-section .card-content {
-            padding: 25px;
-        }
-
-        .visa-section .visa-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--primary-colors);
-            margin-bottom: 15px;
-            line-height: 1.3;
-        }
-
-        .visa-section .visa-info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .visa-section .info-item {
-            display: flex;
-            align-items: center;
-            padding: 7px 15px;
-            background: var(--primary-lights);
-            border-radius: 5px;
-            font-size: 0.9rem;
-        }
-
-        .visa-section .info-item i {
-            color: var(--secondary-colors);
-            margin-right: 8px;
-            font-size: 1rem;
-        }
-
-        .visa-section .info-item .info-label {
-            font-weight: 600;
-            color: var(--primary-colors);
-            margin-right: 5px;
-        }
-
-        .visa-section .info-item .info-value {}
-
-        .visa-section .visa-description {
-            font-size: 0.95rem;
-            line-height: 1.5;
-            margin-bottom: 25px;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .visa-section .features-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 25px;
-        }
-
-        .visa-section .feature-tag {
-            background: var(--secondary-lights);
-            color: var(--primary-colors);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid var(--all-border);
-        }
-
-        .visa-section .apply-btn {
+        .umrah-packages-section .btn-gradient {
             background-color: var(--secondary-colors);
             border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-weight: 600;
-            font-size: 1rem;
-            width: 100%;
-            position: relative;
-            overflow: hidden;
         }
 
 
-        /* Modal Styles */
-        .visa-section .visa-modal .modal-content {
-            border-radius: 15px;
-            border: none;
-
-            overflow: hidden;
-        }
-
-        .visa-section .visa-modal .modal-header {
-            background-color: var(--primary-lights);
-            border: none;
-        }
-
-        .visa-section .visa-modal .modal-title {
-            font-weight: 700;
-            font-size: 1.5rem;
+        .umrah-packages-section .text-primary-custom {
             color: var(--primary-colors);
         }
 
-
-        .visa-section .visa-modal .modal-body {
-            padding: 30px;
+        .umrah-packages-section .text-secondary-custom {
+            color: var(--secondary-colors);
         }
 
-        .visa-section .visa-modal .form-label {
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .visa-section .visa-modal .form-select,
-        .visa-section .visa-modal .form-control {
-            border: 2px solid var(--all-border);
-            border-radius: 5px;
-            padding: 12px 15px;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-
-        .visa-section .visa-modal .form-select:focus,
-        .visa-section .visa-modal .form-control:focus {
-            border-color: var(--secondary-colors);
-
-        }
-
-        .visa-section .visa-modal .search-btn {
-            background: var(--secondary-colors);
-            border: none;
-            padding: 12px 30px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .visa-section .visa-info-grid {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-
-
-
-            .visa-section .card-content {
-                padding: 20px;
-            }
-
-            .visa-section .apply-hassle-visa-heading {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .visa-section .features-list {
-                justify-content: center;
-            }
-
-            .visa-section .info-item {
-                padding: 7px 12px;
-                font-size: 0.85rem;
-            }
-        }
+      
     </style>
 </head>
 
-<body>
-    <section class="visa-section apply-hassle-visa py-5">
+<body class="bg-light">
+    <section class="umrah-packages-section py-5">
         <div class="container">
             <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary-custom mb-3">Sacred Umrah Packages</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                    Embark on a spiritual journey with our carefully crafted Umrah packages, designed to provide comfort
+                    and peace during your pilgrimage.
+                </p>
+                <hr class="w-25 mx-auto border-3 border-secondary-custom">
+            </div>
+
             <div class="row">
-                <div class="col-12">
-                    <div class="section-header">
-                        <h3 class="apply-hassle-visa-heading">Apply Hassle Free E-visas</h3>
-                        <p class="section-subtitle">
-                            Hassle-Free travel with E-Visa: Your international gateway awaits! Fast, secure, and
-                            convenient visa processing.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Visa Cards Grid -->
-            <div class="row g-4">
-                <!-- Visa Card 1 - Azerbaijan -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3">
-                        <div class="card-image-wrapper mb-2">
-                            <img src="/img/visa-card-img.png" alt="Armenia evisa">
-                            <div class="processing-time text-white">3-5 Days</div>
-                        </div>
-                        <div class="card-content p-2">
-                            <h5 class="visa-title">Azerbaijan E-Visa</h5>
-
-                            <div class="visa-info-grid">
-                                <div class="info-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span class="info-label">From:</span>
-                                    <span class="info-value text-muted">Dubai</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-calendar-check-fill"></i>
-                                    <span class="info-label">Valid:</span>
-                                    <span class="info-value text-muted">30 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-clock-fill"></i>
-                                    <span class="info-label">Process:</span>
-                                    <span class="info-value text-muted">3-5 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-cash"></i>
-                                    <span class="info-label">Fee:</span>
-                                    <span class="info-value text-muted">AED 50</span>
+                <!-- Umrah Card 1 -->
+                <div class="col-12 mb-4">
+                    <div class="card shadow-lg border-0 rounded-4 card-hover overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <!-- Image -->
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="/placeholder.svg?height=300&width=400&text=Makkah+Madinah"
+                                        class="img-fluid w-100 h-100 object-fit-cover img-hover" alt="Umrah Package">
+                                    <!-- Duration Badge -->
+                                    <span
+                                        class="position-absolute top-0 start-0 m-3 badge bg-white text-primary-custom fs-6 px-3 py-2 rounded-pill">
+                                        21 Days
+                                    </span>
+                                    <!-- Special Badge -->
+                                    <span
+                                        class="position-absolute top-0 end-0 m-3 badge bg-primary text-white fs-6 px-3 py-2 rounded-pill">
+                                        Premium
+                                    </span>
                                 </div>
                             </div>
 
-                            <p class="visa-description text-muted">
-                                Experience the beauty of Azerbaijan with our fast and reliable e-visa service. Perfect
-                                for tourism and business visits.
-                            </p>
+                            <!-- Content -->
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body p-4 flex-grow-1 d-flex flex-column">
+                                    <!-- Rating Section -->
+                                    <div
+                                        class="d-flex align-items-center p-3 mb-3 bg-light rounded-3 border-start-custom">
+                                        <div class="me-3">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                        <small class="text-muted fw-medium">4.8 (156 reviews)</small>
+                                    </div>
 
-                            <div class="features-list">
-                                <span class="feature-tag">Tourist Visa</span>
-                                <span class="feature-tag">Business Visa</span>
-                                <span class="feature-tag">Online Process</span>
-                            </div>
+                                    <!-- Title -->
+                                    <h5 class="card-title fw-bold text-primary-custom mb-3 lh-sm">
+                                        21 Days Umrah Package – 10 Nights Makkah & 10 Nights Madinah
+                                    </h5>
 
-                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
-                                data-country="Azerbaijan" data-flag="🇦🇿">
-                                <i class="bi bi-airplane me-2"></i>Apply Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                                    <!-- Description -->
+                                    <p class="card-text text-muted mb-4 flex-grow-1">
+                                        Take a soul-nourishing 21-day Umrah Package, crafted for individuals who want to
+                                        spend more time in the holy cities of Makkah and Madinah. Experience spiritual
+                                        tranquility with extended stays, premium accommodations, and comprehensive
+                                        services designed for your comfort and devotion.
+                                    </p>
 
-                <!-- Visa Card 2 - Turkey -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3">
-                        <div class="card-image-wrapper mb-2">
-                            <img src="/img/visa-card-img.png" alt="Armenia evisa">
+                                    <!-- Services -->
+                                    <div class="row g-2 mb-4">
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-car-front text-primary me-2"></i>
+                                                <small class="fw-medium text-primary-custom">Private Transport</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-passport text-success me-2"></i>
+                                                <small class="fw-medium text-primary-custom">With Visa</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-airplane text-info me-2"></i>
+                                                <small class="fw-medium text-primary-custom">Private Ticket</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-star text-warning me-2"></i>
+                                                <small class="fw-medium text-primary-custom">5 Star Hotel</small>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="processing-time text-white">1-3 Days</div>
-                        </div>
-                        <div class="card-content p-2">
-                            <h5 class="visa-title">Turkey E-Visa</h5>
-
-                            <div class="visa-info-grid">
-                                <div class="info-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span class="info-label">From:</span>
-                                    <span class="info-value text-muted">UAE</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-calendar-check-fill"></i>
-                                    <span class="info-label">Valid:</span>
-                                    <span class="info-value text-muted">90 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-clock-fill"></i>
-                                    <span class="info-label">Process:</span>
-                                    <span class="info-value text-muted">1-3 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-cash"></i>
-                                    <span class="info-label">Fee:</span>
-                                    <span class="info-value text-muted">AED 60</span>
-                                </div>
-                            </div>
-
-                            <p class="visa-description text-muted">
-                                Discover Turkey's rich culture and history. Fast processing with multiple entry options
-                                available for your convenience.
-                            </p>
-
-                            <div class="features-list">
-                                <span class="feature-tag">Multiple Entry</span>
-                                <span class="feature-tag">Tourist Visa</span>
-                                <span class="feature-tag">Fast Process</span>
-                            </div>
-
-                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
-                                data-country="Turkey" data-flag="🇹🇷">
-                                <i class="bi bi-airplane me-2"></i>Apply Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visa Card 3 - Georgia -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3">
-                        <div class="card-image-wrapper mb-2">
-                            <img src="/img/visa-card-img.png" alt="Georgia evisa">
-
-                            <div class="processing-time text-white">2-4 Days</div>
-                        </div>
-                        <div class="card-content p-2">
-                            <h5 class="visa-title">Georgia E-Visa</h5>
-
-                            <div class="visa-info-grid">
-                                <div class="info-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span class="info-label">From:</span>
-                                    <span class="info-value text-muted">Dubai</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-calendar-check-fill"></i>
-                                    <span class="info-label">Valid:</span>
-                                    <span class="info-value text-muted">30 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-clock-fill"></i>
-                                    <span class="info-label">Process:</span>
-                                    <span class="info-value text-muted">2-4 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-cash"></i>
-                                    <span class="info-label">Fee:</span>
-                                    <span class="info-value text-muted">AED 45</span>
-                                </div>
-                            </div>
-
-                            <p class="visa-description text-muted">
-                                Explore Georgia's stunning landscapes and warm hospitality. Simple application process
-                                with reliable approval rates.
-                            </p>
-
-                            <div class="features-list">
-                                <span class="feature-tag">Tourist Visa</span>
-                                <span class="feature-tag">Transit Visa</span>
-                                <span class="feature-tag">Reliable</span>
-                            </div>
-
-                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
-                                data-country="Georgia" data-flag="🇬🇪">
-                                <i class="bi bi-airplane me-2"></i>Apply Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visa Card 4 - Armenia -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3">
-                        <div class="card-image-wrapper mb-2">
-                            <img src="/img/visa-card-img.png" alt="Armenia evisa">
-                            <div class="processing-time text-white">5-7 Days</div>
-                        </div>
-                        <div class="card-content p-2">
-                            <h5 class="visa-title">Armenia E-Visa</h5>
-
-                            <div class="visa-info-grid">
-                                <div class="info-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span class="info-label">From:</span>
-                                    <span class="info-value text-muted">UAE</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-calendar-check-fill"></i>
-                                    <span class="info-label">Valid:</span>
-                                    <span class="info-value text-muted">120 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-clock-fill"></i>
-                                    <span class="info-label">Process:</span>
-                                    <span class="info-value text-muted">5-7 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-cash"></i>
-                                    <span class="info-label">Fee:</span>
-                                    <span class="info-value text-muted">AED 55</span>
-                                </div>
-                            </div>
-
-                            <p class="visa-description text-muted">
-                                Discover Armenia's ancient heritage and modern attractions. Extended validity period for
-                                longer stays and exploration.
-                            </p>
-
-                            <div class="features-list">
-                                <span class="feature-tag">Long Stay</span>
-                                <span class="feature-tag">Tourist Visa</span>
-                                <span class="feature-tag">Cultural</span>
-                            </div>
-
-                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
-                                data-country="Armenia" data-flag="🇦🇲">
-                                <i class="bi bi-airplane me-2"></i>Apply Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visa Card 5 - Kyrgyzstan -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3">
-                        <div class="card-image-wrapper mb-2">
-                            <img src="/img/visa-card-img.png" alt="Armenia evisa">
-                            <div class="processing-time text-white">3-5 Days</div>
-                        </div>
-                        <div class="card-content p-2">
-                            <h5 class="visa-title">Kyrgyzstan E-Visa</h5>
-
-                            <div class="visa-info-grid">
-                                <div class="info-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span class="info-label">From:</span>
-                                    <span class="info-value text-muted">Dubai</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-calendar-check-fill"></i>
-                                    <span class="info-label">Valid:</span>
-                                    <span class="info-value text-muted">60 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-clock-fill"></i>
-                                    <span class="info-label">Process:</span>
-                                    <span class="info-value text-muted">3-5 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-cash"></i>
-                                    <span class="info-label">Fee:</span>
-                                    <span class="info-value text-muted">AED 40</span>
-                                </div>
-                            </div>
-
-                            <p class="visa-description text-muted">
-                                Experience Kyrgyzstan's breathtaking mountain landscapes and nomadic culture. Adventure
-                                tourism and nature exploration await.
-                            </p>
-
-                            <div class="features-list">
-                                <span class="feature-tag">Adventure</span>
-                                <span class="feature-tag">Nature</span>
-                                <span class="feature-tag">Budget Friendly</span>
-                            </div>
-
-                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
-                                data-country="Kyrgyzstan" data-flag="🇰🇬">
-                                <i class="bi bi-airplane me-2"></i>Apply Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Visa Card 6 - Uzbekistan -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-visa-card p-3">
-                        <div class="card-image-wrapper mb-2">
-                            <img src="/img/visa-card-img.png" alt="Armenia evisa">
-
-                            <div class="processing-time text-white">2-3 Days</div>
-                        </div>
-                        <div class="card-content p-2">
-                            <h5 class="visa-title">Uzbekistan E-Visa</h5>
-
-                            <div class="visa-info-grid">
-                                <div class="info-item">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    <span class="info-label">From:</span>
-                                    <span class="info-value text-muted">UAE</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-calendar-check-fill"></i>
-                                    <span class="info-label">Valid:</span>
-                                    <span class="info-value text-muted">30 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-clock-fill"></i>
-                                    <span class="info-label">Process:</span>
-                                    <span class="info-value text-muted">2-3 Days</span>
-                                </div>
-                                <div class="info-item">
-                                    <i class="bi bi-cash"></i>
-                                    <span class="info-label">Fee:</span>
-                                    <span class="info-value text-muted">AED 65</span>
-                                </div>
-                            </div>
-
-                            <p class="visa-description text-muted">
-                                Journey through Uzbekistan's Silk Road cities and Islamic architecture. Rich history and
-                                cultural experiences await visitors.
-                            </p>
-
-                            <div class="features-list">
-                                <span class="feature-tag">Silk Road</span>
-                                <span class="feature-tag">Historical</span>
-                                <span class="feature-tag">Cultural</span>
-                            </div>
-
-                            <button class="btn apply-btn text-white" data-bs-toggle="modal" data-bs-target="#visaModal"
-                                data-country="Uzbekistan" data-flag="🇺🇿">
-                                <i class="bi bi-airplane me-2"></i>Apply Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Enhanced Modal -->
-        <div class="modal fade visa-modal" id="visaModal" tabindex="-1" aria-labelledby="visaModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header px-4">
-                        <h1 class="modal-title" id="visaModalLabel">
-                            <span id="modalCountryName">Azerbaijan</span> E-Visa Application
-                        </h1>
-                        <button type="button" class="btn-close text-muted" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="nationality" class="form-label text-muted">
-                                        <i class="bi bi-person-badge me-2"></i>Select Nationality:
-                                    </label>
-                                    <select class="form-select" id="nationality" required>
-                                        <option selected>Pakistan</option>
-                                        <option value="india">India</option>
-                                        <option value="bangladesh">Bangladesh</option>
-                                        <option value="sri-lanka">Sri Lanka</option>
-                                        <option value="philippines">Philippines</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="residence" class="form-label text-muted ">
-                                        <i class="bi bi-house me-2"></i>Current Residence:
-                                    </label>
-                                    <select class="form-select" id="residence" required>
-                                        <option selected>United Arab Emirates</option>
-                                        <option value="uk">United Kingdom</option>
-                                        <option value="usa">United States</option>
-                                        <option value="canada">Canada</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="travelDate" class="form-label text-muted">
-                                        <i class="bi bi-calendar-event me-2"></i>Preferred Travel Date:
-                                    </label>
-                                    <div class="position-relative">
-                                        <input class="form-control datepicker-input" type="text" id="SelectDatemodal"
-                                            placeholder="Select Date" readonly>
+                                    <!-- Price + Button -->
+                                    <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+                                        <div>
+                                            <small class="text-muted text-uppercase fw-medium">Starting from</small>
+                                            <h4 class="fw-bold text-primary-custom mb-0">PKR 832,170.00</h4>
+                                        </div>
+                                        <a href="/umrah-detail.html"
+                                            class="btn btn-gradient text-white px-4 py-2 rounded-pill fw-semibold">
+                                            <i class="bi bi-calendar-check me-2"></i>Book Now
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="visaType" class="form-label text-muted">
-                                        <i class="bi bi-airplane me-2"></i>Visa Type:
-                                    </label>
-                                    <select class="form-select" id="visaType" required>
-                                        <option selected>Tourist Visa</option>
-                                        <option value="business">Business Visa</option>
-                                        <option value="transit">Transit Visa</option>
-                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Umrah Card 2 -->
+                <div class="col-12 mb-4">
+                    <div class="card shadow-lg border-0 rounded-4 card-hover overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <!-- Image -->
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="/placeholder.svg?height=300&width=400&text=Economy+Umrah"
+                                        class="img-fluid w-100 h-100 object-fit-cover img-hover"
+                                        alt="Economy Umrah Package">
+                                    <!-- Duration Badge -->
+                                    <span
+                                        class="position-absolute top-0 start-0 m-3 badge bg-white text-primary-custom fs-6 px-3 py-2 rounded-pill">
+                                        14 Days
+                                    </span>
+                                    <!-- Special Badge -->
+                                    <span
+                                        class="position-absolute top-0 end-0 m-3 badge bg-success text-white fs-6 px-3 py-2 rounded-pill">
+                                        Popular
+                                    </span>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12 d-flex justify-content-end gap-3">
-                                    <button type="button" class="btn btn-outline-secondary px-4"
-                                        data-bs-dismiss="modal">
-                                        Cancel
-                                    </button>
-                                    <button type="submit" class="btn search-btn px-5 text-white">
-                                        <i class="bi bi-search me-2"></i>Search & Apply
-                                    </button>
+
+                            <!-- Content -->
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body p-4 flex-grow-1 d-flex flex-column">
+                                    <!-- Rating Section -->
+                                    <div
+                                        class="d-flex align-items-center p-3 mb-3 bg-light rounded-3 border-start-custom">
+                                        <div class="me-3">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-half text-warning"></i>
+                                        </div>
+                                        <small class="text-muted fw-medium">4.6 (89 reviews)</small>
+                                    </div>
+
+                                    <!-- Title -->
+                                    <h5 class="card-title fw-bold text-primary-custom mb-3 lh-sm">
+                                        14 Days Economy Umrah Package – 7 Nights Each City
+                                    </h5>
+
+                                    <!-- Description -->
+                                    <p class="card-text text-muted mb-4 flex-grow-1">
+                                        Perfect for first-time pilgrims, this 14-day economy package offers excellent
+                                        value while maintaining quality accommodations and services. Includes guided
+                                        tours, comfortable hotels, and all essential services for a memorable spiritual
+                                        journey.
+                                    </p>
+
+                                    <!-- Services -->
+                                    <div class="row g-2 mb-4">
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-people text-primary me-2"></i>
+                                                <small class="fw-medium text-primary-custom">Shared Transport</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-passport text-success me-2"></i>
+                                                <small class="fw-medium text-primary-custom">With Visa</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-airplane text-info me-2"></i>
+                                                <small class="fw-medium text-primary-custom">Group Ticket</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-building text-warning me-2"></i>
+                                                <small class="fw-medium text-primary-custom">4 Star Hotel</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Price + Button -->
+                                    <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+                                        <div>
+                                            <small class="text-muted text-uppercase fw-medium">Starting from</small>
+                                            <h4 class="fw-bold text-primary-custom mb-0">PKR 485,250.00</h4>
+                                        </div>
+                                        <a href="/umrah-detail.html"
+                                            class="btn btn-gradient text-white px-4 py-2 rounded-pill fw-semibold">
+                                            <i class="bi bi-calendar-check me-2"></i>Book Now
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Umrah Card 3 -->
+                <div class="col-12 mb-4">
+                    <div class="card shadow-lg border-0 rounded-4 card-hover overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <!-- Image -->
+                            <div class="col-md-4">
+                                <div class="position-relative h-100">
+                                    <img src="/placeholder.svg?height=300&width=400&text=Luxury+Umrah"
+                                        class="img-fluid w-100 h-100 object-fit-cover img-hover"
+                                        alt="Luxury Umrah Package">
+                                    <!-- Duration Badge -->
+                                    <span
+                                        class="position-absolute top-0 start-0 m-3 badge bg-white text-primary-custom fs-6 px-3 py-2 rounded-pill">
+                                        10 Days
+                                    </span>
+                                    <!-- Special Badge -->
+                                    <span
+                                        class="position-absolute top-0 end-0 m-3 badge bg-warning text-dark fs-6 px-3 py-2 rounded-pill">
+                                        Luxury
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body p-4 flex-grow-1 d-flex flex-column">
+                                    <!-- Rating Section -->
+                                    <div
+                                        class="d-flex align-items-center p-3 mb-3 bg-light rounded-3 border-start-custom">
+                                        <div class="me-3">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                        <small class="text-muted fw-medium">4.9 (234 reviews)</small>
+                                    </div>
+
+                                    <!-- Title -->
+                                    <h5 class="card-title fw-bold text-primary-custom mb-3 lh-sm">
+                                        10 Days VIP Umrah Package – Luxury Experience
+                                    </h5>
+
+                                    <!-- Description -->
+                                    <p class="card-text text-muted mb-4 flex-grow-1">
+                                        Experience the ultimate in comfort and luxury with our VIP Umrah package. Stay
+                                        in 5-star hotels with Haram views, enjoy private transportation, dedicated
+                                        guides, and exclusive services designed for discerning pilgrims seeking the
+                                        finest experience.
+                                    </p>
+
+                                    <!-- Services -->
+                                    <div class="row g-2 mb-4">
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-car-front text-primary me-2"></i>
+                                                <small class="fw-medium text-primary-custom">VIP Transport</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-passport text-success me-2"></i>
+                                                <small class="fw-medium text-primary-custom">Express Visa</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-airplane text-info me-2"></i>
+                                                <small class="fw-medium text-primary-custom">Business Class</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="d-flex align-items-center p-2 bg-light rounded-2 border">
+                                                <i class="bi bi-gem text-warning me-2"></i>
+                                                <small class="fw-medium text-primary-custom">5 Star Luxury</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Price + Button -->
+                                    <div class="d-flex align-items-center justify-content-between pt-3 border-top">
+                                        <div>
+                                            <small class="text-muted text-uppercase fw-medium">Starting from</small>
+                                            <h4 class="fw-bold text-primary-custom mb-0">PKR 1,245,500.00</h4>
+                                        </div>
+                                        <a href="/umrah-detail.html"
+                                            class="btn btn-gradient text-white px-4 py-2 rounded-pill fw-semibold">
+                                            <i class="bi bi-calendar-check me-2"></i>Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -652,14 +355,29 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
-        flatpickr(".datepicker-input", {
-            dateFormat: "Y-m-d",
-            allowInput: false
+        // Minimal JavaScript for enhanced interactions
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add smooth scroll animation for cards
+            const cards = document.querySelectorAll('.card-hover');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
         });
     </script>
-
 </body>
 
 </html>

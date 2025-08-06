@@ -218,7 +218,7 @@ body {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: var(--secondary-colors);
+    background: var(--primary-colors);
     padding: 6px 12px;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -323,7 +323,6 @@ body {
 
 .apply-hassle-visa .visa-modal .modal-title {
     font-weight: 700;
-    font-size: 1.5rem;
     color: var(--primary-colors);
 }
 
@@ -333,7 +332,6 @@ body {
 }
 
 .apply-hassle-visa .visa-modal .form-label {
-    font-weight: 600;
     margin-bottom: 8px;
 }
 

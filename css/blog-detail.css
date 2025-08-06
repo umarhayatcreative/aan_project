@@ -1,6 +1,7 @@
 body {
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
+    background-color: var(--primary-lights);
 }
 
 :root {
@@ -13,62 +14,21 @@ body {
     --all-border: #E6E6E6;
 }
 
-.home-for-mobileview .offcanvas .offcanvas-body ul li a {
+.home-for-mobileview .offcanvas .offcanvas-body ul li a{
     color: var(--primary-colors);
 }
 
-.offcanvas-icon {
+.offcanvas-icon{
     color: var(--secondary-colors);
 }
-
 /* header & banner sec start */
+
 .navbar-toggler-icon {
     width: 20px;
     height: 20px;
 }
-
-.hero-section-home {
-    background: url("../img/contact-us-bg.png");
-    height: 437px;
-    position: relative;
-}
-
-@media (max-width: 576px) {
-    .hero-section-home {
-        height: 350px;
-    }
-
-}
-
-.hero-section-home .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.65);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.hero-section-home .lead {
-    font-size: clamp(16px, 2.5vw, 25px);
-}
-
-.hero-section-home .hero-content {
-    position: relative;
-    z-index: 2;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-}
-
-
 .hero-section-home .nav-link:hover {
     color: var(--secondary-colors) !important;
-}
-
-.navbar .nav-link.active {
-    color: var(--secondary-colors) !important;
-    /* or any color you want */
 }
 
 .hero-section-home .btn-search {
@@ -81,9 +41,14 @@ body {
     background-color: var(--secondary-colors);
 }
 
+.navbar .nav-link.active {
+    color: var(--secondary-colors) !important;
+    /* or any color you want */
+}
 
 .header-home .navbar {
     z-index: 1030;
+    top: 0;
 }
 
 /* Mobile toggle menu background and styles */
@@ -159,7 +124,7 @@ body {
 
 /* header fixed */
 .header-home .navbar-scroll {
-    background-color: transparent;
+    background-color: var(--primary-colors) !important;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -181,69 +146,72 @@ body {
 /* header fixed */
 
 /* header & banner sec end */
-.contact-detail .contact-detail-custom {
-    background-color: var(--primary-lights);
+
+.blog-detail-sec .blog-detail-custom h2{
+color: var(--primary-colors);
+    font-size: clamp(20px, 5vw, 28px);
+}
+
+.blog-detail-img img{
+    border-radius: 15px;
+    height: 300px;
+    width: 100%;
+}
+
+.blog-detail-sec .blog-right-sec-card{
+    /* background-color: var(--primary-lights); */
     border-radius: 15px;
 }
 
-.contact-detail .contact-detail-custom i {
-    color: var(--secondary-colors);
-}
-
-.contact-detail .contact-detail-custom a {
+.blog-detail-sec .blog-right-sec-card{
     color: var(--primary-colors);
 }
 
-.contact-detail .contact-detail-custom h5 {
+.blog-detail-custom h4{
     color: var(--primary-colors);
 }
 
-.locations {
-    background-color: var(--primary-lights);
-}
-
-.get-into-touch-custom .send-message-btn {
-    background-color: var(--secondary-colors);
-}
-
-
-.get-into-touch-custom .send-message-btn:hover {
-    background-color: var(--secondary-colors);
-}
-
-.get-into-touch-custom .section-title {
-    color: var(--primary-colors);
-}
-
-.locations .locations-custom {
+.blog-detail-sec .blog-custom-card {
+    border: 1px solid var(--all-border);
     border-radius: 15px;
-
 }
 
-.locations .locations-custom .country-flag img{
-    width: 40px;
-}
-.locations .locations-custom h4 {
-    color: var(--primary-colors);
+.blog-detail-sec .blog-custom-card img {
+    height: 170px;
+    object-fit: cover;
 }
 
-.locations .locations-custom a {
-    border: 1px solid var(--secondary-colors);
-    color: var(--primary-colors);
+.blog-detail-sec .blog-custom-card .featured-badge {
+    background-color: var(--primary-colors);
+    padding: 4px 8px;
     border-radius: 5px;
-    padding: 7px 30px;
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
-.locations .locations-custom a:hover {
+.blog-detail-sec .blog-custom-card .btn {
     border: 1px solid var(--secondary-colors);
-    color: var(--color-white);
-    background-color: var(--secondary-colors);
 }
 
-
-.locations .location-heading {
+.blog-detail-sec .blog-custom-card h6 {
     color: var(--primary-colors);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer section start */
 .footer-sec {
@@ -273,4 +241,7 @@ body {
     justify-content: center;
 }
 
+.form-control:focus{
+    box-shadow: none!important;
+}
 /* footer section end */
