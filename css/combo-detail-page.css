@@ -8,15 +8,22 @@
     border: none;
     box-shadow: none;
 }
+
 /* for all date picker */
 .flatpickr-day.selected {
-    background: var(--secondary-colors)!important;
+    background: var(--secondary-colors) !important;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: var(--color-white);
-    border-color: var(--secondary-colors)!important;
+    border-color: var(--secondary-colors) !important;
 }
+
 /* for all date picker */
+body {
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-colors: #000026;
     --secondary-colors: #FB5B32;
@@ -337,8 +344,9 @@
 }
 
 
-.combo-detail-page-detail .combo-time-slot .btn.show, .btn:first-child:active{
-    border:transparent;
+.combo-detail-page-detail .combo-time-slot .btn.show,
+.btn:first-child:active {
+    border: transparent;
     margin: 1px;
 }
 
@@ -432,9 +440,10 @@
     background-color: var(--secondary-colors);
 }
 
-.combo-options-name{
-   font-size: clamp(16px, 1.5vw + 0.5rem, 22px);
+.combo-options-name {
+    font-size: clamp(16px, 1.5vw + 0.5rem, 22px);
 }
+
 .date-card-combo .month-text {
     font-size: 13px;
     font-weight: 600;
@@ -447,50 +456,56 @@
 }
 
 .date-card-combo .date-number {
-      font-size: clamp(18px, 2vw,  24px);
+    font-size: clamp(18px, 2vw, 24px);
     font-weight: 600;
     color: var(--primary-colors);
 }
 
-.combo-detail-page-detail-card{
+.combo-detail-page-detail-card {
     border: 1px solid var(--all-border);
     border-radius: 15px;
 }
 
-        #calendarModal #datepicker {
-            width: 100%;
-        }
+#calendarModal #datepicker {
+    width: 100%;
+}
+
 @media (max-width: 576px) {
-  #calendarModal .modal-dialog {
-    max-width: 300px;
-    margin: 1.75rem auto;
-  }
-  /* Show only the first three date cards, always show More Dates button */
-  .date-card-combo .row .col {
-    display: none;
-  }
-  .date-card-combo .row .col:nth-child(1),
-  .date-card-combo .row .col:nth-child(2),
-  .date-card-combo .row .col:nth-child(3),
-  .date-card-combo .row .col:last-child {
-    display: block;
-  }
+    #calendarModal .modal-dialog {
+        max-width: 300px;
+        margin: 1.75rem auto;
+    }
+
+    /* Show only the first three date cards, always show More Dates button */
+    .date-card-combo .row .col {
+        display: none;
+    }
+
+    .date-card-combo .row .col:nth-child(1),
+    .date-card-combo .row .col:nth-child(2),
+    .date-card-combo .row .col:nth-child(3),
+    .date-card-combo .row .col:last-child {
+        display: block;
+    }
 }
+
 @media (min-width: 577px) and (max-width: 768px) {
-  /* Show only the first five date cards, always show More Dates button */
-  .date-card-combo .row .col {
-    display: none;
-  }
-  .date-card-combo .row .col:nth-child(1),
-  .date-card-combo .row .col:nth-child(2),
-  .date-card-combo .row .col:nth-child(3),
-  .date-card-combo .row .col:nth-child(4),
-  .date-card-combo .row .col:nth-child(5),
-  .date-card-combo .row .col:last-child {
-    display: block;
-  }
+
+    /* Show only the first five date cards, always show More Dates button */
+    .date-card-combo .row .col {
+        display: none;
+    }
+
+    .date-card-combo .row .col:nth-child(1),
+    .date-card-combo .row .col:nth-child(2),
+    .date-card-combo .row .col:nth-child(3),
+    .date-card-combo .row .col:nth-child(4),
+    .date-card-combo .row .col:nth-child(5),
+    .date-card-combo .row .col:last-child {
+        display: block;
+    }
 }
-  
+
 /* combo  detail sec end */
 
 

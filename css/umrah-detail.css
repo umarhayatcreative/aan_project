@@ -313,6 +313,7 @@ body {
     height: 41px;
     background-color: var(--secondary-lights);
     border-radius: 50%;
+    color: var(--secondary-colors);
 }
 
 .umrah-detail-custom .umrah-option-detail-icons .text-color {

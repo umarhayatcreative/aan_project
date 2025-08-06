@@ -1159,3 +1159,31 @@ function selectTimeSlot(element, timeSlot) {
 // // visa modal date
 
 // visa javascript complete end
+
+    // Immediately initialize cart functionality
+    const cartToggleBtn = document.querySelector('.cart-toggle-btn');
+    const cartDropdown = document.querySelector('.cart-dropdown');
+    const closeBtn = document.querySelector('.dropdown-close-btn');
+
+    if (cartToggleBtn && cartDropdown && closeBtn) {
+      // Toggle cart dropdown on cart icon click
+      cartToggleBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        cartDropdown.classList.toggle('d-none');
+      });
+
+      // Close dropdown when close button is clicked
+      closeBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        cartDropdown.classList.add('d-none');
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function (e) {
+        if (!cartDropdown.contains(e.target) && !cartToggleBtn.contains(e.target)) {
+          cartDropdown.classList.add('d-none');
+        }
+      });
+    }

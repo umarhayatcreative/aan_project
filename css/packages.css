@@ -391,7 +391,7 @@ body {
 }
 
 .travel-packages-section .book-btn {
-    background: linear-gradient(135deg, var(--secondary-colors) 0%, #e55a2b 100%);
+    background-color: var(--secondary-colors);
     border: none;
     padding: 12px 25px;
     border-radius: 5px;
@@ -399,11 +399,11 @@ body {
     font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-
 }
 
 .travel-packages-section .book-btn:hover {
     transform: translateY(-2px);
+    background-color: var(--secondary-colors);
 
 
     color: var(--color-white);

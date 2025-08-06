@@ -308,13 +308,13 @@ body {
 
 }
 
-.packages-detail-custom .packages-option-detail-icons .img-icon {
+.packages-detail-custom .packages-option-detail-icons .img-icon{
     width: 41px;
     height: 41px;
     background-color: var(--secondary-lights);
     border-radius: 50%;
+    color: var(--secondary-colors);
 }
-
 .packages-detail-custom .packages-option-detail-icons .text-color {
     color: var(--primary-colors);
 }

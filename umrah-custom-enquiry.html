@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/umrah-custom-enquiry.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
 
@@ -87,258 +87,249 @@
     <!-- add guest detail start-->
 
     <section class="umrah-custom-enquiry py-5 mt-2">
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <div class="card">
-                        <div class="card-header p-0">
-                            <!-- Tab Navigation -->
-                            <ul class="nav nav-tabs p-2" id="bookingTabs" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active text-muted fw-medium" id="personal-tab"
-                                        data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab"
-                                        aria-controls="personal" aria-selected="true">
-                                        <i class="fas fa-user me-2"></i>Personal Details
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link text-muted fw-medium" id="flight-tab" data-bs-toggle="tab"
-                                        data-bs-target="#flight" type="button" role="tab" aria-controls="flight"
-                                        aria-selected="false">
-                                        <i class="fas fa-plane me-2"></i>Flight Details
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link text-muted fw-medium" id="hotel-tab" data-bs-toggle="tab"
-                                        data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel"
-                                        aria-selected="false">
-                                        <i class="fas fa-hotel me-2"></i>Hotel Details
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link text-muted fw-medium" id="transfers-tab"
-                                        data-bs-toggle="tab" data-bs-target="#transfers" type="button" role="tab"
-                                        aria-controls="transfers" aria-selected="false">
-                                        <i class="fas fa-car me-2"></i>Transfers
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="card-body p-4">
-                            <!-- Tab Content -->
-                            <div class="tab-content" id="bookingTabsContent">
-                                <!-- Personal Details Tab -->
-                                <div class="tab-pane fade show active" id="personal" role="tabpanel"
-                                    aria-labelledby="personal-tab">
-                                    <form id="personalForm">
-                                        <div class="row g-3 mb-3">
-                                            <div class="col-lg-4 col-md-6">
-                                                <label for="firstName" class="form-label fw-bold">Name:</label>
-                                                <input type="text" class="form-control py-2" id="firstName"
-                                                    placeholder="First Name" required>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <label for="email" class="form-label fw-bold">Email:</label>
-                                                <input type="email" class="form-control py-2" id="email"
-                                                    placeholder="Enter Your Email" required>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <label for="phone" class="form-label fw-bold">Phone Number:</label>
-                                                <input type="tel" class="form-control py-2" id="phone"
-                                                    placeholder="Enter Your Phone Number" required>
-                                            </div>
-                                        </div>
-                                        <div class="row g-3 mb-4">
-                                            <div class="col-lg-4 col-md-6">
-                                                <label for="makkahRange" class="form-label fw-bold">Numbers of Days
-                                                    Makkah:</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control py-2" id="makkahRange"
-                                                        placeholder="Select Date Range" readonly>
-                                                    <span class="input-group-text"><i
-                                                            class="fas fa-calendar-alt"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <label for="madinahRange" class="form-label fw-bold">Numbers of Days
-                                                    Madinah:</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control py-2" id="madinahRange"
-                                                        placeholder="Select Date Range" readonly>
-                                                    <span class="input-group-text"><i
-                                                            class="fas fa-calendar-alt"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6">
-                                                <label for="returnRange" class="form-label fw-bold">Numbers of Days
-                                                    Makkah Return:</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control py-2" id="returnRange"
-                                                        placeholder="Select Date Range" readonly>
-                                                    <span class="input-group-text"><i
-                                                            class="fas fa-calendar-alt"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between border-top mt-4 pt-3">
-                                            <button type="button" class="btn btn-secondary" disabled>
-                                                <i class="bi bi-arrow-left me-2"></i>Back
-                                            </button>
-                                            <button type="button" class="btn btn-orange"
-                                                onclick="nextTab('flight-tab')">
-                                                Next<i class="bi bi-arrow-right ms-2"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <!-- Flight Details Tab -->
-                                <div class="tab-pane fade" id="flight" role="tabpanel" aria-labelledby="flight-tab">
-                                    <!-- Flight Type Toggle -->
-                                    <div class="flight-type-toggle">
-                                        <div id="groupFlightBtn" class="flight-type-btn selected text-muted"
-                                            onclick="selectFlightType('group')">Group Flight</div>
-                                        <div id="onlineFlightBtn" class="flight-type-btn text-muted"
-                                            onclick="selectFlightType('online')">Online Flight</div>
-                                    </div>
-                                    <form id="flightForm">
-                                        <div class="d-flex justify-content-between border-top mt-4 pt-3">
-                                            <button type="button" class="btn btn-secondary"
-                                                onclick="prevTab('personal-tab')">
-                                                <i class="bi bi-arrow-left me-2"></i>Back
-                                            </button>
-                                            <button type="button" class="btn btn-orange" onclick="nextTab('hotel-tab')">
-                                                Next<i class="bi bi-arrow-right ms-2"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <!-- Hotel Details Tab -->
-                                <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
-                                    <form id="hotelForm">
-                                        <div class="row mb-3 align-items-center g-2">
-                                            <div class="col-lg-12">
-                                                <label class="form-label fw-bold">Numbers of Days Makkah:</label>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <select class="form-select" required>
-                                                    <option value="">Please Select a hotel</option>
-                                                    <option value="hilton">Hilton Makkah</option>
-                                                    <option value="marriott">Marriott Makkah</option>
-                                                    <option value="sheraton">Sheraton Makkah</option>
-                                                    <option value="hyatt">Hyatt Regency Makkah</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <select class="form-select" required>
-                                                    <option value="">Please Select a Distance</option>
-                                                    <option value="close">Close</option>
-                                                    <option value="medium">Medium</option>
-                                                    <option value="far">Far</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3 align-items-center g-2">
-                                            <div class="col-lg-12">
-                                                <label class="form-label fw-bold">Numbers of Days Madinah:</label>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <select class="form-select" required>
-                                                    <option value="">Please Select a hotel</option>
-                                                    <option value="hilton">Hilton Madinah</option>
-                                                    <option value="marriott">Marriott Madinah</option>
-                                                    <option value="sheraton">Sheraton Madinah</option>
-                                                    <option value="hyatt">Hyatt Regency Madinah</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <select class="form-select" required>
-                                                    <option value="">Please Select a Distance</option>
-                                                    <option value="close">Close</option>
-                                                    <option value="medium">Medium</option>
-                                                    <option value="far">Far</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4 align-items-center g-2">
-                                            <div class="col-lg-12">
-                                                <label class="form-label fw-bold">Numbers of Days Makkah Return:</label>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <select class="form-select" required>
-                                                    <option value="">Please Select a hotel</option>
-                                                    <option value="hilton">Hilton Makkah</option>
-                                                    <option value="marriott">Marriott Makkah</option>
-                                                    <option value="sheraton">Sheraton Makkah</option>
-                                                    <option value="hyatt">Hyatt Regency Makkah</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <select class="form-select" required>
-                                                    <option value="">Please Select a Distance</option>
-                                                    <option value="close">Close</option>
-                                                    <option value="medium">Medium</option>
-                                                    <option value="far">Far</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between border-top mt-4 pt-3">
-                                            <button type="button" class="btn btn-secondary"
-                                                onclick="prevTab('flight-tab')">
-                                                <i class="bi bi-arrow-left me-2"></i>Back
-                                            </button>
-                                            <button type="button" class="btn btn-orange"
-                                                onclick="nextTab('transfers-tab')">
-                                                Next<i class="bi bi-arrow-right ms-2"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <!-- Transfers Tab -->
-                                <div class="tab-pane fade" id="transfers" role="tabpanel"
-                                    aria-labelledby="transfers-tab">
-                                    <form id="transfersForm">
-                                        <div class="row mb-3 g-2">
-                                            <div class="col-md-6">
-                                                <div id="sharedTransferBtn" class="flight-type-btn w-100 text-muted"
-                                                    onclick="selectTransferType('shared')">Shared Transfer</div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div id="privateTransferBtn" class="flight-type-btn w-100 text-muted"
-                                                    onclick="selectTransferType('private')">Private Transfer</div>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4 g-2">
-                                            <div class="col-md-6">
-                                                <div id="jeddahMakkahBtn" class="flight-type-btn w-100 text-muted"
-                                                    onclick="selectRouteType('jeddahMakkah')">Jeddah to Makkah Transfer
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div id="ziaratBtn" class="flight-type-btn w-100 text-muted"
-                                                    onclick="selectRouteType('ziarat')">Ziarat</div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between border-top mt-4 pt-3">
-                                            <button type="button" class="btn btn-secondary"
-                                                onclick="prevTab('hotel-tab')">
-                                                <i class="bi bi-arrow-right me-2"></i>Back
-                                            </button>
-                                            <button type="button" class="btn btn-orange px-4" onclick="submitBooking()">
-                                                Submit
-                                            </button>
-                                        </div>
-                                    </form>
+       <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+                <div class="form-container-custom p-4 bg-white">
+                    <!-- Header -->
+                    <form id="bookingForm">
+                        <!-- Personal Details Section -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                    <i class="fas fa-user me-3 fs-6"></i>
+                                    <h3 class="mb-0 fs-5 fw-semibold">Personal Details</h3>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="row g-3 mb-5">
+                            <div class="col-md-4">
+                                <div class="">
+                                    <label for="firstName" class="text-muted mb-1">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder=" " required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="">
+                                     <label for="email" class="text-muted mb-1">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder=" " required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="">
+                                      <label for="phone" class="text-muted mb-1">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder=" " required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label text-muted mb-1">Days in Makkah</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Days Range</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="5">5 Days</option>
+                                    <option value="7">7 Days</option>
+                                    <option value="10">10 Days</option>
+                                    <option value="14">14 Days</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label text-muted mb-1">Days in Madinah</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Days Range</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="5">5 Days</option>
+                                    <option value="7">7 Days</option>
+                                    <option value="10">10 Days</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label text-muted mb-1">Days for Makkah Return</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Days Range</option>
+                                    <option value="2">2 Days</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="5">5 Days</option>
+                                    <option value="7">7 Days</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Flight Details Section -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                    <i class="fas fa-plane me-3 fs-6"></i>
+                                    <h3 class="mb-0 fs-5 fw-semibold">Flight Details</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="option-card-custom" onclick="selectOption(this, 'flight', 'group')">
+                                    <h6 class="fw-bold mb-0"><i class="fas fa-users me-2 text-secondary-custom"></i>Group Flight</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="option-card-custom" onclick="selectOption(this, 'flight', 'online')">
+                                    <h6 class="fw-bold mb-0"><i class="fas fa-laptop me-2 text-secondary-custom"></i>Online Flight</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hotel Details Section -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                    <i class="fas fa-hotel me-3 fs-6"></i>
+                                    <h3 class="mb-0 fs-5 fw-semibold">Hotel Details</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-2 mb-5">
+                            <div class="col-12">
+                                <h6 class="fw-bold mb-0">Makkah Accommodation</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted mb-1">Select Hotel</label>
+                                <select class="form-select" required>
+                                    <option value="">Please Select a Hotel</option>
+                                    <option value="hilton">Hilton Makkah Convention Hotel</option>
+                                    <option value="fairmont">Fairmont Makkah Clock Royal Tower</option>
+                                    <option value="conrad">Conrad Makkah</option>
+                                    <option value="anjum">Anjum Hotel Makkah</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted mb-1">Distance from Haram</label>
+                                <select class="form-select" required>
+                                    <option value="">Please Select Distance</option>
+                                    <option value="walking">Walking Distance (0-500m)</option>
+                                    <option value="close">Close (500m-1km)</option>
+                                    <option value="nearby">Nearby (1-2km)</option>
+                                    <option value="transport">Transportation Required (2km+)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <h6 class="fw-bold mb-0 mt-4">Madinah Accommodation</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted mb-1">Select Hotel</label>
+                                <select class="form-select" required>
+                                    <option value="">Please Select a Hotel</option>
+                                    <option value="oberoi">The Oberoi Madinah</option>
+                                    <option value="pullman">Pullman Zamzam Madinah</option>
+                                    <option value="shaza">Shaza Madinah</option>
+                                    <option value="anwar">Anwar Al Madinah Movenpick</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted mb-1">Distance from Masjid Nabawi</label>
+                                <select class="form-select" required>
+                                    <option value="">Please Select Distance</option>
+                                    <option value="walking">Walking Distance (0-500m)</option>
+                                    <option value="close">Close (500m-1km)</option>
+                                    <option value="nearby">Nearby (1-2km)</option>
+                                    <option value="transport">Transportation Required (2km+)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <h6 class="fw-bold mb-0 mt-4">Makkah Return Accommodation</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted mb-1">Select Hotel</label>
+                                <select class="form-select" required>
+                                    <option value="">Please Select a Hotel</option>
+                                    <option value="hilton2">Hilton Makkah Convention Hotel</option>
+                                    <option value="fairmont2">Fairmont Makkah Clock Royal Tower</option>
+                                    <option value="conrad2">Conrad Makkah</option>
+                                    <option value="anjum2">Anjum Hotel Makkah</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted mb-1">Distance from Haram</label>
+                                <select class="form-select" required>
+                                    <option value="">Please Select Distance</option>
+                                    <option value="walking">Walking Distance (0-500m)</option>
+                                    <option value="close">Close (500m-1km)</option>
+                                    <option value="nearby">Nearby (1-2km)</option>
+                                    <option value="transport">Transportation Required (2km+)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Transfer Details Section -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                    <i class="fas fa-bus me-3 fs-6"></i>
+                                    <h3 class="mb-0 fs-5 fw-semibold">Transfer Options</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-5">
+                            <div class="col-md-6">
+                                <div class="option-card-custom" onclick="selectOption(this, 'transfer', 'shared')">
+                                    <h6 class="fw-bold mb-0"><i class="fas fa-share-alt me-2"></i>Shared Transfer</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="option-card-custom" onclick="selectOption(this, 'transfer', 'private')">
+                                    <h6 class="fw-bold mb-0"><i class="fas fa-car me-2"></i>Private Transfer</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="option-card-custom" onclick="selectOption(this, 'transfer', 'jeddah-makkah')">
+                                    <h6 class="fw-bold mb-0"><i class="fas fa-route me-2"></i>Jeddah to Makkah Transfer</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="option-card-custom" onclick="selectOption(this, 'transfer', 'ziarat')">
+                                    <h6 class="fw-bold mb-0"><i class="fas fa-map-marked-alt me-2"></i>Ziarat</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-submit-booking fw-semibold text-white">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit Booking Request
+                                </button>
+                                <div class="mt-4 p-4 rounded-2 border border-dashed">
+                                    <div class="row justify-content-center g-4">
+                                        <div class="col-auto">
+                                            <div class="d-flex align-items-center gap-2 text-muted">
+                                                <i class="fas fa-shield-alt text-success"></i>
+                                                <small class="fw-medium">SSL Protected</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="d-flex align-items-center gap-2 text-muted">
+                                                <i class="fas fa-headset text-primary-custom"></i>
+                                                <small class="fw-medium">24/7 Support</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="d-flex align-items-center gap-2 text-muted">
+                                                <i class="fas fa-award text-warning"></i>
+                                                <small class="fw-medium">Licensed Tour Operator</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
 

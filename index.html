@@ -211,7 +211,7 @@
                           <span>2 Adults, 0 Children - 1 Room</span>
                         </button>
                         <label for="guestRoomBtn" class="text-secondary">Guests & Rooms</label>
-                        <div class="dropdown-menu w-100 shadow-sm border-light p-3" id="guestRoomDropdown"
+                        <div class="dropdown-menu w-100 shadow-sm border-light p-3 text-nowrap" id="guestRoomDropdown"
                           data-bs-auto-close="outside">
                           <!-- Room 1 -->
                           <div class="room-container mb-3" id="room1">
@@ -283,7 +283,7 @@
 
                   <div class="col-lg-1">
                     <div class="hotel-input-group h-100">
-                      <a href=""
+                      <a href="/hotel.html"
                         class="btn hotel-search-btn w-100 h-100 d-flex align-items-center justify-content-center">Search</a>
                     </div>
                   </div>
@@ -418,7 +418,7 @@
                           </button>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-end">
-                          <button type="submit" class="btn flight-search-btn px-5 py-3 text-white w-100">Search</button>
+                          <a href="/flight-detail.html" type="submit" class="btn flight-search-btn px-5 py-3 text-white w-100">Search</a>
                         </div>
                       </div>
                     </div>
@@ -1665,8 +1665,8 @@
           <div class="footer-custom">
             <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
             <ul class="list-unstyled small">
-              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Blogs</a></li>
+              <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="/blog.html" class="text-white text-decoration-none">Blogs</a></li>
               <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
               <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
             </ul>
@@ -1711,33 +1711,7 @@
 
 
   <script>
-    // Immediately initialize cart functionality
-    const cartToggleBtn = document.querySelector('.cart-toggle-btn');
-    const cartDropdown = document.querySelector('.cart-dropdown');
-    const closeBtn = document.querySelector('.dropdown-close-btn');
 
-    if (cartToggleBtn && cartDropdown && closeBtn) {
-      // Toggle cart dropdown on cart icon click
-      cartToggleBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        cartDropdown.classList.toggle('d-none');
-      });
-
-      // Close dropdown when close button is clicked
-      closeBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        cartDropdown.classList.add('d-none');
-      });
-
-      // Close dropdown when clicking outside
-      document.addEventListener('click', function (e) {
-        if (!cartDropdown.contains(e.target) && !cartToggleBtn.contains(e.target)) {
-          cartDropdown.classList.add('d-none');
-        }
-      });
-    }
   </script>
 
   <script src="js/index.js"></script>
