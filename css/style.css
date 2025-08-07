@@ -50,7 +50,7 @@ body {
 .hero-section-home {
     position: relative;
     background: url("../img/Bg home.png") no-repeat center/cover;
-    min-height: 590px;
+    min-height: 500px;
     /* Allow section to grow more if needed */
     padding: 100px 20px 60px;
     /* top and bottom padding */
