@@ -1332,6 +1332,19 @@ body {
     color: #999;
     cursor: pointer;
 }
+
+
+.signin-login .password-toggless {
+    position: absolute;
+    right: 27px;
+    top: 60%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+}
+
 .signin-login .password-input-container {
     position: relative;
 }
