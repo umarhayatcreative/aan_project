@@ -254,9 +254,10 @@ body {
     color: var(--primary-colors);
 }
 
-.our-journey{
+.our-journey {
     background-color: var(--primary-lights);
 }
+
 .our-journey-heading {
     color: var(--primary-colors);
 }
@@ -281,6 +282,21 @@ body {
 
 .our-partners .our-partners-heading h2 {
     color: var(--primary-colors);
+}
+
+.our-partners .carousel-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.our-partners .carousel-item {
+    overflow: hidden;
+}
+
+/* Adjust spacing between items */
+.our-partners .carousel-row .col-6 {
+    padding: 0 5px;
 }
 
 /* footer section start */

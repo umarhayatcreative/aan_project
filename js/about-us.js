@@ -9,3 +9,11 @@ window.addEventListener("scroll", function () {
 });
 
 //  header fixed
+
+    // Optional: Initialize carousel with specific behavior
+                document.addEventListener('DOMContentLoaded', function () {
+                    var carousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
+                        interval: 4000,
+                        wrap: true
+                    });
+                });
