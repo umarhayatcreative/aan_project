@@ -214,6 +214,11 @@ body {
     cursor: pointer;
 }
 
+.our-blog-trading .blog-tour-card .card-img-top{
+    height: 250px;
+    border-radius: 10px;
+}
+
 .our-blog-trading .blog-tour-card a {
     color: var(--secondary-colors);
 }

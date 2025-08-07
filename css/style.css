@@ -660,6 +660,7 @@ body {
     background-color: var(--secondary-colors);
 }
 
+
 /* home ads section end */
 
 .home-ads .home-ads-card {
@@ -774,9 +775,9 @@ body {
 }
 
 @media (max-width: 767.9px) {
-    .cities-card {
+    /* .cities-card {
         height: 200px;
-    }
+    } */
 
     .cities-card .btn-orange {
 
@@ -800,10 +801,10 @@ body {
     font-size: 0.85rem;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
-    top: 85%;
-
+    top: 80%;
     left: 50%;
     z-index: 99;
+    text-shadow: 1px 1px 3px rgb(189, 71, 3);
 }
 
 .cities-card .btn-orange:hover {
@@ -814,13 +815,21 @@ body {
 
 .cities-card {
     border-radius: 15px;
-    height: 300px;
+    height: 270px;
     object-fit: cover;
+    position: relative;
+    overflow: hidden;
 }
 
-.cities-card img {
+/* .cities-card img {
     width: 100%;
     object-fit: cover;
+} */
+.cities-card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -903,7 +912,11 @@ body {
 
 /* promotion sec start */
 .home-promotion .home-promotion-custom {
-    background-image: url("../img/start-journey.png");
+    /* background-image: url("../img/start-journey.avif"); */
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0)),
+        /* overlay */
+        url('../img/start-journey.avif');
     background-repeat: no-repeat;
     background-size: cover;
     /* cover = full area fill */
