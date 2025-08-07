@@ -651,14 +651,16 @@ body {
     overflow: hidden;
 }
 
+.home-ads .home-ads-card .home-ads-img {
+   height: 100%;
+}
+
 
 .home-ads-card .ads-btn {
     background-color: var(--secondary-colors);
 }
 
-
 /* home ads section end */
-
 
 .home-ads .home-ads-card {
     min-height: 198px;
@@ -694,6 +696,11 @@ body {
         min-height: 220px;
     }
 
+
+    .home-ads .home-ads-card .home-ads-img {
+        height: 220px;
+    }
+
     .home-ads-card .card-content {
         padding: 1.5rem !important;
     }
@@ -710,6 +717,10 @@ body {
 @media (max-width: 576px) {
     .home-ads .home-ads-card {
         min-height: 200px;
+    }
+
+    .home-ads .home-ads-card .home-ads-img {
+        height: 200px;
     }
 
     .home-ads-card .card-content {
@@ -835,11 +846,12 @@ body {
 
 /* high rated hotel sec start */
 
-.top-rated-hotel-heading h3{
+.top-rated-hotel-heading h3 {
     color: var(--primary-colors);
     font-size: clamp(24px, 5vw, 30px);
-    font-weight: 600;s
+    font-weight: 600;
 }
+
 .hotel-card-custom {
     border-radius: 15px;
     overflow: hidden;
