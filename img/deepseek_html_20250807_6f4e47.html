@@ -1,0 +1,62 @@
+<div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="row g-2 carousel-row">
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/jazz-mosafir.png" class="img-fluid" alt="Image 1"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/nexus-dmc.png" class="img-fluid" alt="Image 2"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/rayna.png" class="img-fluid" alt="Image 3"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/tboholidays.png" class="img-fluid" alt="Image 4"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/thrillark (1).png" class="img-fluid" alt="Image 5"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/webibeds.png" class="img-fluid" alt="Image 6"></div>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="row g-2 carousel-row">
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/jazz-mosafir.png" class="img-fluid" alt="Image 1"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/nexus-dmc.png" class="img-fluid" alt="Image 2"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/rayna.png" class="img-fluid" alt="Image 3"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/tboholidays.png" class="img-fluid" alt="Image 4"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/thrillark (1).png" class="img-fluid" alt="Image 5"></div>
+                <div class="col-6 col-md-4 col-lg-2"><img src="img/webibeds.png" class="img-fluid" alt="Image 6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left & Right Buttons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+
+<style>
+    /* Prevent wrapping and ensure proper carousel behavior */
+    .carousel-row {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    
+    .carousel-item {
+        overflow: hidden;
+    }
+    
+    /* Adjust spacing between items */
+    .carousel-row .col-6 {
+        padding: 0 5px;
+    }
+</style>
+
+<script>
+    // Optional: Initialize carousel with specific behavior
+    document.addEventListener('DOMContentLoaded', function() {
+        var carousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
+            interval: 4000,
+            wrap: true
+        });
+    });
+</script>

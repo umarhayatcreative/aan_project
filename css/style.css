@@ -652,7 +652,7 @@ body {
 }
 
 .home-ads .home-ads-card .home-ads-img {
-   height: 100%;
+    height: 100%;
 }
 
 
@@ -751,22 +751,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* world top cities sec start */
 .world-top-cities {
     background-color: var(--primary-lights);
@@ -783,13 +767,10 @@ body {
     color: var(--secondary-colors);
 }
 
-/* 
-.cities-card {
-    height: 280px;
-} */
-
-.cities-card img {
-    object-fit: contain;
+.our-blog .our-blog-custom img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 @media (max-width: 767.9px) {
@@ -805,7 +786,7 @@ body {
     }
 
     .our-blog .our-blog-custom img {
-        height: 200px;
+        height: 300px;
         object-fit: cover;
         border-radius: 15px;
     }
@@ -831,11 +812,17 @@ body {
 }
 
 
-.world-top-citie .card-box img {
-    border-radius: 16px;
-    height: 100%;
+.cities-card {
+    border-radius: 15px;
+    height: 300px;
     object-fit: cover;
 }
+
+.cities-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .cities-image-overlay-gradient {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 80%);
