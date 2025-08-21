@@ -1,36 +1,35 @@
-
-.home-for-mobileview .offcanvas .offcanvas-body ul li a{
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
     color: var(--primary-colors);
 }
 
-.offcanvas-icon{
+.offcanvas-icon {
     color: var(--secondary-colors);
 }
+
 /* header & banner sec start */
 
 .navbar-toggler-icon {
     width: 20px;
     height: 20px;
 }
-.hero-section-home .nav-link:hover {
-    color: var(--secondary-colors) !important;
-}
 
-.hero-section-home .btn-search {
-    background-color: var(--secondary-colors);
+.header-home .nav-link{
     color: var(--color-white);
-    border: none;
 }
 
-.hero-section-home .btn-search:hover {
-    background-color: var(--secondary-colors);
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
 }
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
 
 .navbar .nav-link.active {
-    color: var(--secondary-colors) !important;
+    color: var(--secondary-colors);
     /* or any color you want */
 }
-
 .header-home .navbar {
     z-index: 1030;
     top: 0;
@@ -110,23 +109,28 @@
 
 /* header fixed */
 .header-home .navbar-scroll {
-    background-color: var(--primary-colors) !important;
+    background-color: transparent;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header-home .navbar-scroll.scrolled {
-    background-color: var(--primary-colors) !important;
+    background-color: var(--primary-colors);
     /* Change to any color */
 }
 
-.header-home .navbar-scroll.scrolled .nav-link,
-.navbar-scroll.scrolled .navbar-brand,
-.navbar-scroll.scrolled #cartIcon i {
-    color: var(--color-white);
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
 }
 
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
+}
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
 }
 
 /* header fixed */
@@ -134,21 +138,25 @@
 /* header & banner sec end */
 
 /* add guest detail start */
-.checkout-booking-summary .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active{
+.checkout-booking-summary .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active {
     border: none;
     color: var(--color-white);
 }
+
 .checkout-booking-detail {
     margin-top: 72px;
 }
 
 .checkout-booking-detail .lead-title {
-      font-size: clamp(18px, 2vw, 25px);
+    font-size: var(--font-size-heading);
     color: var(--primary-colors);
 }
 
 .checkout-payment-detail h4 {
-      font-size: clamp(18px, 2vw, 25px);
+    font-size: var(--font-size-heading);
     color: var(--primary-colors);
 }
 
@@ -166,48 +174,67 @@
     border: 1px solid var(--secondary-colors);
 }
 
-.checkout-booking-summary, .checkout-payment-detail, .checkout-guest-detail{
+.checkout-booking-summary,
+.checkout-payment-detail,
+.checkout-guest-detail {
     border: 1px solid var(--all-border);
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
+
 .checkout-booking-summary h4 {
-     font-size: clamp(18px, 2vw, 20px);
+    font-size: clamp(18px, 2vw, 20px);
     color: var(--primary-colors);
 }
 
-.checkout-booking-detail .badge{
+.checkout-booking-detail .badge {
     background-color: var(--secondary-lights);
     /* color: var(--primary-colors); */
 }
-.checkout-booking-summary .tour-badge{
-    background-color: var(--secondary-colors);
+
+.checkout-booking-summary .tour-badge {
+    background-color: var(--primary-colors-low-opacity);
 }
-.checkout-booking-summary .delete-icon{
+
+.checkout-booking-summary .delete-icon {
     color: var(--secondary-colors);
 }
 
-.checkout-booking-summary .total-payment{
-color: var(--primary-colors);
-}
-.checkout-booking-summary a{
-    background-color: var(--secondary-colors);
-}
-.checkout-booking-summary a:hover{
-    background-color: var(--secondary-colors);
-}
-
-.checkout-booking-summary .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    background-color: var(--secondary-colors);
-}
-
-.total-payment-pay h4{
+.checkout-booking-summary .total-payment {
     color: var(--primary-colors);
-      font-size: clamp(18px, 2vw, 25px);
+}
+
+
+.checkout-booking-summary .btn {
+    background-color: var(--secondary-colors);
+    border: 1px solid var(--secondary-colors);
+    color: var(--color-white);
+    font-weight: var(--btn-font-weight);
+}
+
+.checkout-booking-summary .btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--secondary-colors);
+    color: var(--primary-colors);
+}
+
+.total-payment-pay h4 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
 
 }
-.total-payment-pay .confirm-pay-btn{
+
+.total-payment-pay .confirm-pay-btn {
     background-color: var(--secondary-colors);
+    font-weight: var(--btn-font-weight);
+    color: var(--color-white);
 }
+
+.total-payment-pay .confirm-pay-btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--secondary-colors);
+    color: var(--primary-colors);
+}
+
 /* footer section start */
 .footer-sec {
     background-color: var(--primary-colors);
@@ -236,7 +263,8 @@ color: var(--primary-colors);
     justify-content: center;
 }
 
-.form-control:focus{
-    box-shadow: none!important;
+.form-control:focus {
+    box-shadow: none !important;
 }
+
 /* footer section end */

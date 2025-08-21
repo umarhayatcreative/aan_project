@@ -35,9 +35,7 @@
     width: 100%;
 }
 
-.hero-section-home .lead {
-    font-size: clamp(16px, 2.5vw, 25px);
-}
+
 
 .hero-section-home .hero-content {
     position: relative;
@@ -48,25 +46,22 @@
 }
 
 
-.hero-section-home .nav-link:hover {
-    color: var(--secondary-colors) !important;
+.header-home .nav-link{
+    color: var(--color-white);
 }
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
 
 .navbar .nav-link.active {
-    color: var(--secondary-colors) !important;
-    /* or any color you want */
+    color: var(--secondary-colors);
 }
-
-.hero-section-home .btn-search {
-    background-color: var(--secondary-colors);
-    color: var(--color-white);
-    border: none;
-}
-
-.hero-section-home .btn-search:hover {
-    background-color: var(--secondary-colors);
-}
-
 
 .header-home .navbar {
     z-index: 1030;
@@ -80,7 +75,7 @@
     }
 
     .header-home #mainMenu .nav-link {
-        color: var(--color-white) !important;
+        color: var(--color-white);
     }
 
     .header-home .btn-outline-light:hover {
@@ -129,7 +124,7 @@
     }
 
     .hero-section-home .navbar .btn {
-        font-size: 0.98rem;
+        font-size: 15p;
         border-radius: 6px;
     }
 
@@ -150,18 +145,23 @@
 }
 
 .header-home .navbar-scroll.scrolled {
-    background-color: var(--primary-colors) !important;
+    background-color: var(--primary-colors);
     /* Change to any color */
 }
 
-.header-home .navbar-scroll.scrolled .nav-link,
-.navbar-scroll.scrolled .navbar-brand,
-.navbar-scroll.scrolled #cartIcon i {
-    color: var(--color-white);
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
 }
 
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
+}
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
 }
 
 /* header fixed */
@@ -174,7 +174,7 @@
 }
 
 .our-experience-custom h5 {
-    font-size: 30px;
+    font-size:var(--font-size-heading);
     color: var(--primary-colors);
 }
 
@@ -259,7 +259,7 @@
 
 .ceo-message-section-bg {
     background-color: var(--primary-lights);
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
 
 .ceo-message-custom h3 {
@@ -300,7 +300,7 @@
 
 .footer-sec .footer-custom ul li {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size:var(--font-size-paragraph);
 }
 
 .footer-sec .footer-custom .social-icons li i {

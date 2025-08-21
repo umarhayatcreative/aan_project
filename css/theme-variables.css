@@ -76,6 +76,7 @@ body {
     --btn-font-weight: 500;
     --font-size-banner-heading-weight: 700;
     --font-size-heading-weight: 600;
+    --rating-star-color: rgb(255, 136, 0);
     color-scheme: dark;
 }
 

@@ -48,25 +48,23 @@
 }
 
 
-.hero-section-home .nav-link:hover {
-    color: var(--secondary-colors) !important;
+.header-home .nav-link{
+    color: var(--color-white);
 }
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
 
 .navbar .nav-link.active {
-    color: var(--secondary-colors) !important;
+    color: var(--secondary-colors);
     /* or any color you want */
 }
-
-.hero-section-home .btn-search {
-    background-color: var(--secondary-colors);
-    color: var(--color-white);
-    border: none;
-}
-
-.hero-section-home .btn-search:hover {
-    background-color: var(--secondary-colors);
-}
-
 
 .header-home .navbar {
     z-index: 1030;
@@ -80,7 +78,7 @@
     }
 
     .header-home #mainMenu .nav-link {
-        color: var(--color-white) !important;
+        color: var(--color-white)
     }
 
     .header-home .btn-outline-light:hover {
@@ -150,18 +148,23 @@
 }
 
 .header-home .navbar-scroll.scrolled {
-    background-color: var(--primary-colors) !important;
+    background-color: var(--primary-colors);
     /* Change to any color */
 }
 
-.header-home .navbar-scroll.scrolled .nav-link,
-.navbar-scroll.scrolled .navbar-brand,
-.navbar-scroll.scrolled #cartIcon i {
-    color: var(--color-white);
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
 }
 
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
+}
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
 }
 
 /* header fixed */
@@ -254,7 +257,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--primary-colors-low-opacity);
     z-index: 1040;
     opacity: 0;
     visibility: hidden;
@@ -328,7 +331,7 @@
 
 .umrah-card-custom {
     border: 1px solid var(--all-border);
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
 
 .umrah-card-custom .umrah-days {

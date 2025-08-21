@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAN Tourism Activities</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/visa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- header & banner sec start -->
+    <section class="header-home">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100 navbar-scroll">
+            <div class="container d-flex align-items-center py-2 flex-nowrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold me-4 flex-shrink-0" href="/index.html">Logo</a>
+
+                <!-- Menu Items (centered on large screens) -->
+                <div class="collapse navbar-collapse justify-content-center flex-grow-1" id="mainMenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
+                        <li class="nav-item"><a class="nav-link" href="/flight.html">Flight</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/hotel.html">Hotel</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="/activities-detail-page.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/combo-tour.html">Combo
+                                Tours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/umrah.html">Umrah</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/visa.html">Visa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side: Contact Us, Log in, Cart -->
+                <div class="d-flex align-items-center ms-auto flex-shrink-0">
+                    <div class="d-none d-lg-flex align-items-center gap-2">
+                        <a href="/contact-us.html" class="nav-link me-2">Contact Us</a>
+                        <a href="#" class="btn btn-outline-light py-1 px-3 me-2">Log in</a>
+                    </div>
+                    <!-- Cart icon always visible -->
+                    <a href="#" class="nav-link fs-5 d-flex align-items-center ms-2" id="cartIcon"><i
+                            class="bi bi-cart"></i></a>
+                    <!-- Toggler (hamburger icon) for mobile -->
+                    <button class="navbar-toggler ms-2 border-white d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <span class="navbar-toggler-icon border-white"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="home-for-mobileview">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/flight.html" class="text-decoration-none"><i
+                                class="bi bi-airplane me-2 offcanvas-icon"></i>Flight</a></li>
+                    <li class="list-group-item"><a href="/hotel.html" class="text-decoration-none"><i
+                                class="bi bi-bank me-2 offcanvas-icon"></i>Hotel</a></li>
+                    <li class="list-group-item"><a href="/activities.html" class="text-decoration-none"><i
+                                class="bi bi-camera me-2 offcanvas-icon"></i>Activities</a></li>
+                    <li class="list-group-item"><a href="/combo-tour.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Combo Tour</a></li>
+                    <li class="list-group-item"><a href="/packages.html" class="text-decoration-none"><i
+                                class="bi bi-boxes me-2 offcanvas-icon"></i>Packages</a></li>
+                    <li class="list-group-item"><a href="/umrah.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Umrah</a></li>
+                    <li class="list-group-item"><a href="/visa.html" class="text-decoration-none"><i
+                                class="bi bi-grid me-2 offcanvas-icon"></i>Visa</a></li>
+                    <li class="list-group-item"><a href="/contact-us.html" class="text-decoration-none"><i
+                                class="bi bi-telephone me-2 offcanvas-icon"></i>Contact Us</a></li>
+                    <li class="list-group-item me-2"><a href="" class="text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#loginModal"><i class="bi bi-person me-2 offcanvas-icon"></i>Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header & banner sec end -->
+
+    <!-- visa input start -->
+    <section class="visa-input-sec py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-2">
+                <div class="col">
+                    <div class="visa-input-group">
+                        <div class="form-floating">
+                            <select class="form-select fw-semibold" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option selected>Pakistan</option>
+                                <option value="1">Malaysia</option>
+                                <option value="2">Azerbaijan</option>
+                                <option value="3">Turkey</option>
+                            </select>
+                            <label for="floatingSelect">Visa For</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="visa-input-group">
+                        <div class="form-floating">
+                            <select class="form-select fw-semibold" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option selected>United Arab Emirates</option>
+                                <option value="1">United Kingdom</option>
+                            </select>
+                            <label for="floatingSelect">Select Living</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="visa-input-group">
+                        <div class="form-floating">
+                            <select class="form-select fw-semibold" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option selected>Pakistan</option>
+                                <option value="1">India</option>
+                                <option value="2">Bangladesh</option>
+                                <option value="3">Sri Lanka</option>
+                            </select>
+                            <label for="floatingSelect">Select Nationality</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="visa-input-group">
+                        <form class="form-floating flotingg w-100 date-picker-container">
+                            <input class="form-control fw-semibold" type="text" id="checkInDate" placeholder="Check In"
+                                readonly="readonly">
+                            <label for="checkInDate">Check In</label>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="visa-input-group h-100">
+                        <a href="/visa-detail.html"
+                            class="btn visa-search-btn w-100 h-100 d-flex align-items-center justify-content-center">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Hassle Free E-visas sec start -->
+    <section class="apply-hassle-visa py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Visa Card 1 - Azerbaijan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-visa-card p-3 d-flex flex-column">
+                        <div class="card-image-wrapper mb-2">
+                            <img src="/img/azarbaijan-flag.jpg" alt="Armenia evisa">
+                            <div class="processing-time text-white">3-5 Days</div>
+                        </div>
+                        <div class="card-content p-2">
+                            <h5 class="visa-title">Azerbaijan E-Visa</h5>
+
+                            <div class="visa-info-grid">
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="info-label">From:</span>
+                                    <span class="info-value text-muted">Dubai</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-calendar-check-fill"></i>
+                                    <span class="info-label">Valid:</span>
+                                    <span class="info-value text-muted">30 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <span class="info-label">Process:</span>
+                                    <span class="info-value text-muted">3-5 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-cash"></i>
+                                    <span class="info-label">Fee:</span>
+                                    <span class="info-value text-muted">AED 50</span>
+                                </div>
+                            </div>
+
+                            <p class="visa-description text-muted">
+                                Experience the beauty of Azerbaijan with our fast and reliable e-visa service. Perfect
+                                for tourism and business visits.
+                            </p>
+
+                            <div class="features-list">
+                                <span class="feature-tag">Tourist Visa</span>
+                                <span class="feature-tag">Business Visa</span>
+                                <span class="feature-tag">Online Process</span>
+                            </div>
+                        </div>
+                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#visaModal" data-country="Azerbaijan" data-flag="ðŸ‡¦ðŸ‡¿">
+                            <i class="bi bi-airplane me-2"></i>Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Visa Card 2 - Turkey -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-visa-card p-3 d-flex flex-column">
+                        <div class="card-image-wrapper mb-2">
+                            <img src="/img/turkey-flag.jpg" alt="Armenia evisa">
+
+                            <div class="processing-time text-white">1-3 Days</div>
+                        </div>
+                        <div class="card-content p-2">
+                            <h5 class="visa-title">Turkey E-Visa</h5>
+
+                            <div class="visa-info-grid">
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="info-label">From:</span>
+                                    <span class="info-value text-muted">UAE</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-calendar-check-fill"></i>
+                                    <span class="info-label">Valid:</span>
+                                    <span class="info-value text-muted">90 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <span class="info-label">Process:</span>
+                                    <span class="info-value text-muted">1-3 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-cash"></i>
+                                    <span class="info-label">Fee:</span>
+                                    <span class="info-value text-muted">AED 60</span>
+                                </div>
+                            </div>
+
+                            <p class="visa-description text-muted">
+                                Discover Turkey's rich culture and history. Fast processing with multiple entry options
+                                available for your convenience.
+                            </p>
+
+                            <div class="features-list">
+                                <span class="feature-tag">Multiple Entry</span>
+                                <span class="feature-tag">Tourist Visa</span>
+                                <span class="feature-tag">Fast Process</span>
+                            </div>
+                        </div>
+                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#visaModal" data-country="Azerbaijan" data-flag="ðŸ‡¦ðŸ‡¿">
+                            <i class="bi bi-airplane me-2"></i>Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Visa Card 3 - Georgia -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-visa-card p-3 d-flex flex-column">
+                        <div class="card-image-wrapper mb-2">
+                            <img src="/img/geogia-flag.jpeg" alt="Georgia evisa">
+
+                            <div class="processing-time text-white">2-4 Days</div>
+                        </div>
+                        <div class="card-content p-2">
+                            <h5 class="visa-title">Georgia E-Visa</h5>
+
+                            <div class="visa-info-grid">
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="info-label">From:</span>
+                                    <span class="info-value text-muted">Dubai</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-calendar-check-fill"></i>
+                                    <span class="info-label">Valid:</span>
+                                    <span class="info-value text-muted">30 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <span class="info-label">Process:</span>
+                                    <span class="info-value text-muted">2-4 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-cash"></i>
+                                    <span class="info-label">Fee:</span>
+                                    <span class="info-value text-muted">AED 45</span>
+                                </div>
+                            </div>
+
+                            <p class="visa-description text-muted">
+                                Explore Georgia's stunning landscapes and warm hospitality. Simple application process
+                                with reliable approval rates.
+                            </p>
+
+                            <div class="features-list">
+                                <span class="feature-tag">Tourist Visa</span>
+                                <span class="feature-tag">Transit Visa</span>
+                                <span class="feature-tag">Reliable</span>
+                            </div>
+
+                        </div>
+                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#visaModal" data-country="Azerbaijan" data-flag="ðŸ‡¦ðŸ‡¿">
+                            <i class="bi bi-airplane me-2"></i>Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Visa Card 4 - Armenia -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-visa-card p-3 d-flex flex-column">
+                        <div class="card-image-wrapper mb-2">
+                            <img src="/img/aremina-flag.jpeg" alt="Armenia evisa">
+                            <div class="processing-time text-white">5-7 Days</div>
+                        </div>
+                        <div class="card-content p-2">
+                            <h5 class="visa-title">Armenia E-Visa</h5>
+
+                            <div class="visa-info-grid">
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="info-label">From:</span>
+                                    <span class="info-value text-muted">UAE</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-calendar-check-fill"></i>
+                                    <span class="info-label">Valid:</span>
+                                    <span class="info-value text-muted">120 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <span class="info-label">Process:</span>
+                                    <span class="info-value text-muted">5-7 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-cash"></i>
+                                    <span class="info-label">Fee:</span>
+                                    <span class="info-value text-muted">AED 55</span>
+                                </div>
+                            </div>
+
+                            <p class="visa-description text-muted">
+                                Discover Armenia's ancient heritage and modern attractions. Extended validity period for
+                                longer stays and exploration.
+                            </p>
+
+                            <div class="features-list">
+                                <span class="feature-tag">Long Stay</span>
+                                <span class="feature-tag">Tourist Visa</span>
+                                <span class="feature-tag">Cultural</span>
+                            </div>
+
+                        </div>
+                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#visaModal" data-country="Azerbaijan" data-flag="ðŸ‡¦ðŸ‡¿">
+                            <i class="bi bi-airplane me-2"></i>Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Visa Card 5 - Kyrgyzstan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-visa-card p-3 d-flex flex-column">
+                        <div class="card-image-wrapper mb-2">
+                            <img src="/img/kyrgyzstan-flag.jpg" alt="Armenia evisa">
+                            <div class="processing-time text-white">3-5 Days</div>
+                        </div>
+                        <div class="card-content p-2">
+                            <h5 class="visa-title">Kyrgyzstan E-Visa</h5>
+
+                            <div class="visa-info-grid">
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="info-label">From:</span>
+                                    <span class="info-value text-muted">Dubai</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-calendar-check-fill"></i>
+                                    <span class="info-label">Valid:</span>
+                                    <span class="info-value text-muted">60 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <span class="info-label">Process:</span>
+                                    <span class="info-value text-muted">3-5 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-cash"></i>
+                                    <span class="info-label">Fee:</span>
+                                    <span class="info-value text-muted">AED 40</span>
+                                </div>
+                            </div>
+
+                            <p class="visa-description text-muted">
+                                Experience Kyrgyzstan's breathtaking mountain landscapes and nomadic culture. Adventure
+                                tourism and nature exploration await.
+                            </p>
+
+                            <div class="features-list">
+                                <span class="feature-tag">Adventure</span>
+                                <span class="feature-tag">Nature</span>
+                                <span class="feature-tag">Budget Friendly</span>
+                            </div>
+                        </div>
+                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#visaModal" data-country="Azerbaijan" data-flag="ðŸ‡¦ðŸ‡¿">
+                            <i class="bi bi-airplane me-2"></i>Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Visa Card 6 - Uzbekistan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-visa-card p-3 d-flex flex-column">
+                        <div class="card-image-wrapper mb-2">
+                            <img src="/img/uzbekistan-flag.jpg" alt="Armenia evisa">
+
+                            <div class="processing-time text-white">2-3 Days</div>
+                        </div>
+                        <div class="card-content p-2">
+                            <h5 class="visa-title">Uzbekistan E-Visa</h5>
+
+                            <div class="visa-info-grid">
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="info-label">From:</span>
+                                    <span class="info-value text-muted">UAE</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-calendar-check-fill"></i>
+                                    <span class="info-label">Valid:</span>
+                                    <span class="info-value text-muted">30 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <span class="info-label">Process:</span>
+                                    <span class="info-value text-muted">2-3 Days</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="bi bi-cash"></i>
+                                    <span class="info-label">Fee:</span>
+                                    <span class="info-value text-muted">AED 65</span>
+                                </div>
+                            </div>
+
+                            <p class="visa-description text-muted">
+                                Journey through Uzbekistan's Silk Road cities and Islamic architecture. Rich history and
+                                cultural experiences await visitors.
+                            </p>
+
+                            <div class="features-list">
+                                <span class="feature-tag">Silk Road</span>
+                                <span class="feature-tag">Historical</span>
+                                <span class="feature-tag">Cultural</span>
+                            </div>
+                        </div>
+                        <button class="btn apply-btn text-white mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#visaModal" data-country="Azerbaijan" data-flag="ðŸ‡¦ðŸ‡¿">
+                            <i class="bi bi-airplane me-2"></i>Apply Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Enhanced Modal -->
+        <div class="modal fade visa-modal" id="visaModal" tabindex="-1" aria-labelledby="visaModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header px-4">
+                        <h5 class="modal-title" id="visaModalLabel">
+                            <span id="modalCountryName">Azerbaijan</span> E-Visa Application
+                        </h5>
+                        <button type="button" class="btn-close text-muted" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nationality" class="form-label text-muted">
+                                        <i class="bi bi-person-badge me-2"></i>Select Nationality:
+                                    </label>
+                                    <select class="form-select fw-medium" id="nationality" required>
+                                        <option selected>Pakistan</option>
+                                        <option value="india">India</option>
+                                        <option value="bangladesh">Bangladesh</option>
+                                        <option value="sri-lanka">Sri Lanka</option>
+                                        <option value="philippines">Philippines</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="residence" class="form-label text-muted ">
+                                        <i class="bi bi-house me-2"></i>Current Residence:
+                                    </label>
+                                    <select class="form-select fw-medium" id="residence" required>
+                                        <option selected>United Arab Emirates</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="usa">United States</option>
+                                        <option value="canada">Canada</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="travelDate" class="form-label text-muted">
+                                        <i class="bi bi-calendar-event me-2"></i>Preferred Travel Date:
+                                    </label>
+                                    <div class="position-relative">
+                                        <input class="form-control fw-medium" type="text" id="checkInDateM"
+                                            placeholder="Check In" readonly="readonly">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="visaType" class="form-label text-muted">
+                                        <i class="bi bi-airplane me-2"></i>Visa Type:
+                                    </label>
+                                    <select class="form-select fw-medium" id="visaType" required>
+                                        <option selected>Tourist Visa</option>
+                                        <option value="business">Business Visa</option>
+                                        <option value="transit">Transit Visa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end gap-3">
+                                    <button type="button" class="btn btn-outline-secondary px-4"
+                                        data-bs-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <a href="visa-detail.html" type="submit" class="btn search-btn px-5 text-white">
+                                        <i class="bi bi-search me-2"></i>Search & Apply
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Apply Hassle Free E-visas sec end -->
+
+    <!-- visa input end-->
+
+
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h5 class="fw-bold text-white mb-4 fs-4">Logo</h5>
+                        <p class="small text-white">
+                            From flights to tours, Umrah to visa â€” Tourism offers personalized services for your ideal
+                            trip. Smart
+                            planning for better travel experiences.
+                        </p>
+                        <div>
+                            <button id="lightModeBtn">Light</button>
+                            <button id="darkModeBtn">Dark</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
+                        <ul class="list-unstyled small text-white">
+                            <li><a href="/visa.html" class="text-white text-decoration-none">Visas</a></li>
+                            <li><a href="/activities.html" class="text-white text-decoration-none">Activities</a></li>
+                            <li><a href="/combo-tour.html" class="text-white text-decoration-none">Combo Tours</a></li>
+                            <li><a href="/hotel.html" class="text-white text-decoration-none">Hotel</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Blogs</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Get In Touch:</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 12 345
+                                    6789</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">info__gmail.com</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Street 1, Lahore
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">Â© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <script src="js/visa.js"></script>
+    <script src="js/theme-change.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

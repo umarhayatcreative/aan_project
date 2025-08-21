@@ -1,57 +1,29 @@
-
-.home-for-mobileview .offcanvas .offcanvas-body ul li a{
+/* Offcanvas Mobile Menu */
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
     color: var(--primary-colors);
 }
 
-.offcanvas-icon{
+.offcanvas-icon {
     color: var(--secondary-colors);
 }
+
+/* Offcanvas Mobile Menu */
+
 /* header & banner sec start */
 
-.navbar-toggler-icon {
+.header-home .navbar-toggler-icon {
     width: 20px;
     height: 20px;
 }
-.hero-section-home .nav-link:hover {
-    color: var(--secondary-colors) !important;
+.header-home .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
-.hero-section-home .btn-search {
-    background-color: var(--secondary-colors);
-    color: var(--color-white);
-    border: none;
-}
-
-.hero-section-home .btn-search:hover {
-    background-color: var(--secondary-colors);
-}
-
-.navbar .nav-link.active {
-    color: var(--secondary-colors) !important;
-    /* or any color you want */
-}
-
 .header-home .navbar {
     z-index: 1030;
     top: 0;
 }
 
 /* Mobile toggle menu background and styles */
-@media (max-width: 991px) {
-    .header-home #mainMenu {
-        background-color: var(--primary-colors);
-        padding: 1rem;
-    }
-
-    .header-home #mainMenu .nav-link {
-        color: var(--color-white) !important;
-    }
-
-    .header-home .btn-outline-light:hover {
-        background-color: var(--color-white);
-        color: var(--primary-colors);
-    }
-}
 
 .home-for-mobileview .offcanvas {
     border-radius: 0 18px 18px 0;
@@ -72,82 +44,88 @@
     border-bottom: 1px solid var(--primary-lights);
 }
 
-@media (min-width: 992px) {
-    .home-for-mobileview .offcanvas {
-        display: none !important;
-    }
 
-    .hero-section-home .navbar-nav .nav-link {
-        /* color: #fff !important; */
-        font-size: 1rem;
-        padding: 0.5rem 1.1rem;
-        font-weight: 400;
-        opacity: 0.9;
-        transition: color 0.2s, opacity 0.2s;
-    }
-
-    .hero-section-home .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-        /* color: #fff !important; */
-        opacity: 1;
-    }
-
-    .hero-section-home .navbar .btn {
-        font-size: 0.98rem;
-        border-radius: 6px;
-    }
-
-    .hero-section-home .navbar .bi-cart {
-        vertical-align: middle;
-        font-size: 1.25rem;
-    }
-
-    .hero-section-home .navbar {
-        background: linear-gradient(90deg, rgba(10, 18, 40, 0.85) 0%, rgba(20, 30, 60, 0.7) 100%);
-    }
-}
 
 /* header fixed */
 .header-home .navbar-scroll {
-    background-color: var(--primary-colors) !important;
+    background-color: var(--primary-colors);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.header-home .navbar-scroll .nav-item .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link i {
+    color: var(--color-white);
+}
+
+
+
+
+
 .header-home .navbar-scroll.scrolled {
-    background-color: var(--primary-colors) !important;
+    background-color: var(--primary-colors);
     /* Change to any color */
 }
 
-.header-home .navbar-scroll.scrolled .nav-link,
-.navbar-scroll.scrolled .navbar-brand,
-.navbar-scroll.scrolled #cartIcon i {
-    color: var(--color-white);
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
 }
 
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
 }
 
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
+}
+
+.header-home .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
+
 /* header fixed */
 
 /* header & banner sec end */
 
 /* add guest detail start */
-.activity-booking-summary .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active{
+.activity-booking-summary .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active {
     border: none;
     color: var(--color-white);
 }
+
 .activity-booking-detail {
     margin-top: 72px;
 }
 
 .activity-booking-detail .lead-title {
-    font-size: 25px;
+    font-size: var(--font-size-heading);
     color: var(--primary-colors);
 }
 
 .activity-payment-detail h4 {
-    font-size: 25px;
+    font-size: var(--font-size-heading);
     color: var(--primary-colors);
 }
 
@@ -165,39 +143,51 @@
     border: 1px solid var(--secondary-colors);
 }
 
-.activity-booking-summary, .activity-payment-detail, .activity-guest-detail{
+.activity-booking-summary,
+.activity-payment-detail,
+.activity-guest-detail {
     border: 1px solid var(--all-border);
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
+
 .activity-booking-summary h4 {
-    font-size: 25px;
+    font-size: var(--font-size-heading);
     color: var(--primary-colors);
 }
 
-.activity-booking-detail .badge{
+.activity-booking-detail .badge {
     background-color: var(--secondary-lights);
     /* color: var(--primary-colors); */
 }
-.activity-booking-summary .tour-badge{
+
+.activity-booking-summary .tour-badge {
     background-color: var(--secondary-colors);
 }
-.activity-booking-summary .delete-icon{
+
+.activity-booking-summary .delete-icon {
     color: var(--secondary-colors);
 }
 
-.activity-booking-summary .total-payment{
-color: var(--primary-colors);
+.activity-booking-summary .total-payment {
+    color: var(--primary-colors);
 }
-.activity-booking-summary a{
-    background-color: var(--secondary-colors);
-}
-.activity-booking-summary a:hover{
+
+.activity-booking-summary a {
     background-color: var(--secondary-colors);
 }
 
-.activity-booking-summary .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.activity-booking-summary a:hover {
     background-color: var(--secondary-colors);
 }
+
+.activity-booking-summary .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: var(--secondary-colors);
+}
+
 /* footer section start */
 .footer-sec {
     background-color: var(--primary-colors);
@@ -213,7 +203,7 @@ color: var(--primary-colors);
 
 .footer-sec .footer-custom ul li {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-paragraph);
 }
 
 .footer-sec .footer-custom .social-icons li i {
@@ -226,7 +216,8 @@ color: var(--primary-colors);
     justify-content: center;
 }
 
-.form-control:focus{
-    box-shadow: none!important;
+.form-control:focus {
+    box-shadow: none !important;
 }
+
 /* footer section end */

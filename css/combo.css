@@ -1,5 +1,3 @@
-
-
 .home-for-mobileview .offcanvas .offcanvas-body ul li a {
     color: var(--primary-colors);
 }
@@ -49,26 +47,23 @@
 }
 
 
-.hero-section-home .nav-link:hover {
-    color: var(--secondary-colors) !important;
+.header-home .nav-link{
+    color: var(--color-white);
 }
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
 
 .navbar .nav-link.active {
-    color: var(--secondary-colors) !important;
+    color: var(--secondary-colors);
     /* or any color you want */
 }
-
-.hero-section-home .btn-search {
-    background-color: var(--secondary-colors);
-    color: var(--color-white);
-    border: none;
-}
-
-.hero-section-home .btn-search:hover {
-    background-color: var(--secondary-colors);
-}
-
-
 .header-home .navbar {
     z-index: 1030;
 }
@@ -81,7 +76,7 @@
     }
 
     .header-home #mainMenu .nav-link {
-        color: var(--color-white) !important;
+        color: var(--color-white);
     }
 
     .header-home .btn-outline-light:hover {
@@ -151,18 +146,23 @@
 }
 
 .header-home .navbar-scroll.scrolled {
-    background-color:var(--primary-colors) !important;
+    background-color: var(--primary-colors);
     /* Change to any color */
 }
 
-.header-home .navbar-scroll.scrolled .nav-link,
-.navbar-scroll.scrolled .navbar-brand,
-.navbar-scroll.scrolled #cartIcon i {
-    color: var(--color-white);
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
 }
 
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
+}
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
 }
 
 /* header fixed */
@@ -182,7 +182,7 @@
 .combo-list .filter-overlay .filter-close {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: var(--font-size-heading);
     cursor: pointer;
     margin-left: auto;
     padding: 5px;
@@ -194,7 +194,7 @@
 
 
 .combo-list .combo-tour-card {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -230,27 +230,28 @@
 }
 
 .combo-list .rating-stars {
-    color: var(--secondary-colors);
+    color: var( --rating-star-color);
     font-size: 13px;
 }
 
 .combo-list .price-current {
     font-weight: 700;
     color: var(--primary-colors);
-    font-size: 1.1rem;
+    font-size: var(--font-size-card-heading);
 }
 
-.combo-list .from-price{
+.combo-list .from-price {
     margin-bottom: -5px;
 }
+
 .combo-card-title {
-    font-size: 16px;
+    font-size: var(--font-size-paragraph);
     color: var(--primary-colors);
 }
 
 .combo-list .price-original {
     text-decoration: line-through;
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
     margin-left: 8px;
 }
 
@@ -264,7 +265,7 @@
     font-weight: 600;
     color: var(--primary-colors);
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: var(--font-size-paragraph);
 }
 
 .combo-list .form-check-input:checked {
@@ -302,8 +303,7 @@
 }
 
 .combo-list .location-text {
-    color: #636e72;
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
 }
 
 /* Mobile Filter Styles */
@@ -317,7 +317,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--primary-colors-low-opacity);
     z-index: 1040;
     opacity: 0;
     visibility: hidden;
@@ -358,9 +358,9 @@
 .combo-list .filter-close {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: var(--font-size-heading);
     cursor: pointer;
-    color: #636e72;
+    color: var(--primary-colors-low-opacity);
     margin-left: auto;
 }
 
@@ -409,7 +409,7 @@
 
 .footer-sec .footer-custom ul li {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-paragraph);
 }
 
 .footer-sec .footer-custom .social-icons li i {

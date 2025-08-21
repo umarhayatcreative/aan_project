@@ -15,7 +15,17 @@
     width: 20px;
     height: 20px;
 }
+.header-home .nav-link{
+    color: var(--color-white);
+}
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
 
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+    /* or any color you want */
+}
 
 .hero-section-home .hero-overlay {
     background-color: var(--all-overlay-bg);
@@ -609,18 +619,23 @@
 }
 
 .header-home .navbar-scroll.scrolled {
-    background-color: var(--primary-colors) !important;
+    background-color: var(--primary-colors);
     /* Change to any color */
 }
 
-.header-home .navbar-scroll.scrolled .nav-link,
-.navbar-scroll.scrolled .navbar-brand,
-.navbar-scroll.scrolled #cartIcon i {
-    color: var(--color-white);
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
 }
 
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
+}
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
 }
 
 /* header fixed */
