@@ -1,0 +1,95 @@
+html,
+body {
+    font-family: var(--font-family-primary);
+    scroll-behavior: smooth;
+}
+
+/* :root {
+    --all-overlay-bg: rgba(0, 0, 0, 0.55);
+    --primary-colors: #000026;
+    --secondary-colors: #FB5B32;
+    --btn-hover-color: #df4e2a;
+    --primary-lights: #F9F9FF;
+    --secondary-lights: #FFEFEB;
+    --color-white: #fff;
+    --primary-colors-low-opacity: rgba(0, 0, 38, 0.5);
+    --all-border: #E6E6E6;
+    --font-family-primary: "Rubik", sans-serif;
+    --font-size-paragraph: 16px;
+    --font-size-small: 14px;
+    --font-size-heading: clamp(20px, 2.5vw, 25px);
+    --font-size-card-heading: clamp(16px, 1vw, 17px);
+    --font-size-banner-heading: clamp(30px, 2.5vw, 45px);
+    --btn-font-size: clamp(14px, 2vw, 16px);
+    --border-radius-boxes: 15px;
+    --btn-border-radius: 5px;
+    --btn-font-weight: 500;
+    --font-size-banner-heading-weight: 700;
+    --font-size-heading-weight: 600;
+} */
+
+[data-theme="light"] {
+    --all-overlay-bg: rgba(0, 0, 0, 0.55);
+    --primary-colors: #1d1d1d;
+    --secondary-colors: #44b50c;
+    --btn-hover-color: #58e013;
+    --primary-lights: #f3f3f3;
+    --secondary-lights: #ebfde2;
+    --color-white: #fff;
+    --primary-colors-low-opacity: rgba(6, 38, 0, 0.5);
+    --all-border: #E6E6E6;
+   --font-family-primary:"Jost", sans-serif;
+    --font-size-paragraph: 16px;
+    --font-size-small: 14px;
+    --font-size-heading: clamp(20px, 2.5vw, 25px);
+    --font-size-card-heading: clamp(16px, 1vw, 17px);
+    --font-size-banner-heading: clamp(30px, 2.5vw, 45px);
+    --btn-font-size: clamp(14px, 2vw, 16px);
+    --border-radius-boxes: 15px;
+    --btn-border-radius: 5px;
+    --btn-font-weight: 500;
+    --font-size-banner-heading-weight: 700;
+    --font-size-heading-weight: 600;
+    --rating-star-color: rgb(255, 136, 0);
+
+}
+
+[data-theme="dark"] {
+    --all-overlay-bg: rgba(0, 0, 0, 0.55);
+    --primary-colors: #000026;
+    --secondary-colors: #FB5B32;
+    --btn-hover-color: #df4e2a;
+    --primary-lights: #F9F9FF;
+    --secondary-lights: #FFEFEB;
+    --color-white: #fff;
+    --primary-colors-low-opacity: rgba(0, 0, 38, 0.5);
+    --all-border: #E6E6E6;
+    --font-family-primary: "Rubik", sans-serif;
+    --font-size-paragraph: 16px;
+    --font-size-small: 14px;
+    --font-size-heading: clamp(20px, 2.5vw, 25px);
+    --font-size-card-heading: clamp(16px, 1vw, 17px);
+    --font-size-banner-heading: clamp(30px, 2.5vw, 45px);
+    --btn-font-size: clamp(14px, 2vw, 16px);
+    --border-radius-boxes: 15px;
+    --btn-border-radius: 5px;
+    --btn-font-weight: 500;
+    --font-size-banner-heading-weight: 700;
+    --font-size-heading-weight: 600;
+    color-scheme: dark;
+}
+
+#lightModeBtn{
+    background-color: #44b50c;
+    border-radius: 5px;
+    border: 1px solid #44b50c;
+    padding: 3px 20px;
+    color: white;
+}
+#darkModeBtn{
+    background-color: #FB5B32;
+    border-radius: 5px;
+    border: 1px solid #FB5B32;
+    padding: 3px 20px;
+    color: white;
+}

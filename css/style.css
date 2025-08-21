@@ -1,21 +1,4 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
-    scroll-behavior: smooth;
-}
 
-:root {
-    --primary-colors: #000026;
-    --secondary-colors: #FB5B32;
-    --primary-lights: #F9F9FF;
-    --secondary-lights: #FFEFEB;
-    --color-white: #fff;
-    --primary-colors-low-opacity: rgba(0, 0, 38, 0.5);
-    --all-border: #E6E6E6;
-}
 
 .home-for-mobileview .offcanvas .offcanvas-body ul li a {
     color: var(--primary-colors);
@@ -35,7 +18,7 @@ body {
 
 
 .hero-section-home .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: var(--all-overlay-bg);
     position: absolute;
     top: 0;
     left: 0;
@@ -43,17 +26,11 @@ body {
     width: 100%;
 }
 
-.hero-section-home .lead {
-    font-size: clamp(16px, 2.5vw, 25px);
-}
-
 .hero-section-home {
     position: relative;
     background: url("../img/Bg home.png") no-repeat center/cover;
     min-height: 500px;
-    /* Allow section to grow more if needed */
     padding: 100px 20px 60px;
-    /* top and bottom padding */
 }
 
 .hero-section-home .hero-content-banner {
@@ -63,9 +40,12 @@ body {
     width: 100%;
 }
 
+.hero-section-home .hero-content-banner h1 {
+    font-size: var(--font-size-banner-heading);
+}
+
 .hero-content-banner .nav-tabs .nav-link {
     color: var(--color-white);
-    /* optional: set default color */
     display: flex;
     align-items: center;
     gap: 6px;
@@ -75,7 +55,6 @@ body {
 
 .hero-content-banner .nav-tabs .nav-link i {
     color: var(--secondary-colors);
-    /* default icon color */
 }
 
 .hero-content-banner .nav-tabs .nav-link.active,
@@ -107,7 +86,6 @@ body {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     min-width: max-content;
-    /* Ensure all tabs fit inside */
 }
 
 /* Optional: Hide scrollbar for cleaner UI */
@@ -122,17 +100,22 @@ body {
 
 /* hotel input sec start */
 .hero-content-banner .hotel-input-sec {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
 
 .hero-content-banner .hotel-input-sec .hotel-input-group .hotel-search-btn {
     background-color: var(--secondary-colors);
     color: var(--color-white);
     border: none;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
 
 }
+
+.hero-content-banner .hotel-input-sec .hotel-input-group .hotel-search-btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
 
 .hero-content-banner .hotel-input-sec .btn-infants-add-remove {
     width: 30px;
@@ -159,13 +142,13 @@ body {
 }
 
 .hero-content-banner .flight-input-sec {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 
 }
 
 
 .hero-content-banner .flight-form-container {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
 
 /* Trip Type Radio Buttons */
@@ -183,8 +166,8 @@ body {
 }
 
 .hero-content-banner .flight-trip-type-container .trip-type-option label {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--btn-font-weight);
     color: var(--primary-colors);
     margin: 0;
     cursor: pointer;
@@ -207,7 +190,7 @@ body {
     content: "▼";
     position: absolute;
     right: 0.75rem;
-    font-size: 0.75rem;
+    font-size: var(--font-size-small);
 
 }
 
@@ -251,7 +234,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
@@ -267,7 +250,7 @@ body {
 .hero-content-banner .flight-trip-content .counter-value {
     min-width: 20px;
     text-align: center;
-    font-weight: 500;
+    font-weight: var(--btn-font-weight);
 }
 
 .hero-content-banner .flight-trip-content .class-options {
@@ -298,11 +281,10 @@ body {
 .hero-content-banner .flight-trip-content .apply-btn {
     width: 100%;
     background-color: var(--secondary-colors);
-
     border: none;
     padding: 0.75rem;
     border-radius: 4px;
-    font-weight: 500;
+    font-weight: var(--btn-font-weight);
     margin-top: 1rem;
     cursor: pointer;
 }
@@ -357,7 +339,7 @@ body {
     color: var(--text-dark);
     border-radius: 4px;
     width: auto;
-    font-weight: 500;
+    font-weight: var(--btn-font-weight);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -385,14 +367,10 @@ body {
     border-radius: 4px;
     z-index: 9999;
     padding: 0;
-    /* Remove default padding for ul/li */
     list-style: none;
-    /* Remove bullet points */
     max-height: 200px;
-    /* Limit height for scrollability */
     overflow-y: auto;
     display: none;
-    /* Hidden by default */
 }
 
 .hero-content-banner .flight-trip-content .city-suggestions-menu.show {
@@ -408,7 +386,7 @@ body {
     padding: 0.75rem 1rem;
     cursor: pointer;
     border-bottom: 1px solid var(--all-border);
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
     color: var(--text-dark);
 }
 
@@ -425,7 +403,7 @@ body {
 /* visa input sec start */
 
 .visa-input-sec {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
 
 
@@ -434,15 +412,19 @@ body {
     background-color: var(--secondary-colors);
     color: var(--color-white);
     border: none;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
 
+}
+
+.visa-input-sec .visa-input-group .visa-search-btn:hover {
+    background-color: var(--btn-hover-color);
 }
 
 /* visa input sec end */
 
 .hotel-card-custom {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -493,6 +475,7 @@ body {
 .header-home .navbar {
     z-index: 1030;
 }
+
 
 /* Cart container styles */
 .position-relative {
@@ -570,7 +553,7 @@ body {
 
 .home-for-mobileview .list-group-item {
     border: none;
-    font-size: 1.1rem;
+    font-size: var(--font-size-paragraph);
     padding: 1.1rem 1.5rem;
     display: flex;
     align-items: center;
@@ -589,7 +572,7 @@ body {
 
     .hero-section-home .navbar-nav .nav-link {
         /* color: #fff !important; */
-        font-size: 1rem;
+        font-size: var(--font-size-paragraph);
         padding: 0.5rem 1.1rem;
         font-weight: 400;
         opacity: 0.9;
@@ -647,7 +630,7 @@ body {
 .home-ads .home-ads-card {
     min-height: 250px;
     background-color: var(--secondary-colors);
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
     overflow: hidden;
 }
 
@@ -666,7 +649,7 @@ body {
 .home-ads .home-ads-card {
     min-height: 198px;
     background-color: var(--secondary-colors);
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -759,8 +742,8 @@ body {
 
 .world-top-cities .world-top-head h2 {
     color: var(--primary-colors);
-    font-size: clamp(24px, 5vw, 30px);
-    font-weight: 600;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
 }
 
 
@@ -771,7 +754,7 @@ body {
 .our-blog .our-blog-custom img {
     height: 250px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
 
 @media (max-width: 767.9px) {
@@ -789,7 +772,7 @@ body {
     .our-blog .our-blog-custom img {
         height: 300px;
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: var(--border-radius-boxes);
     }
 }
 
@@ -798,13 +781,12 @@ body {
     color: var(--color-white);
     border: none;
     padding: 6px 16px;
-    font-size: 0.85rem;
+    font-size: var(--font-size-small);
     border-radius: 20px;
     transition: 0.3s ease-in-out;
     top: 80%;
     left: 50%;
     z-index: 99;
-    text-shadow: 1px 1px 3px rgb(189, 71, 3);
 }
 
 .cities-card .btn-orange:hover {
@@ -814,7 +796,7 @@ body {
 
 
 .cities-card {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
     height: 270px;
     object-fit: cover;
     position: relative;
@@ -844,12 +826,12 @@ body {
 
 .top-rated-hotel-heading h3 {
     color: var(--primary-colors);
-    font-size: clamp(24px, 5vw, 30px);
-    font-weight: 600;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
 }
 
 .hotel-card-custom {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -879,26 +861,26 @@ body {
     left: 10px;
     background: var(--secondary-colors);
     padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 500;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-small);
+    font-weight: var(--btn-font-weight);
 }
 
 
 
 .hotel-card-custom .rating-stars {
-    color: var(--secondary-colors);
+    color: var(--rating-star-color);
     font-size: 13px;
 }
 
 .hotel-card-custom .price-current {
-    font-weight: 700;
+    font-weight: var(--font-size-banner-heading-weight);
     color: var(--primary-colors);
     font-size: 1.1rem;
 }
 
 .hotel-card-custom .hotel-card-title {
-    font-size: clamp(16px, 1.5vw, 18px);
+    font-size: var(--font-size-card-heading);
     color: var(--primary-colors);
 }
 
@@ -912,19 +894,16 @@ body {
 
 /* promotion sec start */
 .home-promotion .home-promotion-custom {
-    /* background-image: url("../img/start-journey.avif"); */
     background:
         linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0)),
         /* overlay */
         url('../img/start-journey.avif');
     background-repeat: no-repeat;
     background-size: cover;
-    /* cover = full area fill */
     background-position: center;
-    /* center = center alignment */
     min-height: 418px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
 }
 
 .home-promotion .home-promotion-btn {
@@ -937,7 +916,7 @@ body {
 /* high rated tour section start */
 
 .high-rated-tour .tour-card {
-    border-radius: 15px;
+    border-radius: var(--border-radius-boxes);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -958,9 +937,9 @@ body {
     left: 10px;
     background: var(--secondary-colors);
     padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 500;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-small);
+
 }
 
 .high-rated-tour .top-rated-badge-star {
@@ -969,24 +948,24 @@ body {
     right: 10px;
     background: var(--primary-colors-low-opacity);
     padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 500;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-small);
+
 }
 
 .high-rated-tour .rating-stars {
-    color: var(--secondary-colors);
+    color: var(--rating-star-color);
     font-size: 13px;
 }
 
 .high-rated-tour .price-current {
-    font-weight: 700;
+    font-weight: var(--font-size-banner-heading-weight);
     color: var(--primary-colors);
-    font-size: 1.1rem;
+    font-size: var(--font-size-paragraph);
 }
 
 .high-rated-tour .activity-card-title {
-    font-size: 16px;
+    font-size: var(--font-size-paragraph);
     color: var(--primary-colors);
 }
 
@@ -1001,34 +980,10 @@ body {
 
 .high-rated-tour-head h2 {
     color: var(--primary-colors);
-    font-size: clamp(24px, 5vw, 30px);
-    font-weight: 600;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
 }
 
-/* high rated tour section end */
-
-/* our experience sec start */
-/* 
-.our-experience .our-experience-custom {
-    height: 390px;
-}
-
-.our-experience-custom h5 {
-    font-size: 30px;
-    color: var(--primary-colors);
-}
-
-.our-experience-custom .experience-count h4 {
-    color: var(--secondary-colors);
-
-}
-
-.our-experience-custom .experience-count h6 {
-    color: var(--primary-colors);
-
-} */
-
-/* our experience sec end */
 
 /* our blog section start */
 .our-blog {
@@ -1037,14 +992,14 @@ body {
 
 .our-blog .our-blog-head h2 {
     color: var(--primary-colors);
-    font-size: clamp(24px, 5vw, 30px);
-    font-weight: 600;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
 }
 
 
 .our-blog .our-blog-custom h5 {
     color: var(--primary-colors);
-    font-size: 18px;
+    font-size: var(--font-size-box-heading);
 }
 
 .our-blog .our-blog-custom a {
@@ -1055,12 +1010,12 @@ body {
 /* our review sec start  */
 .our-review .section-title {
     color: var(--primary-colors);
-    font-size: 30px;
-    font-weight: 600;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
 }
 
 .our-review .review-card {
-    border-radius: 20px;
+    border-radius: var(--border-radius-boxes);
     padding: 30px;
     border: 1px solid var(--all-border) !important;
     border: none;
@@ -1081,7 +1036,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--all-border);
-
     transition: transform 0.3s ease;
 }
 
@@ -1090,27 +1044,26 @@ body {
 }
 
 .our-review .reviewer-name {
-    font-size: 1.25rem;
-    font-weight: 600;
-
+    font-size: var(--font-size-card-heading);
+    font-weight: var(--font-size-heading-weight);
     margin-bottom: 5px;
 }
 
 .our-review .reviewer-title {
     color: var(--primary-colors);
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
     font-weight: 400;
 }
 
 .our-review .star-rating {
-    color: var(--secondary-colors);
-    font-size: 1.1rem;
+    color: var(--rating-star-color);
+    font-size: var(--font-size-small);
     /* margin-bottom: 20px; */
 }
 
 .our-review .review-text {
     line-height: 1.7;
-    font-size: 1rem;
+    font-size: var(--font-size-paragraph);
     font-style: italic;
 }
 
@@ -1124,7 +1077,7 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #dee2e6;
+    background-color: var(--primary-colors-low-opacity);
     border: none;
     margin: 0 8px;
     transition: all 0.3s ease;
@@ -1155,7 +1108,7 @@ body {
 
 @media (max-width: 768px) {
     .our-review .section-title {
-        font-size: 2rem;
+        font-size: var(--font-size-heading);
         margin-bottom: 40px;
     }
 
@@ -1169,9 +1122,6 @@ body {
         height: 60px;
     }
 
-    .our-review .reviewer-name {
-        font-size: 1.1rem;
-    }
 }
 
 /* our review sec end  */
@@ -1212,7 +1162,7 @@ body {
     border: none;
     border-radius: 10px;
     padding: 12px;
-    font-size: 16px;
+    font-size: var(--btn-font-size);
 }
 
 .signin-login .btn-primary-custom:hover {
@@ -1229,7 +1179,7 @@ body {
 
 .signin-login .form-control:focus {
     border-color: var(--secondary-colors);
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 .signin-login .divider {
@@ -1263,7 +1213,7 @@ body {
 .signin-login .forgot-password {
     color: var(--secondary-colors);
     text-decoration: none;
-    font-size: 14px;
+    font-size: var(--font-size-small);
 }
 
 .signin-login .forgot-password:hover {
@@ -1297,7 +1247,7 @@ body {
     justify-content: center;
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
     cursor: pointer;
-    font-size: 17px;
+    font-size: var(--font-size-card-heading);
 }
 
 .signin-login .social-icons ul li:hover {
@@ -1318,7 +1268,7 @@ body {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #999;
+    color: var(--primary-colors-low-opacity);
     cursor: pointer;
 }
 
@@ -1329,7 +1279,7 @@ body {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #999;
+    color: var(--primary-colors-low-opacity);
     cursor: pointer;
 }
 
@@ -1341,7 +1291,7 @@ body {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #999;
+    color: var(--primary-colors-low-opacity);
     cursor: pointer;
 }
 
@@ -1368,7 +1318,7 @@ body {
 
 .footer-sec .footer-custom ul li {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-paragraph);
 }
 
 .footer-sec .footer-custom .social-icons li i {

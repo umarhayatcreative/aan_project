@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
   <meta charset="UTF-8" />
@@ -7,8 +7,10 @@
   <title>AAN Tourism</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -119,7 +121,7 @@
     <div class="hero-overlay"></div>
     <div class="container h-100 p-0">
       <div class="hero-content-banner py-lg-5 py-md-3 py-sm-2">
-        <h1 class="display-5 fw-bold text-white">Your Adventure Starts Now</h1>
+        <h1 class=" fw-bold text-white">Your Adventure Starts Now</h1>
         <!-- tabs for home banner search br start -->
         <div class="nav-tabs-scroll">
           <ul class="nav nav-tabs border-0 d-flex my-3 pb-1" id="myTab" role="tablist">
@@ -654,7 +656,7 @@
           <a href="/hotel.html" class="text-decoration-none text-dark">
             <div class="position-relative">
               <img src="img/hotel-aa.webp" class="card-img-top tour-image" alt="Desert Safari">
-              <span class="top-rated-badge text-white">Top Rated</span>
+              <span class="top-rated-badge text-white small">Top Rated</span>
             </div>
             <div class="card-body d-flex flex-column">
               <div class="d-flex">
@@ -692,7 +694,7 @@
           <a href="/hotel.html" class="text-decoration-none text-dark">
             <div class="position-relative">
               <img src="img/hotel-bb.webp" class="card-img-top tour-image" alt="Desert Safari">
-              <span class="top-rated-badge text-white">Top Rated</span>
+              <span class="top-rated-badge text-white small">Top Rated</span>
             </div>
             <div class="card-body d-flex flex-column">
               <div class="d-flex">
@@ -730,7 +732,7 @@
           <a href="/hotel.html" class="text-decoration-none text-dark">
             <div class="position-relative">
               <img src="img/hotel-cc.webp" class="card-img-top tour-image" alt="Desert Safari">
-              <span class="top-rated-badge text-white">Top Rated</span>
+              <span class="top-rated-badge text-white small">Top Rated</span>
             </div>
             <div class="card-body d-flex flex-column">
               <div class="d-flex">
@@ -768,7 +770,7 @@
           <a href="/hotel.html" class="text-decoration-none text-dark">
             <div class="position-relative">
               <img src="img/hotel-dd.jpg" class="card-img-top tour-image" alt="Desert Safari">
-              <span class="top-rated-badge text-white">Top Rated</span>
+              <span class="top-rated-badge text-white small">Top Rated</span>
             </div>
             <div class="card-body d-flex flex-column">
               <div class="d-flex">
@@ -846,7 +848,7 @@
             <div class="card tour-card">
               <div class="position-relative">
                 <img src="img/tour-aa.jpg" class="card-img-top tour-image" alt="Desert Safari">
-                <span class="top-rated-badge text-white">Top Rated</span>
+                <span class="top-rated-badge text-white small">Top Rated</span>
                 <span class="top-rated-badge-star text-white">
                   <i class="bi bi-geo-alt-fill small me-1"></i>
                   <span class="location-text small text-white">Dubai</span>
@@ -881,7 +883,7 @@
             <div class="card tour-card">
               <div class="position-relative">
                 <img src="img/tour-bb.webp" class="card-img-top tour-image" alt="Desert Safari">
-                <span class="top-rated-badge text-white">Top Rated</span>
+                <span class="top-rated-badge text-white small">Top Rated</span>
                 <span class="top-rated-badge-star text-white">
                   <i class="bi bi-geo-alt-fill small me-1"></i>
                   <span class="location-text small text-white">Dubai</span>
@@ -917,7 +919,7 @@
             <div class="card tour-card">
               <div class="position-relative">
                 <img src="img/tour-cc" class="card-img-top tour-image" alt="Desert Safari">
-                <span class="top-rated-badge text-white">Top Rated</span>
+                <span class="top-rated-badge text-white small">Top Rated</span>
                 <span class="top-rated-badge-star text-white">
                   <i class="bi bi-geo-alt-fill small me-1"></i>
                   <span class="location-text small text-white">Dubai</span>
@@ -952,7 +954,7 @@
             <div class="card tour-card">
               <div class="position-relative">
                 <img src="img/tour-dd.webp" class="card-img-top tour-image" alt="Desert Safari">
-                <span class="top-rated-badge text-white">Top Rated</span>
+                <span class="top-rated-badge text-white small">Top Rated</span>
                 <span class="top-rated-badge-star text-white">
                   <i class="bi bi-geo-alt-fill small me-1"></i>
                   <span class="location-text small text-white">Dubai</span>
@@ -1597,6 +1599,10 @@
               From flights to tours, Umrah to visa — Tourism offers personalized services for your ideal trip. Smart
               planning for better travel experiences.
             </p>
+            <div>
+              <button id="lightModeBtn">Light</button>
+              <button id="darkModeBtn">Dark</button>
+            </div>
           </div>
         </div>
 
@@ -1663,6 +1669,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/home-banner.js"></script>
+  <script src="js/theme-change.js"></script>
 </body>
 
 </html>

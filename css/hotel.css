@@ -1,18 +1,4 @@
-body {
-    font-family: "Rubik", sans-serif;
-    scroll-behavior: smooth;
 
-}
-
-:root {
-    --primary-colors: #000026;
-    --secondary-colors: #FB5B32;
-    --primary-lights: #F9F9FF;
-    --secondary-lights: #FFEFEB;
-    --color-white: #fff;
-    --primary-colors-low-opacity: rgba(0, 0, 38, 0.5);
-    --all-border: #E6E6E6;
-}
 
 .home-for-mobileview .offcanvas .offcanvas-body ul li a {
     color: var(--primary-colors);
