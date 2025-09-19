@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.summary-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.summary-item i {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.edit-trip-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-trip-btn:hover {
+    background-color: #0056b3;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px 0;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .summary-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .summary-item {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,310 @@
+/* Offcanvas Mobile Menu */
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
+    color: var(--primary-colors);
+}
+
+.offcanvas-icon {
+    color: var(--secondary-colors);
+}
+
+/* Offcanvas Mobile Menu */
+
+/* header & banner sec start */
+
+.header-home .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
+.header-home .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.header-home .navbar {
+    z-index: 1030;
+    top: 0;
+}
+
+/* Mobile toggle menu background and styles */
+
+.home-for-mobileview .offcanvas {
+    border-radius: 0 18px 18px 0;
+    width: 320px;
+}
+
+.home-for-mobileview .list-group-item {
+    border: none;
+    font-size: 1.1rem;
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+}
+
+.home-for-mobileview .list-group-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-lights);
+}
+
+
+
+/* header fixed */
+.header-home .navbar-scroll {
+    background-color: var(--primary-colors);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-home .navbar-scroll .nav-item .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link i {
+    color: var(--color-white);
+}
+
+
+
+
+
+.header-home .navbar-scroll.scrolled {
+    background-color: var(--primary-colors);
+    /* Change to any color */
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
+}
+
+.header-home .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
+
+/* header fixed */
+
+/* header & banner sec end */
+
+.flight-confirmation-booking .flight-confirmation-booking-head h5 {
+    color: var(--primary-colors);
+    font-size: clamp(18px, 3vw, 25px);
+}
+
+.flight-confirmation-booking .flight-info-card {
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* border: 1px solid var(--all-border); */
+}
+
+.flight-confirmation-booking .flight-info-card .flight-header {
+    padding: 20px;
+}
+
+
+
+.flight-confirmation-booking .flight-info-card .airline-details {
+    flex: 1;
+}
+
+.flight-confirmation-booking .flight-info-card .route-point {
+    text-align: center;
+    flex: 1;
+}
+
+.flight-confirmation-booking .flight-info-card .flight-time {
+    font-size: var(--font-size-heading);
+    color: var(--primary-colors);
+
+}
+
+.flight-confirmation-booking .flight-info-card .airport-code {
+    color: var(--primary-colors);
+    font-size: 16px;
+}
+
+.flight-confirmation-booking .route-middle {
+    flex: 2;
+    text-align: center;
+    position: relative;
+    margin: 0 20px;
+}
+
+.flight-confirmation-booking .flight-info-card .duration {
+    background-color: var(--secondary-lights);
+}
+
+.flight-confirmation-booking .flight-info-card .stops {
+    color: var(--secondary-colors);
+}
+
+.flight-confirmation-booking .flight-info-card .route-line {
+    height: 1px;
+    background: var(--all-border);
+    position: relative;
+
+}
+
+.flight-confirmation-booking .flight-info-card .route-line::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -3px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid var(--all-border);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+
+
+.flight-confirmation-booking .flight-info-card .extra-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--font-size-small);
+}
+
+.flight-confirmation-booking .flight-info-card .header-actions h4 {
+    color: var(--primary-colors);
+    font-size: clamp(16px, 1vw, 20px);
+}
+
+
+.flight-confirmation-booking .flight-info-card .segment-header {
+    background-color: var(--secondary-lights);
+}
+
+
+.flight-confirmation-booking .flight-info-card .segment-header .segment-time {
+    color: var(--primary-colors);
+}
+
+.flight-confirmation-booking .flight-info-card .segment-duration {
+    background-color: var(--secondary-lights);
+}
+
+
+.flight-confirmation-booking .flight-info-card .stop-indicator {
+    color: var(--primary-colors);
+}
+
+
+.flight-confirmation-booking .flight-info-card .segment-details {
+    background-color: var(--primary-lights);
+    border-radius: var(--border-radius-boxes);
+}
+
+.flight-confirmation-booking .flight-date {
+    color: var(--primary-colors);
+    border: 1px solid var(--secondary-colors);
+}
+
+.flight-confirmation-booking .payment-method h5 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
+}
+
+.flight-confirmation-booking .apply-coupon-btn {
+    border: 1px solid var(--secondary-colors);
+}
+
+.flight-confirmation-booking .apply-coupon-btn:hover {
+    border: 1px solid var(--secondary-colors);
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.flight-confirmation-booking .confirm-pay-btn {
+    background-color: var(--secondary-colors);
+}
+
+.flight-confirmation-booking .confirm-pay-btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.flight-confirmation-booking .price-summary-card h6 {
+    color: var(--primary-colors);
+    font-size: clamp(16px, 1vw, 18px);
+    color: var(--primary-colors);
+}
+
+.flight-confirmation-booking .price-summary-card a {
+    color: var(--secondary-colors);
+}
+
+.flight-confirmation-booking .check-in {
+    border: 1px solid var(--all-border);
+    border-radius: var(--border-radius-boxes);
+}
+
+.flight-confirmation-booking .price-summary {
+    border: 1px solid var(--all-border);
+    border-radius: var(--border-radius-boxes);
+}
+
+.flight-confirmation-booking .price-summary-card {
+    border: 1px solid var(--all-border);
+    border-radius: var(--border-radius-boxes);
+}
+
+.flight-confirmation-booking .price-row {
+    color: var(--primary-colors);
+}
+
+
+/* footer section start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(3, 43, 129, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+/* footer section end */

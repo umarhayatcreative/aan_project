@@ -1,0 +1,80 @@
+/* filepath: e:\Aantorism Web\New Project\Aantorism New Web\css\flight-detail.css */
+
+body {
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-colors: #000026;
+    --secondary-colors: #FB5B32;
+    --primary-lights: #F9F9FF;
+    --color-white: #fff;
+    --all-border: #E6E6E6;
+}
+
+.summary-bar {
+    background-color: var(--primary-lights);
+    padding: 1rem;
+    border-bottom: 1px solid var(--all-border);
+}
+
+.summary-bar .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    color: var(--primary-colors);
+}
+
+.summary-bar .icon i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.summary-bar .edit-trip-btn {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.summary-bar .edit-trip-btn:hover {
+    background-color: darken(var(--secondary-colors), 10%);
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.tab-content {
+    margin-top: 1rem;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .summary-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .summary-bar .icon {
+        margin-bottom: 1rem;
+    }
+}

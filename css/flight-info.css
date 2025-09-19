@@ -1,0 +1,748 @@
+/* Offcanvas Mobile Menu */
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
+    color: var(--primary-colors);
+}
+
+.offcanvas-icon {
+    color: var(--secondary-colors);
+}
+
+/* Offcanvas Mobile Menu */
+
+/* header & banner sec start */
+
+.header-home .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
+.header-home .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.header-home .navbar {
+    z-index: 1030;
+    top: 0;
+}
+
+/* Mobile toggle menu background and styles */
+
+.home-for-mobileview .offcanvas {
+    border-radius: 0 18px 18px 0;
+    width: 320px;
+}
+
+.home-for-mobileview .list-group-item {
+    border: none;
+    font-size: 1.1rem;
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+}
+
+.home-for-mobileview .list-group-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-lights);
+}
+
+
+
+/* header fixed */
+.header-home .navbar-scroll {
+    background-color: var(--primary-colors);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-home .navbar-scroll .nav-item .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link i {
+    color: var(--color-white);
+}
+
+
+
+
+
+.header-home .navbar-scroll.scrolled {
+    background-color: var(--primary-colors);
+    /* Change to any color */
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
+}
+
+.header-home .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
+
+/* header fixed */
+
+/* header & banner sec end */
+
+.form-select:focus {
+
+    outline: 0;
+    box-shadow: none;
+}
+
+.flight-info-card {
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* border: 1px solid var(--all-border); */
+}
+
+.flight-info-card .flight-header {
+    padding: 20px;
+}
+
+
+
+.flight-info-card .airline-details {
+    flex: 1;
+}
+
+.flight-info-card .route-point {
+    text-align: center;
+    flex: 1;
+}
+
+.flight-info-card .flight-time {
+    font-size: clamp(20px, 2vw, 25px);
+    color: var(--primary-colors);
+
+}
+
+.flight-info-card .airport-code {
+    color: var(--primary-colors);
+    font-size: 16px;
+}
+
+.route-middle {
+    flex: 2;
+    text-align: center;
+    position: relative;
+    margin: 0 20px;
+}
+
+.flight-info-card .duration {
+    background-color: var(--secondary-lights);
+}
+
+.flight-info-card .stops {
+    color: var(--secondary-colors);
+}
+
+.flight-info-card .route-line {
+    height: 1px;
+    background: var(--all-border);
+    position: relative;
+
+}
+
+.flight-info-card .route-line::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -3px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid var(--all-border);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+
+
+.flight-info-card .extra-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.flight-info-card .header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.flight-info-card .hide-btn {
+    background: var(--secondary-colors);
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    font-size: 14px;
+}
+
+.flight-info-card .hide-btn:hover {
+    background: var(--secondary-colors);
+}
+
+.flight-detail-btn {
+    color: var(--primary-colors);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.flight-info-card .fare-options {
+    padding: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+}
+
+.flight-info-card .fare-options.collapsed {
+    display: none !important;
+}
+
+.flight-info-card .fare-options.expanded {
+    /* max-height: 600px; */
+    opacity: 1;
+}
+
+
+.flight-info-card .header-actions .change-btn {
+    border: 1px solid var(--secondary-colors);
+    color: var(--primary-colors);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+
+}
+
+.flight-info-card .segment-header {
+    background-color: var(--secondary-lights);
+}
+
+.flight-info-card .segment-header .total-time {}
+
+.flight-info-card .segment-header .segment-time {
+    color: var(--primary-colors);
+}
+
+.flight-info-card .segment-duration {
+    background-color: var(--secondary-lights);
+}
+
+
+.flight-info-card .stop-indicator {
+    color: var(--primary-colors);
+}
+
+
+.flight-info-card  .segment-details {
+    background-color: var(--primary-lights);
+    border-radius: var(--border-radius-boxes);
+}
+
+.flight-info-details-btn {
+    color: var(--secondary-colors);
+}
+
+.flight-info-card .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.flight-info-card .collapse-content.show {
+    max-height: 1000px;
+}
+
+.flight-info .flight-info-heading {
+    color: var(--primary-colors);
+    font-size: clamp(22px, 5vw, 30px);
+}
+
+.flight-info .price-summary-card {
+    background-color: var(--primary-colors);
+    border-radius: var(--border-radius-boxes);
+    border: 1px solid var(--all-border);
+}
+
+.flight-info .price-summary-card h5 {
+    color: var(--primary-colors);
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+.flight-info .price-summary-card .airline-name {
+    color: var(--primary-colors);
+}
+
+.flight-info .price-summary-card .border-card {
+    border: 1px solid var(--all-border);
+
+}
+
+.flight-info .price-summary-card .total-price {
+    color: var(--primary-colors);
+}
+
+
+.flight-info .back-next-btn .back {
+    border: 1px solid var(--all-border);
+}
+
+.flight-info .back-next-btn .continue {
+    background-color: var(--secondary-colors);
+}
+
+/* baggage css */
+.flight-baggage {
+    border-radius: var(--border-radius-boxes);
+}
+
+.flight-baggage .flight-row {
+    border: 1px solid var(--all-border);
+    border-radius: var(--border-radius-boxes);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.flight-baggage .baggage-counter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* .flight-baggage .baggage-selector {
+    min-width: 200px;
+} */
+
+.flight-baggage .baggage-dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    /* remove background image if any */
+    padding-right: 1rem;
+    /* adjust spacing after removing arrow */
+}
+
+.flight-baggage .baggage-dropdown {
+    border: 1px solid var(--all-border);
+    border-radius: 1.5rem;
+    color: var(--secondary-colors);
+    cursor: pointer;
+
+}
+
+.flight-baggage .baggage-dropdown:focus {
+    outline: none;
+}
+
+
+.flight-baggage .baggage-dropdown option {
+    padding: 0.5rem;
+    color: var(--primary-colors);
+}
+
+.flight-baggage .baggage-dropdown option:checked {
+    background: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.flight-baggage .included-badge {
+    color: var(--primary-colors);
+    border-radius: 0.375rem;
+    background-color: var(--secondary-lights);
+}
+
+.flight-baggage .baggage-title {
+    font-size: clamp(20px, 2vw, 25px);
+    color: var(--primary-colors);
+}
+
+.flight-baggage .pessenger-name {
+    color: var(--primary-colors);
+}
+
+/* baggage css */
+
+
+/* seat selection start */
+
+.flight-seat-selection .main-content {
+    padding: 40px 0;
+}
+
+.flight-seat-selection .booking-card {
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.flight-seat-selection .seat-selection-btn i {
+    margin-right: 8px;
+}
+
+/* Modal Styles */
+.flight-seat-selection .modal-content {
+    border: none;
+    border-radius: 16px;
+
+}
+
+.flight-seat-selection .modal-header {
+    border-bottom: 1px solid var(--all-border);
+    padding: 20px 30px;
+    background: var(--primary-lights);
+    border-radius: 16px 16px 0 0;
+}
+
+.flight-seat-selection .modal-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.flight-seat-selection .modal-body {
+    padding: 30px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.flight-seat-selection .seat-selection-container {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.flight-seat-selection .flight-route {
+
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    text-align: center;
+}
+
+.flight-seat-selection .passenger-section {
+    margin-bottom: 24px;
+}
+
+.flight-seat-selection .passenger-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--primary-lights);
+}
+
+.flight-seat-selection .passenger-item.selected {
+    background-color: var(--secondary-lights);
+
+}
+
+.flight-seat-selection .passenger-number {
+    background-color: var(--secondary-colors);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flight-seat-selection .seat-map-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.flight-seat-selection .seat-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+
+.flight-seat-selection .row-number {
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--primary-colors);
+    font-weight: 500;
+}
+
+.flight-seat-selection .seat {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.flight-seat-selection .seat.available {
+    background-color: var(--secondary-colors);
+}
+
+.flight-seat-selection .seat.reserved {
+    background-color: var(--primary-colors-low-opacity);
+    cursor: not-allowed;
+}
+
+.flight-seat-selection .seat.extra-legroom {
+    background-color: var(--secondary-colors);
+    position: relative;
+}
+
+.flight-seat-selection .seat.extra-legroom::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.flight-seat-selection .seat.not-available {
+    background-color: var(--secondary-lights);
+    cursor: not-allowed;
+}
+
+.flight-seat-selection .seat.selected {
+    background-color: var(--primary-colors);
+    border-color: var(--primary-colors);
+
+}
+
+.flight-seat-selection .seat:hover:not(.reserved):not(.not-available) {
+    transform: scale(1.1);
+}
+
+.flight-seat-selection .seat-letter {
+    width: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--primary-colors);
+    font-weight: 500;
+}
+
+.flight-seat-selection .aisle-gap {
+    width: 16px;
+}
+
+.flight-seat-selection .legend {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: var(--primary-lights);
+    border-radius: 8px;
+}
+
+.flight-seat-selection .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.flight-seat-selection .legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.flight-seat-selection .legend-color.preferred {
+    background-color: var(--secondary-colors);
+}
+
+.flight-seat-selection .legend-color.reserved {
+    background-color: var(--primary-colors);
+}
+
+.flight-seat-selection .legend-color.extra-legroom {
+    background-color: var(--secondary-colors);
+    position: relative;
+}
+
+.flight-seat-selection .legend-color.extra-legroom::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.flight-seat-selection .legend-color.not-available {
+    background-color: var(--secondary-lights);
+}
+
+.flight-seat-selection .aircraft-outline {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+.flight-seat-selection .seat-headers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+
+/* Tab styles */
+.flight-seat-selection .flight-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--all-border);
+    margin-bottom: 20px;
+}
+
+.flight-seat-selection .flight-tab {
+    padding: 10px 16px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    transition: all 0.2s;
+    flex: 1;
+    text-align: center;
+}
+
+.flight-seat-selection .flight-tab.active {
+    color: var(--secondary-colors);
+    border-bottom-color: var(--secondary-colors);
+}
+
+.flight-seat-selection .flight-tab:hover:not(.active) {
+    color: var(--primary-colors);
+    border-bottom-color: var(--all-border);
+}
+
+.flight-seat-selection .flight-segment {
+    display: none;
+}
+
+.flight-seat-selection .flight-segment.active {
+    display: block;
+}
+
+.flight-seat-selection .modal-footer {
+    padding: 20px 30px;
+    border-top: 1px solid var(--all-border);
+}
+
+.flight-seat-selection .btn-confirm {
+    background: var(--secondary-colors);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.flight-seat-selection .btn-confirm:hover {
+    transform: translateY(-1px);
+}
+
+.seat-selection .seat-selection-heading {
+    color: var(--primary-colors);
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+.seat-selection {
+    border-radius: var(--border-radius-boxes);
+}
+
+.seat-selection  .seat-selection-btn{
+    background-color: var(--secondary-colors);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .flight-seat-selection .modal-xl {
+        max-width: 100% !important;
+        margin: 0;
+    }
+
+    .flight-seat-selection .modal-body {
+        padding: 20px;
+    }
+
+    .flight-seat-selection .seat-map-container {
+        max-width: 100%;
+    }
+
+    .flight-seat-selection .seat {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Seat selection end */
+
+
+/* footer section start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(3, 43, 129, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+/* footer section end */

@@ -1,0 +1,174 @@
+/* Offcanvas Mobile Menu */
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
+    color: var(--primary-colors);
+}
+
+.offcanvas-icon {
+    color: var(--secondary-colors);
+}
+
+/* Offcanvas Mobile Menu */
+
+/* header & banner sec start */
+
+.header-home .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.header-home .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.header-home .navbar {
+    z-index: 1030;
+    top: 0;
+}
+
+/* Mobile toggle menu background and styles */
+
+.home-for-mobileview .offcanvas {
+    border-radius: 0 18px 18px 0;
+    width: 320px;
+}
+
+.home-for-mobileview .list-group-item {
+    border: none;
+    font-size: 1.1rem;
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+}
+
+.home-for-mobileview .list-group-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-lights);
+}
+
+
+
+/* header fixed */
+.header-home .navbar-scroll {
+    background-color: var(--primary-colors);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-home .navbar-scroll .nav-item .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link i {
+    color: var(--color-white);
+}
+
+
+
+
+
+.header-home .navbar-scroll.scrolled {
+    background-color: var(--primary-colors);
+    /* Change to any color */
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
+}
+
+.header-home .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
+
+/* header fixed */
+/* header section end */
+.visa-user-detail {
+    margin-top: 50px;
+}
+
+.user-detail-head {
+    background-color: var(--secondary-lights);
+}
+
+.user-detail-head h3 {
+    color: var(--primary-colors);
+}
+
+.visa-user-detail-form-head {
+    background-color: var(--primary-lights);
+}
+
+.visa-user-detail-form-head h5 {
+    color: var(--primary-colors);
+}
+
+.visa-user-detail-form .form-select:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
+}
+
+.visa-user-detail-form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
+}
+
+.visa-user-detail .confirm-btn {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+
+
+/* footer section start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer section end */

@@ -1,0 +1,318 @@
+/* Offcanvas Mobile Menu */
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
+    color: var(--primary-colors);
+}
+
+.offcanvas-icon {
+    color: var(--secondary-colors);
+}
+
+/* Offcanvas Mobile Menu */
+
+/* header & banner sec start */
+
+.header-home .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
+.header-home .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.header-home .navbar {
+    z-index: 1030;
+    top: 0;
+}
+
+/* Mobile toggle menu background and styles */
+
+.home-for-mobileview .offcanvas {
+    border-radius: 0 18px 18px 0;
+    width: 320px;
+}
+
+.home-for-mobileview .list-group-item {
+    border: none;
+    font-size: 1.1rem;
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+}
+
+.home-for-mobileview .list-group-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-lights);
+}
+
+
+
+/* header fixed */
+.header-home .navbar-scroll {
+    background-color: var(--primary-colors);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-home .navbar-scroll .nav-item .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll .nav-item .nav-link i {
+    color: var(--color-white);
+}
+
+
+
+
+
+.header-home .navbar-scroll.scrolled {
+    background-color: var(--primary-colors);
+    /* Change to any color */
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light {
+    color: var(--color-white);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
+}
+
+.header-home .nav-link {
+    color: var(--color-white);
+}
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
+
+/* header fixed */
+
+/* header & banner sec end */
+
+.form-select:focus {
+
+    outline: 0;
+    box-shadow: none;
+}
+
+.hotel-input-sec {
+    background-color: var(--primary-lights);
+    margin-top: 70px;
+}
+
+.hotel-input-sec .hotel-input-group .hotel-search-btn {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.hotel-input-sec .btn-infants-add-remove {
+    width: 30px;
+    height: 30px;
+}
+
+
+.hotel-input-sec .add-guest-btn {
+    background-color: var(--secondary-colors);
+}
+
+.hotel-input-sec .add-guest-btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.hotel-card-custom {
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--all-border);
+    cursor: pointer;
+}
+
+/* .combo-list .combo-hotel-tour-card:hover {
+    transform: translateY(-5px);
+}  */
+
+.hotel-card-custom .btn {
+    background-color: var(--secondary-colors);
+
+}
+
+.hotel-card-custom .btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.hotel-card-custom .tour-image {
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.hotel-card-custom .top-rated-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--secondary-colors);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.hotel-card-custom .rating-stars {
+    color: var(--secondary-colors);
+    font-size: 13px;
+}
+
+.hotel-card-custom .price-current {
+    font-weight: 700;
+    color: var(--primary-colors);
+    font-size: 1.1rem;
+}
+
+.hotel-card-custom .hotel-card-title {
+    font-size: clamp(16px, 1.5vw, 18px);
+    color: var(--primary-colors);
+}
+
+.hotel-card-custom .price-original {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.top-rated-hotel .top-rated-hotel-heading h3 {
+    color: var(--primary-colors);
+    font-size: clamp(24px, 5vw, 28px);
+}
+
+.top-rated-tour-sec .top-rated-tour-sec-heading h3 {
+    color: var(--primary-colors);
+    font-size: clamp(24px, 5vw, 28px);
+}
+
+.top-rated-tour-sec {
+    background-color: var(--primary-lights);
+}
+
+.top-rated-tour-sec .hotel-tour-card {
+    border: 1px solid var(--all-border);
+    border-radius: var(--border-radius-boxes);
+}
+
+.top-rated-tour-sec .hotel-tour-card .btn {
+    background-color: var(--secondary-colors);
+    height: 40px;
+}
+
+.top-rated-tour-sec .tour-image {
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.top-rated-tour-sec .top-rated-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--primary-colors-low-opacity);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.top-rated-tour-sec .rating-stars {
+    color: var(--secondary-colors);
+    font-size: 14px;
+}
+
+.top-rated-tour-sec .price-current {
+    font-weight: 700;
+    color: var(--primary-colors);
+    font-size: 1.1rem;
+}
+
+.activity-card-title {
+    font-size: 16px;
+    color: var(--primary-colors);
+}
+
+.top-rated-tour-sec .price-original {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+/* footer section start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+/* footer section end */
+
+
+/* for all date picker */
+.flatpickr-day.selected {
+    background: var(--secondary-colors) !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: var(--color-white);
+    border-color: var(--secondary-colors) !important;
+}
+
+/* for all date picker */

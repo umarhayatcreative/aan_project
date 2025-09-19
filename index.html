@@ -1,0 +1,1753 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AAN Tourism</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/theme-variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body>
+  <!-- header & banner sec start -->
+  <section class="header-home">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg position-fixed w-100 navbar-scroll p-0">
+      <div class="container d-flex align-items-center py-3 flex-nowrap">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold me-4 flex-shrink-0 text-white" href="#">Logo</a>
+
+        <!-- Menu Items (centered on large screens) -->
+        <div class="collapse navbar-collapse justify-content-center flex-grow-1" id="mainMenu">
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
+            <li class="nav-item"><a class="nav-link" href="/flight.html">Flight</a></li>
+            <li class="nav-item"><a class="nav-link" href="/hotel.html">Hotel</a></li>
+            <li class="nav-item"><a class="nav-link" href="/activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="/combo-tour.html">Combo Tours</a></li>
+            <li class="nav-item"><a class="nav-link" href="/packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="/umrah.html">Umrah</a></li>
+            <li class="nav-item"><a class="nav-link" href="/visa.html">Visa</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side: Contact Us, Log in, Cart -->
+        <div class="d-flex align-items-center ms-auto flex-shrink-0">
+          <div class="d-none d-lg-flex align-items-center gap-2">
+            <a href="/contact-us.html" class="nav-link me-2">Contact Us</a>
+            <a href="#" class="btn btn-outline-light py-1 px-3 me-2" data-bs-toggle="modal"
+              data-bs-target="#loginModal">Log in</a>
+          </div>
+          <!-- Cart icon always visible -->
+          <!-- <a href="#" class="nav-link fs-5 d-flex align-items-center ms-2" id="cartIcon"><i
+              class="bi bi-cart"></i></a> -->
+
+          <div class="position-relative add-to-cart">
+            <a href="#" class="cart-toggle-btn nav-link fs-5 d-flex align-items-center ms-2" role="button">
+              <i class="bi bi-cart"></i>
+            </a>
+
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown bg-white shadow-sm rounded d-none">
+              <div class="d-flex justify-content-between align-items-center p-3 border-bottom rounded-top">
+                <h5 class="mb-0 text-dark">Checkout</h5>
+                <button type="button" class="btn-close dropdown-close-btn" aria-label="Close"></button>
+              </div>
+
+              <!-- Cart Content -->
+              <div class="cart-dropdown-content p-3">
+                <div class="cart-items-list mb-3">
+
+                  <!-- Item 1 -->
+                  <div class="cart-item-card card mb-3">
+                    <div class="card-body p-3">
+                      <div class="row g-2">
+                        <div class="col-3">
+                          <img src="img/activity1.png" class="img-fluid rounded" alt="Tour Thumbnail">
+                        </div>
+                        <div class="col-9">
+                          <div class="d-flex justify-content-between align-items-start">
+                            <h6 class="card-title fw-bold mb-1">Wildwadi waterpark tickets</h6>
+                            <button class="btn btn-sm btn-link text-danger p-0 ms-2" type="button">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
+                          <p class="text-muted small mb-1">Without Transfers 23/10/2025</p>
+                          <p class="card-text fw-bold text-end mb-0">AED 190.33</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 2 -->
+                  <div class="cart-item-card card mb-3 ">
+                    <div class="card-body p-3">
+                      <div class="row g-2">
+                        <div class="col-3">
+                          <img src="img/activity2.png" class="img-fluid rounded" alt="Hotel Thumbnail">
+                        </div>
+                        <div class="col-9">
+                          <div class="d-flex justify-content-between align-items-start">
+                            <h6 class="card-title fw-bold mb-1">Hotel Garni Tiffani</h6>
+                            <button class="btn btn-sm btn-link text-danger p-0 ms-2" type="button">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
+                          <p class="text-muted small mb-1">Standard Single Room, 1 Twin Bed</p>
+                          <p class="card-text fw-bold text-end mb-0">AED 824.48</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item 3 -->
+                  <div class="cart-item-card card mb-3 ">
+                    <div class="card-body p-3">
+                      <div class="row g-2 ">
+                        <div class="col-3">
+                          <img src="img/activity3.png" class="img-fluid rounded" alt="Visa Thumbnail">
+                        </div>
+                        <div class="col-9">
+                          <div class="d-flex justify-content-between align-items-start">
+                            <h6 class="card-title fw-bold mb-1">Malaysia E-Visa</h6>
+                            <button class="btn btn-sm btn-link text-danger p-0 ms-2" type="button">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
+                          <p class="text-muted small mb-1">Visa Type: eNTRI, 1 Person</p>
+                          <p class="card-text fw-bold text-end mb-0">AED 133.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Divider -->
+                <hr class="text-muted my-3">
+
+                <!-- Total Section -->
+                <div class="total-section">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0 fs-5 fw-bold text-dark">Total:</p>
+                    <p class="mb-0 fs-5 fw-bold text-dark">AED 1,147.81</p>
+                  </div>
+                  <a class="btn checkout-btn-cart w-100">Proceed to Checkout</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Toggler (hamburger icon) for mobile -->
+          <button class="navbar-toggler ms-2 border-white d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon border-white"> <i class="bi bi-list text-white"></i></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="home-for-mobileview">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="/flight.html" class="text-decoration-none"><i
+                class="bi bi-airplane me-2 offcanvas-icon"></i>Flight</a></li>
+          <li class="list-group-item"><a href="/hotel.html" class="text-decoration-none"><i
+                class="bi bi-bank me-2 offcanvas-icon"></i>Hotel</a></li>
+          <li class="list-group-item"><a href="/activities.html" class="text-decoration-none"><i
+                class="bi bi-camera me-2 offcanvas-icon"></i>Activities</a></li>
+          <li class="list-group-item"><a href="/combo-tour.html" class="text-decoration-none"><i
+                class="bi bi-box me-2 offcanvas-icon"></i>Combo Tour</a></li>
+          <li class="list-group-item"><a href="/packages.html" class="text-decoration-none"><i
+                class="bi bi-boxes me-2 offcanvas-icon"></i>Packages</a></li>
+          <li class="list-group-item"><a href="/umrah.html" class="text-decoration-none"><i
+                class="bi bi-box me-2 offcanvas-icon"></i>Umrah</a></li>
+          <li class="list-group-item"><a href="/visa.html" class="text-decoration-none"><i
+                class="bi bi-grid me-2 offcanvas-icon"></i>Visa</a></li>
+          <li class="list-group-item"><a href="/contact-us.html" class="text-decoration-none"><i
+                class="bi bi-telephone me-2 offcanvas-icon"></i>Contact Us</a></li>
+          <li class="list-group-item me-2"><a href="" class="text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#loginModal"><i class="bi bi-person me-2 offcanvas-icon"></i>Log In</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero-section-home">
+    <div class="hero-overlay"></div>
+    <div class="container h-100 p-0">
+      <div class="hero-content-banner py-lg-5 py-md-3 py-sm-2">
+        <h1 class=" fw-bold text-white">Your Adventure Starts Now</h1>
+        <!-- tabs for home banner search br start -->
+        <div class="nav-tabs-scroll">
+          <ul class="nav nav-tabs border-0 d-flex my-3 pb-1" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button"
+                role="tab" aria-selected="false"><i class="fa-solid fa-hotel"></i> Hotel</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="flight-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button"
+                role="tab" aria-selected="true"><i class="fa-solid fa-plane"></i> Flight</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="activities-tab" data-bs-toggle="tab" data-bs-target="#activities"
+                type="button" role="tab" aria-selected="false"><i class="fa-solid fa-person-hiking"></i>
+                Activities</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="visa-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button"
+                role="tab" aria-selected="false"><i class="fa-solid fa-id-card"></i> Visa</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tours-tab" data-bs-toggle="tab" data-bs-target="#tours" type="button"
+                role="tab" aria-selected="false"><i class="fa-solid fa-suitcase"></i> Tours</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="packages-tab" data-bs-toggle="tab" data-bs-target="#packages" type="button"
+                role="tab" aria-selected="false"><i class="fa-solid fa-box"></i> Packages</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="umrah-tab" data-bs-toggle="tab" data-bs-target="#umrah" type="button"
+                role="tab" aria-selected="false"><i class="fa-solid fa-kaaba"></i> Umrah</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Tab Content -->
+        <div class="tab-content pt-2" id="myTabContent">
+          <!-- Hotel -->
+          <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+            <section class="hotel-input-sec px-2 py-4 bg-white">
+              <div class="container">
+                <div class="row g-2">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">Malaysia</option>
+                          <option value="2">Azerbaijan</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Visa For</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-2 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">India</option>
+                          <option value="2">Bangladesh</option>
+                          <option value="3">Sri Lanka</option>
+                        </select>
+                        <label for="floatingSelect">Select Nationality</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-3 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating ">
+                        <input type="text" class="form-control fw-semibold" id="returnRange"
+                          placeholder="Select Date Range" readonly>
+                        <label for="returnRange">Select Date Range</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6">
+                    <div class="hotel-input-group">
+                      <div class="form-floating">
+                        <button class="form-select border-light-subtle d-flex align-items-center gap-2 fw-semibold"
+                          id="guestRoomBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span>2 Adults, 0 Children - 1 Room</span>
+                        </button>
+                        <label for="guestRoomBtn" class="text-secondary">Guests & Rooms</label>
+                        <div class="dropdown-menu w-100 shadow-sm border-light p-3 text-nowrap" id="guestRoomDropdown"
+                          data-bs-auto-close="outside">
+                          <!-- Room 1 -->
+                          <div class="room-container mb-3" id="room1">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h6 class="mb-0 fw-medium">Room 1</h6>
+                            </div>
+                            <div class="mb-3">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary">Adults</span>
+                                <div class="d-flex align-items-center">
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('adults', 'decrease', 1)">-</button>
+                                  <span class="mx-3 fw-medium adults-count">2</span>
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('adults', 'increase', 1)">+</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-secondary">Children</span>
+                                <div class="d-flex align-items-center">
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('children', 'decrease', 1)">-</button>
+                                  <span class="mx-3 fw-medium children-count">0</span>
+                                  <button type="button"
+                                    class="btn btn-infants-add-remove btn-outline-secondary rounded-circle btn-sm px-2"
+                                    onclick="event.stopPropagation(); updateGuests('children', 'increase', 1)">+</button>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Children ages section -->
+                            <div id="childrenAgesSection1" class="d-none">
+                              <div class="mb-2">
+                                <div class="d-flex align-items-center">
+                                  <span class="text-secondary">Age of Children</span>
+                                  <i class="fas fa-info-circle ms-1 text-secondary" data-bs-toggle="tooltip"
+                                    title="Please select the age of each child"></i>
+                                </div>
+                              </div>
+                              <div class="row g-2" id="childrenAges1">
+                                <!-- Age dropdowns will be inserted here -->
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Room container for additional rooms -->
+                          <div id="additionalRooms"></div>
+
+                          <!-- Room controls -->
+                          <div class="d-flex justify-content-between mt-3">
+                            <button type="button" class="btn btn-outline-secondary"
+                              onclick="event.stopPropagation(); addRoom()" id="addRoomBtn">+ Add Room</button>
+                            <button type="button" class="btn btn-outline-secondary d-none"
+                              onclick="event.stopPropagation(); removeRoom()" id="removeRoomBtn">- Remove
+                              Room</button>
+                          </div>
+
+                          <!-- Done button always at the bottom -->
+                          <button type="button" class="btn add-guest-btn w-100 text-white mt-3"
+                            onclick="applyGuestRoom()">Done</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-1">
+                    <div class="hotel-input-group h-100">
+                      <a href="/hotel.html"
+                        class="btn hotel-search-btn w-100 h-100 d-flex align-items-center justify-content-center">Search</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+
+          </div>
+
+          <!-- Flight -->
+          <div class="tab-pane fade" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+            <section class="flight-input-sec bg-white px-2 py-4">
+              <div class="container">
+                <div class="flight-form-container bg-white p-3">
+                  <!-- Trip Type Radio Buttons -->
+                  <div class="flight-trip-type-container d-flex gap-2 mb-4 flex-wrap
+                ">
+                    <div class="trip-type-option me-2">
+                      <input type="radio" id="roundtrip-radio" name="tripType" value="roundtrip" checked>
+                      <label for="roundtrip-radio" class="text-nowrap">Round Way</label>
+                    </div>
+                    <div class="trip-type-option me-2">
+                      <input type="radio" id="oneway-radio" name="tripType" value="oneway">
+                      <label for="oneway-radio" class="text-nowrap">One Way</label>
+                    </div>
+                    <div class="trip-type-option me-2">
+                      <input type="radio" id="multicity-radio" name="tripType" value="multicity">
+                      <label for="multicity-radio" class="text-nowrap">Multi City</label>
+                    </div>
+                  </div>
+
+                  <form id="flightBookingForm">
+                    <!-- Round Trip & One Way Form -->
+                    <div id="standard-form" class="flight-trip-content">
+                      <div class="row g-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                          <div class="form-floating">
+                            <input type="text" class="form-control fw-semibold" id="departure-city"
+                              placeholder="Leaving from" value="Lahore, Pakistan">
+                            <label for="departure-city">Leaving from</label>
+                            <div class="city-suggestions-menu bg-white" id="departure-city-suggestions">
+                              <ul></ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                          <div class="form-floating">
+                            <input type="text" class="form-control fw-semibold" id="arrival-city"
+                              placeholder="Going to">
+                            <label for="arrival-city">Going to</label>
+                            <div class="city-suggestions-menu bg-white" id="arrival-city-suggestions">
+                              <ul></ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3" id="date-field-container">
+                          <div class="form-floating">
+                            <input type="text" class="form-control date-range-input fw-semibold" id="date-range"
+                              placeholder="Jul 23    Jul 25 2025" readonly>
+                            <label for="date-range" id="date-label">Depart , Return</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                          <div class="travelers-dropdown">
+                            <div class="form-floating">
+                              <input type="text" class="form-control travelers-toggle fw-semibold"
+                                id="travelers-display" placeholder="Travelers & Class" readonly
+                                value="1 Adults Economy">
+                              <label for="travelers-display">Travelers & Class</label>
+                            </div>
+                            <div class="travelers-menu" id="travelers-menu">
+                              <div class="traveler-row text-muted">
+                                <span>Adults</span>
+                                <div class="traveler-controls">
+                                  <button type="button" class="counter-btn">-</button>
+                                  <span class="counter-value" id="adults-count">1</span>
+                                  <button type="button" class="counter-btn">+</button>
+                                </div>
+                              </div>
+                              <div class="traveler-row">
+                                <span>Children</span>
+                                <div class="traveler-controls">
+                                  <button type="button" class="counter-btn">-</button>
+                                  <span class="counter-value" id="children-count">0</span>
+                                  <button type="button" class="counter-btn">+</button>
+                                </div>
+                              </div>
+                              <div class="traveler-row">
+                                <span>Infants</span>
+                                <div class="traveler-controls">
+                                  <button type="button" class="counter-btn">-</button>
+                                  <span class="counter-value" id="infants-count">0</span>
+                                  <button type="button" class="counter-btn">+</button>
+                                </div>
+                              </div>
+                              <div class="class-options">
+                                <div class="class-option">
+                                  <input type="radio" id="economy" name="class" value="economy" checked>
+                                  <label for="economy">Economy</label>
+                                </div>
+                                <div class="class-option">
+                                  <input type="radio" id="business" name="class" value="business">
+                                  <label for="business">Business Class</label>
+                                </div>
+                                <div class="class-option">
+                                  <input type="radio" id="first" name="class" value="first">
+                                  <label for="first">First Class</label>
+                                </div>
+                              </div>
+                              <button type="button" class="apply-btn text-white">Apply</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3 ms-auto">
+                          <div class="d-flex align-items-center justify-content-end">
+                            <a type="submit" href="/flight-detail.html"
+                              class="btn flight-search-btn w-100 py-3 d-flex align-items-center justify-content-center text-white">Search</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Multi City Form -->
+                    <div id="multicity-form" class="flight-trip-content" style="display: none;">
+                      <div id="multicity-rows"></div>
+                      <div class="row mt-2 g-2" id="multicity-actions-row">
+                        <div class="col-md-6 col-lg-9 col-xl-9 d-flex justify-content-start">
+                          <button type="button" class="add-flight-btn w-100" id="add-multicity-flight-btn">
+                            <i class="bi bi-plus"></i> Add another flight
+                          </button>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-end">
+                          <a href="/flight-detail.html" type="submit"
+                            class="btn flight-search-btn px-5 py-3 text-white w-100">Search</a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+
+          <!-- Activities -->
+          <div class="tab-pane fade" id="activities" role="tabpanel" aria-labelledby="activities-tab">
+            <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search Activities" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+
+          <!-- Visa -->
+          <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="visa-tab">
+            <section class="visa-input-sec px-2 py-4 bg-white">
+              <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-2">
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">Malaysia</option>
+                          <option value="2">Azerbaijan</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Visa For</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>United Arab Emirates</option>
+                          <option value="1">United Kingdom</option>
+                        </select>
+                        <label for="floatingSelect">Select Living</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <div class="form-floating">
+                        <select class="form-select fw-semibold" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option selected>Pakistan</option>
+                          <option value="1">India</option>
+                          <option value="2">Bangladesh</option>
+                          <option value="3">Sri Lanka</option>
+                        </select>
+                        <label for="floatingSelect">Select Nationality</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group">
+                      <form class="form-floating flotingg w-100 date-picker-container">
+                        <input class="form-control fw-semibold" type="text" id="checkInDate" placeholder="Check In"
+                          readonly="readonly">
+                        <label for="checkInDate">Check In</label>
+                      </form>
+
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="visa-input-group h-100">
+                      <a href="/visa-detail.html"
+                        class="btn visa-search-btn w-100 h-100 d-flex align-items-center justify-content-center">Search</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+          </div>
+
+          <!-- Tours -->
+          <div class="tab-pane fade" id="tours" role="tabpanel" aria-labelledby="tours-tab">
+            <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search World Tours" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+
+          <!-- Packages -->
+          <div class="tab-pane fade" id="packages" role="tabpanel" aria-labelledby="packages-tab">
+            <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search Packages" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+
+          <!-- Umrah -->
+          <div class="tab-pane fade" id="umrah" role="tabpanel" aria-labelledby="umrah-tab">
+            <div class="search-box bg-white">
+              <input type="text" class="form-control" placeholder="Search Umrah Packages" />
+              <button class="btn btn-search">Search</button>
+            </div>
+          </div>
+        </div>
+        <!-- tabs for home banner search br end -->
+
+      </div>
+    </div>
+  </section>
+  <!-- header & banner sec end -->
+
+  <!-- home ads section start  -->
+  <section class="home-ads py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="home-ads-card text-white h-100">
+            <div class="d-flex flex-wrap">
+              <div class=" d-flex flex-column align-items-start justify-content-center p-3">
+                <h5 class="fw-bold">Skip the search, start the fun</h5>
+                <p class="mb-2">400,000+ activities ready for you to explore.</p>
+                <button class="btn text-white p-0">Read More</button>
+              </div>
+              <div class="d-flex justify-content-center align-items-center ms-auto mt-auto ads-small-pic">
+                <img class="img-fluid w-100 m-3 pt-1" src="img/home-add-img2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="home-ads-card position-relative overflow-hidden d-flex align-items-center justify-content-center">
+            <img class="img-fluid object-fit-cover home-ads-img" src="img/home-add-img.png" alt="">
+
+            <div
+              class="card-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4">
+              <span class="text-white fs-6">Dream Holiday Homes</span>
+              <h5 class="text-white fw-bold mb-2">Experience the joy of holiday living</h5>
+              <p class="text-white mb-3">Live luxuriously â€“ villas, chalets, and elegant escapes</p>
+              <button class="btn ads-btn text-white btn-sm">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- home ads section end  -->
+
+  <!-- world top cities sec start -->
+  <section class="world-top-cities py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="world-top-head d-flex align-items-center mb-2 flex-wrap">
+            <h2 class="m-0">World Top Cities</h2>
+            <a href="" class="text-decoration-none ms-auto ">Explore More <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <!-- Card 1 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="card-box position-relative rounded-4 overflow-hidden cities-card">
+            <img src="img/Dubai-home.jpg" class="img-fluid" alt="Sharjah" />
+            <a href="#" class="btn btn-orange position-absolute translate-middle-x mb-3 fw-medium">View Detail</a>
+            <div class="cities-image-overlay-gradient position-absolute bottom-0 start-0 w-100 h-100"></div>
+          </div>
+          <h4 class="fw-bold text-center mt-3 w-100">Dubai City</h4>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="card-box position-relative rounded-4 overflow-hidden cities-card">
+            <img src="img/Sharjah-home.jpg" class="img-fluid" alt="Sharjah" />
+            <a href="#" class="btn btn-orange position-absolute translate-middle-x mb-3 fw-medium">View Detail</a>
+            <div class="cities-image-overlay-gradient position-absolute bottom-0 start-0 w-100 h-100"></div>
+          </div>
+          <h4 class="fw-bold text-center mt-3">Sharjah</h4>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="card-box position-relative rounded-4 overflow-hidden cities-card">
+            <img src="img/Japan-home.jpg" class="img-fluid" alt="Sharjah" />
+            <a href="#" class="btn btn-orange position-absolute translate-middle-x mb-3 fw-medium">View Detail</a>
+            <div class="cities-image-overlay-gradient position-absolute bottom-0 start-0 w-100 h-100"></div>
+          </div>
+          <h4 class="fw-bold text-center mt-3">Japan</h4>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="card-box position-relative rounded-4 overflow-hidden cities-card">
+            <img src="img/London-home.jpg" class="img-fluid" alt="Sharjah" />
+            <a href="#" class="btn btn-orange position-absolute translate-middle-x mb-3 fw-medium">View Detail</a>
+            <div class="cities-image-overlay-gradient position-absolute bottom-0 start-0 w-100 h-100"></div>
+          </div>
+          <h4 class="fw-bold text-center mt-3">London</h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- world top cities sec end -->
+  <!-- high rated hotel sec start -->
+
+  <section class="top-rated-hotel p-2 p-md-4 p-xl-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="top-rated-hotel-heading mb-3">
+            <h3 class="fw-bold">High Rated Hotels</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="owl-carousel card-slider">
+        <div class="card hotel-card-custom">
+          <a href="/hotel.html" class="text-decoration-none text-dark">
+            <div class="position-relative">
+              <img src="img/hotel-aa.webp" class="card-img-top tour-image" alt="Desert Safari">
+              <span class="top-rated-badge text-white small">Top Rated</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                  <small class="location-text text-muted">Lahore</small>
+                </div>
+                <span class="rating-stars ms-auto">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+              </div>
+              <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+                Lahore</h5>
+              <div class="d-flex mb-2">
+
+              </div>
+              <div class="mt-auto">
+                <div class="">
+                  <div class="ms-auto">
+                    <span class="text-muted small me-1">From</span>
+                    <span class="price-current">AED 270.24</span>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card hotel-card-custom">
+          <a href="/hotel.html" class="text-decoration-none text-dark">
+            <div class="position-relative">
+              <img src="img/hotel-bb.webp" class="card-img-top tour-image" alt="Desert Safari">
+              <span class="top-rated-badge text-white small">Top Rated</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                  <small class="location-text text-muted">Lahore</small>
+                </div>
+                <span class="rating-stars ms-auto">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+              </div>
+              <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+                Lahore</h5>
+              <div class="d-flex mb-2">
+
+              </div>
+              <div class="mt-auto">
+                <div class="">
+                  <div class="ms-auto">
+                    <span class="text-muted small me-1">From</span>
+                    <span class="price-current">AED 270.24</span>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card hotel-card-custom">
+          <a href="/hotel.html" class="text-decoration-none text-dark">
+            <div class="position-relative">
+              <img src="img/hotel-cc.webp" class="card-img-top tour-image" alt="Desert Safari">
+              <span class="top-rated-badge text-white small">Top Rated</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                  <small class="location-text text-muted">Lahore</small>
+                </div>
+                <span class="rating-stars ms-auto">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+              </div>
+              <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+                Lahore</h5>
+              <div class="d-flex mb-2">
+
+              </div>
+              <div class="mt-auto">
+                <div class="">
+                  <div class="ms-auto">
+                    <span class="text-muted small me-1">From</span>
+                    <span class="price-current">AED 270.24</span>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card hotel-card-custom">
+          <a href="/hotel.html" class="text-decoration-none text-dark">
+            <div class="position-relative">
+              <img src="img/hotel-dd.jpg" class="card-img-top tour-image" alt="Desert Safari">
+              <span class="top-rated-badge text-white small">Top Rated</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-geo-alt-fill text-muted small me-1"></i>
+                  <small class="location-text text-muted">Lahore</small>
+                </div>
+                <span class="rating-stars ms-auto">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+              </div>
+              <h5 class="card-title hotel-card-title mb-2 fw-semibold">Pearl Continental Hotel,
+                Lahore</h5>
+              <div class="d-flex mb-2">
+
+              </div>
+              <div class="mt-auto">
+                <div class="">
+                  <div class="ms-auto">
+                    <span class="text-muted small me-1">From</span>
+                    <span class="price-current">AED 270.24</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- high rated hotel sec end -->
+
+  <!-- promotion sec start -->
+  <section class="home-promotion mt-2 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- <div class="home-promotion-overlay position-absolute top-100 start-100"></div> -->
+          <div
+            class="home-promotion-custom align-items-start d-flex flex-column justify-content-center text-white p-lg-5 p-md-4 p-3 position-relative">
+            <h4 class="display-5 fw-semibold">Start Your Journey</h4>
+            <p>Stay in 4-Star Hotels Â· Explore Yas Island
+              Full City Tours Included</p>
+            <button class="btn home-promotion-btn text-white">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- promotion sec end -->
+
+  <!-- high rated tour sec start -->
+  <section class="high-rated-tour py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="high-rated-tour-head mb-3">
+            <h2>High Rated Tours</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <!-- card 1 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <a href="/activities.html" class="text-decoration-none">
+            <div class="card tour-card">
+              <div class="position-relative">
+                <img src="img/tour-aa.jpg" class="card-img-top tour-image" alt="Desert Safari">
+                <span class="top-rated-badge text-white small">Top Rated</span>
+                <span class="top-rated-badge-star text-white">
+                  <i class="bi bi-geo-alt-fill small me-1"></i>
+                  <span class="location-text small text-white">Dubai</span>
+                </span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <h6 class="card-title activity-card-title mb-2 fw-semibold">Desert Safari Dubai
+                  Tickets
+                  Unforgettable Desert..</h6>
+                <div class="mt-auto mb-3">
+                  <span class="rating-stars me-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="small text-muted">4.7 Review</span>
+                </div>
+                <div class="d-flex flex-column mt-auto">
+                  <span class="text-muted small me-2 price-original">From AED 310</span>
+                  <span class="price-current">AED 270.24</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <a href="/activities.html" class="text-decoration-none">
+            <div class="card tour-card">
+              <div class="position-relative">
+                <img src="img/tour-bb.webp" class="card-img-top tour-image" alt="Desert Safari">
+                <span class="top-rated-badge text-white small">Top Rated</span>
+                <span class="top-rated-badge-star text-white">
+                  <i class="bi bi-geo-alt-fill small me-1"></i>
+                  <span class="location-text small text-white">Dubai</span>
+                </span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <h6 class="card-title activity-card-title mb-2 fw-semibold">Desert Safari Dubai
+                  Tickets
+                  Unforgettable Desert..</h6>
+                <div class="mt-auto mb-3">
+                  <span class="rating-stars me-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="small text-muted">4.7 Review</span>
+                </div>
+                <div class="d-flex flex-column mt-auto">
+                  <span class="text-muted small me-2 price-original">From AED 310</span>
+                  <span class="price-current">AED 270.24</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <!-- card 3 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <a href="/activities.html" class="text-decoration-none">
+            <div class="card tour-card">
+              <div class="position-relative">
+                <img src="img/tour-cc" class="card-img-top tour-image" alt="Desert Safari">
+                <span class="top-rated-badge text-white small">Top Rated</span>
+                <span class="top-rated-badge-star text-white">
+                  <i class="bi bi-geo-alt-fill small me-1"></i>
+                  <span class="location-text small text-white">Dubai</span>
+                </span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <h6 class="card-title activity-card-title mb-2 fw-semibold">Desert Safari Dubai
+                  Tickets
+                  Unforgettable Desert..</h6>
+                <div class="mt-auto mb-3">
+                  <span class="rating-stars me-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="small text-muted">4.7 Review</span>
+                </div>
+                <div class="d-flex flex-column mt-auto">
+                  <span class="text-muted small me-2 price-original">From AED 310</span>
+                  <span class="price-current">AED 270.24</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 4 -->
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <a href="/activities.html" class="text-decoration-none">
+            <div class="card tour-card">
+              <div class="position-relative">
+                <img src="img/tour-dd.webp" class="card-img-top tour-image" alt="Desert Safari">
+                <span class="top-rated-badge text-white small">Top Rated</span>
+                <span class="top-rated-badge-star text-white">
+                  <i class="bi bi-geo-alt-fill small me-1"></i>
+                  <span class="location-text small text-white">Dubai</span>
+                </span>
+              </div>
+              <div class="card-body p-3 d-flex flex-column">
+                <h6 class="card-title activity-card-title mb-2 fw-semibold">Desert Safari Dubai
+                  Tickets
+                  Unforgettable Desert..</h6>
+                <div class="mt-auto mb-3">
+                  <span class="rating-stars me-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span class="small text-muted">4.7 Review</span>
+                </div>
+                <div class="d-flex flex-column mt-auto">
+                  <span class="text-muted small me-2 price-original">From AED 310</span>
+                  <span class="price-current">AED 270.24</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="view-more-high-rated d-flex align-items-center justify-content-center">
+            <button class="btn py-2 px-4"> See More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- high rated tour sec end -->
+
+  <!-- our blog section start -->
+  <section class="our-blog py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="our-blog-head mb-2">
+            <h2>Our Blogs</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="our-blog-custom">
+            <img src="img/blog-1.png" class="img-fluid mb-3 w-100 our-blog-custom-img" alt="">
+            <h5 class="fw-bold mb-2">Castle Tour Tickets Now for 2025!</h5>
+            <p class="text-muted">Get your Sanssouci Palace and Potsdam Castle...</p>
+            <a href="" class="text-decoration-none">Read More <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="our-blog-custom">
+            <img src="img/our blog2.png" class="img-fluid mb-3 w-100 our-blog-custom-img" alt="">
+            <h5 class="fw-bold mb-2">Castle Tour Tickets Now for 2025!</h5>
+            <p class="text-muted">Get your Sanssouci Palace and Potsdam Castle...</p>
+            <a href="" class="text-decoration-none">Read More <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="our-blog-custom">
+            <img src="img/blog-3.jpg" class="img-fluid mb-3 w-100 our-blog-custom-img" alt="">
+            <h5 class="fw-bold mb-2">Castle Tour Tickets Now for 2025!</h5>
+            <p class="text-muted">Get your Sanssouci Palace and Potsdam Castle...</p>
+            <a href="" class="text-decoration-none">Read More <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- our blog section end -->
+  <!-- our review sec start -->
+  <section class="our-review py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-3">Our Reviews</h2>
+        </div>
+      </div>
+
+      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-lg-6 col-md-12">
+                <div class="card review-card bg-white border-0">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                      alt="Smith Victoria" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">Smith Victoria</h5>
+                        <p class="reviewer-title text-muted mb-0">Director</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "The entire trip was flawlessly planned and executed. From flights to hotel stays, everything was
+                    smooth and stress-free. Truly a memorable travel experienceâ€”highly recommended!"
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12 d-block">
+                <div class="card review-card">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="John Smith" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">John Smith</h5>
+                        <p class="reviewer-title text-muted mb-0">Director</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "Excellent service from start to finish! The visa process was quick, and the tour guides were
+                    friendly and knowledgeable. Would definitely book again for my next adventure."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-lg-6 col-md-12">
+                <div class="card review-card">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="John Smith" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">Sarah Johnson</h5>
+                        <p class="reviewer-title text-muted mb-0">Marketing Manager</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "Outstanding customer service and attention to detail. The team went above and beyond to ensure
+                    our vacation was perfect. Every aspect exceeded our expectations!"
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12 d-block">
+                <div class="card review-card">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                      alt="Michael Brown" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">Michael Brown</h5>
+                        <p class="reviewer-title text-muted mb-0">Business Owner</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "Professional, reliable, and incredibly helpful throughout the entire process. They made our dream
+                    vacation a reality with seamless planning and execution."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-lg-6 col-md-12">
+                <div class="card review-card">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="John Smith" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">Sarah Johnson</h5>
+                        <p class="reviewer-title text-muted mb-0">Marketing Manager</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "Outstanding customer service and attention to detail. The team went above and beyond to ensure
+                    our vacation was perfect. Every aspect exceeded our expectations!"
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12 d-block">
+                <div class="card review-card">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                      alt="Michael Brown" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">Michael Brown</h5>
+                        <p class="reviewer-title text-muted mb-0">Business Owner</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "Professional, reliable, and incredibly helpful throughout the entire process. They made our dream
+                    vacation a reality with seamless planning and execution."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-lg-6 col-md-12">
+                <div class="card review-card">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="John Smith" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">Sarah Johnson</h5>
+                        <p class="reviewer-title text-muted mb-0">Marketing Manager</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "Outstanding customer service and attention to detail. The team went above and beyond to ensure
+                    our vacation was perfect. Every aspect exceeded our expectations!"
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12 d-block">
+                <div class="card review-card">
+                  <div class="reviewer-info mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                      alt="Michael Brown" class="reviewer-avatar">
+                    <div class="d-inline text-start ms-3">
+                      <div class="reviewer-details">
+                        <h5 class="reviewer-name mb-0">Michael Brown</h5>
+                        <p class="reviewer-title text-muted mb-0">Business Owner</p>
+                      </div>
+                      <div class="star-rating">
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                        <i class="bi bi-star-fill fs-6"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review-text fst-italic text-muted">
+                    "Professional, reliable, and incredibly helpful throughout the entire process. They made our dream
+                    vacation a reality with seamless planning and execution."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- our review sec end -->
+
+
+  <!-- login-in sign-in modal start -->
+  <div class="signin-login">
+    <div class="modal fade " id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="signupModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <div class="mb-4">
+              <h6 class="fw-bold mb-2">Welcome to Aantorism</h6>
+              <p class="text-muted small">Register now with a small one - time fee to access exclusive
+                flight, Umrah, Visa and Tourism deals â€” fair pricing for all, wherever you are.</p>
+            </div>
+
+            <!-- Sign Up Form -->
+            <form id="signupForm">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Contact" required>
+              </div>
+
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email address" required>
+              </div>
+
+              <div class="mb-3 password-input-container">
+                <input type="password" class="form-control" id="signupPasswordInput" placeholder="Password" required>
+                <button type="button" class="password-toggle" onclick="toggleSignupPassword()">
+                  <i class="fas fa-eye" id="signupPasswordToggleIcon"></i>
+                </button>
+              </div>
+
+              <div class="mb-3">
+                <select class="form-control" required>
+                  <option value="" disabled selected>Country</option>
+                  <option value="US">United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="IN">India</option>
+                  <option value="SA">Saudi Arabia</option>
+                  <option value="AE">United Arab Emirates</option>
+                  <option value="CA">Canada</option>
+                  <option value="AU">Australia</option>
+                  <option value="DE">Germany</option>
+                  <option value="FR">France</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary-custom w-100 mb-3 text-white">Register Now</button>
+            </form>
+
+            <!-- Login Link -->
+            <div class="d-flex align-items-center flex-wrap gap-2">
+              <div class="text-center">
+                <span class="text-muted">Already have an account? </span>
+                <a href="#" class="register-link" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#loginModal">Login Now</a>
+              </div>
+
+              <!-- Social Icons -->
+
+              <div class="social-icons text-center ms-auto">
+                <ul class="list-unstyled d-flex mb-0">
+                  <li class=""><a href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li class=""><a href="#"><i class="bi bi-twitter"></i></a></li>
+                  <li class=""><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- OTP Verification Modal -->
+    <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="otpModalLabel">OTP Verification</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <p class="text-muted mb-4">We've sent a verification code to your email. Please enter the
+              6-digit code below.</p>
+
+            <!-- OTP Input Form -->
+            <form id="otpForm">
+              <div class="mb-3">
+                <label class="form-label text-dark fw-medium">Enter OTP:</label>
+                <div class="d-flex gap-2 justify-content-center mb-3">
+                  <input type="text" class="form-control text-center otp-input" maxlength="1" required>
+                  <input type="text" class="form-control text-center otp-input" maxlength="1" required>
+                  <input type="text" class="form-control text-center otp-input" maxlength="1" required>
+                  <input type="text" class="form-control text-center otp-input" maxlength="1" required>
+                  <input type="text" class="form-control text-center otp-input" maxlength="1" required>
+                  <input type="text" class="form-control text-center otp-input" maxlength="1" required>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary-custom w-100 mb-3 text-white">Verify OTP</button>
+
+              <div class="text-center">
+                <span class="text-muted">Didn't receive the code? </span>
+                <a href="#" class="register-link" id="resendOtp">Resend OTP</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Password Modal -->
+    <div class="modal fade" id="newPasswordModal" tabindex="-1" aria-labelledby="newPasswordModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="newPasswordModalLabel">Set New Password</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <p class="text-muted mb-4">Please enter your new password below.</p>
+
+            <!-- New Password Form -->
+            <form id="newPasswordForm">
+              <div class="mb-3 password-input-container">
+                <label class="form-label text-dark fw-medium">New Password:</label>
+                <input type="password" class="form-control" id="newPasswordInput" placeholder="Enter new password"
+                  required>
+                <button type="button" class="password-toggles" onclick="toggleNewPassword()">
+                  <i class="fas fa-eye" id="newPasswordToggleIcon"></i>
+                </button>
+              </div>
+
+              <div class="mb-3 password-input-containergit">
+                <label class="form-label text-dark fw-medium">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirm new password"
+                  required>
+                <button type="button" class="password-toggless" onclick="toggleConfirmPassword()">
+                  <i class="fas fa-eye" id="confirmPasswordToggleIcon"></i>
+                </button>
+              </div>
+
+              <button type="submit" class="btn btn-primary-custom w-100 mb-3 text-white">Update Password</button>
+            </form>
+
+            <!-- Back to Login Link -->
+            <div class="text-center">
+              <span class="text-muted">Remember your password? </span>
+              <a href="#" class="register-link" data-bs-dismiss="modal" data-bs-toggle="modal"
+                data-bs-target="#loginModal">Back to Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="forgotPasswordModalLabel">Forget Password</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <p class="text-muted mb-4">Enter Your Email To Forget Password</p>
+
+            <!-- Forgot Password Form -->
+            <form id="forgotPasswordForm">
+              <div class="mb-3">
+                <label class="form-label text-dark fw-medium">Enter Email:</label>
+                <input type="email" class="form-control" placeholder="Email address" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary-custom w-100 mb-3 text-white">Forget Password</button>
+            </form>
+
+            <!-- Register Link -->
+            <div class="d-flex align-items-center flex-wrap gap-2">
+              <div class="text-center">
+                <span class="text-muted">Don't have an account? </span>
+                <a href="#" class="register-link fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#signupModal">Register Now</a>
+              </div>
+
+              <!-- Social Icons -->
+
+              <div class="social-icons text-center ms-auto">
+                <ul class="list-unstyled d-flex  mb-0">
+                  <li class=""><a href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li class=""><a href="#"><i class="bi bi-twitter"></i></a></li>
+                  <li class=""><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content p-2">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="loginModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <p class="text-muted mb-4">Please enter your login details to access your account.</p>
+
+            <!-- Google Sign In -->
+            <button
+              class="btn btn-google w-100 mb-3 d-flex align-items-center justify-content-center bg-white text-muted">
+              <i class="bi bi-google me-2"></i>
+              Sign In with Google
+            </button>
+
+            <!-- Facebook Sign In -->
+            <button
+              class="btn btn-facebook text-white w-100 mb-3 d-flex align-items-center justify-content-center bg-white text-muted">
+              <i class="bi bi-facebook me-2"></i>
+              Sign In with Facebook
+            </button>
+
+            <!-- Divider -->
+            <div class="divider">
+              <span class="text-muted">Or Sign in with Email</span>
+
+            </div>
+
+            <!-- Login Form -->
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email address" required>
+              </div>
+
+              <div class="mb-3 password-input-container">
+                <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+                <button type="button" class="password-toggle" onclick="togglePassword()">
+                  <i class="fas fa-eye" id="passwordToggleIcon"></i>
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="rememberMe">
+                  <label class="form-check-label text-muted" for="rememberMe">
+                    Remember me
+                  </label>
+                </div>
+                <a href="#" class="forgot-password" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#forgotPasswordModal">Forgot Password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary-custom w-100 mb-3 text-white">Log In</button>
+            </form>
+
+            <!-- Register Link -->
+            <div class="d-flex align-items-center flex-wrap gap-2">
+              <div class="text-center">
+                <span class="text-muted">Don't have an account? </span>
+                <a href="#" class="register-link fw-normal" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#signupModal">Register Now</a>
+              </div>
+
+              <!-- Social Icons -->
+
+              <div class="social-icons text-center ms-auto">
+                <ul class="list-unstyled d-flex mb-0">
+                  <li class=""><a href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li class=""><a href="#"><i class="bi bi-twitter"></i></a></li>
+                  <li class=""><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login-in sign-in modal end -->
+  <!-- footer section start -->
+  <footer class="footer-sec pt-5">
+    <div class="container py-3">
+      <div class="row gy-4">
+        <!-- Logo and Description -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-custom">
+            <h5 class="fw-bold text-white mb-4 fs-4">Logo</h5>
+            <p class="small text-white">
+              From flights to tours, Umrah to visa â€” Tourism offers personalized services for your ideal trip. Smart
+              planning for better travel experiences.
+            </p>
+            <div>
+              <button id="lightModeBtn">Light</button>
+              <button id="darkModeBtn">Dark</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-custom">
+            <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
+            <ul class="list-unstyled small text-white">
+              <li><a href="/visa.html" class="text-white text-decoration-none">Visas</a></li>
+              <li><a href="/activities.html" class="text-white text-decoration-none">Activities</a></li>
+              <li><a href="/combo-tour.html" class="text-white text-decoration-none">Combo Tours</a></li>
+              <li><a href="/hotel.html" class="text-white text-decoration-none">Hotel</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-custom">
+            <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
+            <ul class="list-unstyled small">
+              <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="/blog.html" class="text-white text-decoration-none">Blogs</a></li>
+              <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-custom">
+            <h6 class="fw-bold text-white mb-4 fs-5">Get In Touch:</h6>
+            <ul class="list-unstyled small text-white social-icons">
+              <li class="d-flex align-items-center mb-2">
+                <i class="bi bi-telephone-fill me-2"></i> <a href="" class="text-decoration-none text-white">+971 12 345
+                  6789</a>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bi bi-envelope-fill me-2"></i> <a href=""
+                  class="text-decoration-none text-white">info__gmail.com</a>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="bi bi-geo-alt-fill me-2"></i> Street 1, Lahore
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="privacy-policy text-center py-2 mt-4">
+      <small class="text-white">Â© Copyright 2024 Tourism. All rights reserved</small>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- jQuery and Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/home-banner.js"></script>
+  <script src="js/theme-change.js"></script>
+</body>
+
+</html>

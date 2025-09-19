@@ -1,0 +1,230 @@
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
+    color: var(--primary-colors);
+}
+
+.offcanvas-icon {
+    color: var(--secondary-colors);
+}
+
+/* header & banner sec start */
+.navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-section-home {
+    background: url("../img/contact-us-bg.png");
+    height: 437px;
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .hero-section-home {
+        height: 350px;
+    }
+
+}
+
+.hero-section-home .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section-home .lead {
+    font-size: clamp(16px, 2.5vw, 25px);
+}
+
+.hero-section-home .hero-content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+.header-home .nav-link{
+    color: var(--color-white);
+}
+
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+}
+
+
+.navbar .nav-link.active {
+    color: var(--secondary-colors);
+    /* or any color you want */
+}
+.header-home .navbar {
+    z-index: 1030;
+}
+
+/* Mobile toggle menu background and styles */
+@media (max-width: 991px) {
+    .header-home #mainMenu {
+        background-color: var(--primary-colors);
+        padding: 1rem;
+    }
+
+    .header-home #mainMenu .nav-link {
+        color: var(--color-white);
+    }
+
+    .header-home .btn-outline-light:hover {
+        background-color: var(--color-white);
+        color: var(--primary-colors);
+    }
+}
+
+.home-for-mobileview .offcanvas {
+    border-radius: 0 18px 18px 0;
+    width: 320px;
+}
+
+.home-for-mobileview .list-group-item {
+    border: none;
+    font-size: 1.1rem;
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+}
+
+.home-for-mobileview .list-group-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-lights);
+}
+
+
+/* header fixed */
+.header-home .navbar-scroll {
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-home .navbar-scroll.scrolled {
+    background-color: var(--primary-colors);
+    /* Change to any color */
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light {
+    color: var(--color-white);
+}
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
+}
+
+/* header fixed */
+
+/* header & banner sec end */
+.contact-detail .contact-detail-custom {
+    background-color: var(--primary-lights);
+    border-radius: var(--border-radius-boxes);
+}
+
+.contact-detail .contact-detail-custom i {
+    color: var(--secondary-colors);
+}
+
+.contact-detail .contact-detail-custom a {
+    color: var(--primary-colors);
+}
+
+.contact-detail .contact-detail-custom h5 {
+    color: var(--primary-colors);
+}
+
+.locations {
+    background-color: var(--primary-lights);
+}
+
+.get-into-touch-custom .send-message-btn {
+    background-color: var(--secondary-colors);
+}
+
+
+.get-into-touch-custom .send-message-btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.get-into-touch-custom .section-title {
+    color: var(--primary-colors);
+}
+
+.locations .locations-custom {
+    border-radius: var(--border-radius-boxes);
+
+}
+
+.locations .locations-custom .country-flag img {
+    width: 40px;
+}
+
+.locations .locations-custom h4 {
+    color: var(--primary-colors);
+}
+
+.locations .locations-custom a {
+    border: 1px solid var(--secondary-colors);
+    color: var(--primary-colors);
+    border-radius: var(--btn-border-radius);
+    padding: 7px 30px;
+}
+
+.locations .locations-custom a:hover {
+    border: 1px solid var(--secondary-colors);
+    color: var(--color-white);
+    background-color: var(--secondary-colors);
+}
+
+
+.locations .location-heading {
+    color: var(--primary-colors);
+}
+
+/* footer section start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer section end */

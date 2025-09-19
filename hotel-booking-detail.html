@@ -1,0 +1,810 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Marina Hotel Apartment</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/hotel-booking-detail.css">
+</head>
+
+<body>
+    <!-- header & banner sec start -->
+    <section class="header-home">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg position-fixed w-100 navbar-scroll">
+            <div class="container d-flex align-items-center py-2 flex-nowrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold me-4 flex-shrink-0 text-white" href="/index.html">Logo</a>
+
+                <!-- Menu Items (centered on large screens) -->
+                <div class="collapse navbar-collapse justify-content-center flex-grow-1" id="mainMenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
+                        <li class="nav-item"><a class="nav-link" href="/flight.html">Flight</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/hotel.html">Hotel</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="/activities-detail-page.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/combo-tour.html">Combo
+                                Tours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/umrah.html">Umrah</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/visa.html">Visa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side: Contact Us, Log in, Cart -->
+                <div class="d-flex align-items-center ms-auto flex-shrink-0">
+                    <div class="d-none d-lg-flex align-items-center gap-2">
+                        <a href="/contact-us.html" class="nav-link me-2">Contact Us</a>
+                        <a href="#" class="btn btn-outline-light py-1 px-3 me-2">Log in</a>
+                    </div>
+                    <!-- Cart icon always visible -->
+                    <a href="#" class="nav-link fs-5 d-flex align-items-center ms-2" id="cartIcon"><i
+                            class="bi bi-cart"></i></a>
+                    <!-- Toggler (hamburger icon) for mobile -->
+                    <button class="navbar-toggler ms-2 border-white d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <span class="navbar-toggler-icon border-white"> <i class="bi bi-list text-white"></i></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="home-for-mobileview">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/flight.html" class="text-decoration-none"><i
+                                class="bi bi-airplane me-2 offcanvas-icon"></i>Flight</a></li>
+                    <li class="list-group-item"><a href="/hotel.html" class="text-decoration-none"><i
+                                class="bi bi-bank me-2 offcanvas-icon"></i>Hotel</a></li>
+                    <li class="list-group-item"><a href="/activities.html" class="text-decoration-none"><i
+                                class="bi bi-camera me-2 offcanvas-icon"></i>Activities</a></li>
+                    <li class="list-group-item"><a href="/combo-tour.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Combo Tour</a></li>
+                    <li class="list-group-item"><a href="/packages.html" class="text-decoration-none"><i
+                                class="bi bi-boxes me-2 offcanvas-icon"></i>Packages</a></li>
+                    <li class="list-group-item"><a href="/umrah.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Umrah</a></li>
+                    <li class="list-group-item"><a href="/visa.html" class="text-decoration-none"><i
+                                class="bi bi-grid me-2 offcanvas-icon"></i>Visa</a></li>
+                    <li class="list-group-item"><a href="/contact-us.html" class="text-decoration-none"><i
+                                class="bi bi-telephone me-2 offcanvas-icon"></i>Contact Us</a></li>
+                    <li class="list-group-item me-2"><a href="" class="text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#loginModal"><i class="bi bi-person me-2 offcanvas-icon"></i>Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header & banner sec end -->
+
+    <!-- Map Modal -->
+    <div class="modal fade hotel-map-modal " id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mapModalLabel">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Pearl Marina Hotel Apartment
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.344133688532!2d55.14543731500953!3d25.092145983944615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5402c126e3%3A0xb6e3cedf5c3eec45!2sDubai%20Marina!5e0!3m2!1sen!2s!4v1647886157153!5m2!1sen!2s"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <div class="map-actions">
+                        <button class="map-action-btn" onclick="openInGoogleMaps()" title="Open in Google Maps">
+                            <i class="fas fa-external-link-alt"></i>
+                        </button>
+                        <button class="map-action-btn" onclick="getDirections()" title="Get Directions">
+                            <i class="fas fa-directions"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade hotel-gallary-modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title " id="galleryModalLabel">Hotel Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="galleryModalCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active rounded-2 ">
+                                <img src="img/hs-1.png" class="d-block w-100 rounded-2" alt="Hotel Main View">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hs-2.png" class="d-block w-100 rounded-2" alt="Lobby">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hs-3.png" class="d-block w-100 rounded-2" alt="Restaurant">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hs-4.png" class="d-block w-100 rounded-2" alt="Room">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hs-5.png" class="d-block w-100 rounded-2" alt="Pool">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hs-6.png" class="d-block w-100 rounded-2" alt="Bar">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hs-1.png" class="d-block w-100 rounded-2" alt="Dining">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryModalCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryModalCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="thumbnail-strip">
+                        <img src="img/hs-1.png" class="active" alt="Hotel Main View" onclick="goToSlide(0)">
+                        <img src="img/hs-2.png" alt="Lobby" onclick="goToSlide(1)">
+                        <img src="img/hs-3.png" alt="Restaurant" onclick="goToSlide(2)">
+                        <img src="img/hs-4.png" alt="Room" onclick="goToSlide(3)">
+                        <img src="img/hs-5.png" alt="Pool" onclick="goToSlide(4)">
+                        <img src="img/hs-6.png" alt="Bar" onclick="goToSlide(5)">
+                        <img src="img/hs-1.png" alt="Dining" onclick="goToSlide(6)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="hotel-detail-booking-nav mb-3">
+        <div class="container">
+            <div class="">
+                <ul class="nav nav-tabs flex-nowrap overflow-auto hide-scrollbar bg-white border-bottom">
+                    <li class="nav-item">
+                        <a class="nav-link active text-nowrap" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="#gallery">Image Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="#facilities">Hotel Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="#attractions">Attractions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="#location">Location</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <!-- Hotel Header -->
+        <div
+            class="hotel-detail-booking-header d-flex justify-content-between align-items-start mb-3 flex-wrap align-items-center">
+            <div class="flex-grow-1">
+                <h3 class="fw-bold mb-2">Pearl Marina Hotel Apartment</h3>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="hotel-rating me-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-muted mb-0">
+                    <i class="bi bi-geo-alt me-2"></i>
+                    Marina Waterfront Dubai Marina, P.O.Box 125179, United Arab Emirates
+                    <a href="#" class="text-danger ms-2" onclick="openMapModal(); return false;">View on Map</a>
+                </p>
+            </div>
+            <div class="text-end mt-3 mt-md-0 ms-auto">
+                <h5 class="fw-bold mb-2">PKR 368,170.00</h5>
+                <a class="btn px-4 text-white onclick=" scrollToRooms()">Select Room</a>
+            </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="row g-2 mb-4">
+            <!-- Desktop Gallery -->
+            <div class="hotel-gallery-desktop w-100">
+                <div class="col-md-8 pe-2">
+                    <img src="img/h-1.png" class="img-fluid rounded w-100 main-image" alt="Hotel Main View">
+                </div>
+                <div class="col-md-4 ps-2">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img src="img/h-1.png" class="img-fluid rounded w-100 gallery-thumbnail" alt="Lobby">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/hs-2.png" class="img-fluid rounded w-100 gallery-thumbnail" alt="Restaurant">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/hs-3.png" class="img-fluid rounded w-100 gallery-thumbnail" alt="Room">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/hs-4.png" class="img-fluid rounded w-100 gallery-thumbnail" alt="Pool">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/h-1.png" class="img-fluid rounded w-100 gallery-thumbnail" alt="Bar">
+                        </div>
+                        <div class="col-6 position-relative">
+                            <img src="img/h-1.png" class="img-fluid rounded w-100 gallery-thumbnail" alt="Dining">
+                            <div class="gallery-overlay" onclick="openGalleryModal()">
+                                <i class="fas fa-images"></i> Gallery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Carousel -->
+            <div class="hotel-gallery-carousel w-100">
+                <div id="hotelGalleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/h-1.png" class="d-block w-100 rounded main-image" alt="Hotel Main View">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/hs-1.png" class="d-block w-100 rounded main-image" alt="Lobby">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/hs-2.png" class="d-block w-100 rounded main-image" alt="Restaurant">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/hs-3.png" class="d-block w-100 rounded main-image" alt="Room">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/hs-4.png" class="d-block w-100 rounded main-image" alt="Pool">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/hs-5.png" class="d-block w-100 rounded main-image" alt="Bar">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hotelGalleryCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hotelGalleryCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Row -->
+        <div class="row">
+            <!-- Left Column - Description and Rooms -->
+            <div class="col-lg-9 mb-4">
+                <div class="hotel-booking-detail-custom">
+                    <!-- Description -->
+                    <div class="mb-4 hotel-booking-detail-custom-heading">
+                        <h4 class="fw-semibold mb-3">Description</h4>
+                        <p class="text-muted">
+                            PC Hotel is a symbol of luxury and sophistication, offering premium rooms and suites with
+                            modern
+                            amenities.
+                            Located in prime city areas, it ensures convenience for both business and leisure
+                            travellers.
+                            With fine dining,
+                            event spaces, and personalized service, PC Hotel promises an unforgettable stay.
+                        </p>
+                    </div>
+
+                    <!-- Rooms Section -->
+                    <div id="rooms" class="mb-4 hotel-booking-detail-custom-heading">
+                        <h4 class="fw-semibold mb-4">Rooms</h4>
+
+                        <!-- Room 1 -->
+                        <div class="hotel-booking-room-card p-3 mb-4">
+                            <div class="row g-3">
+                                <!-- Image Section -->
+                                <div class="col-12 col-md-4">
+                                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                        class="img-fluid rounded w-100" alt="Standard Family Room">
+                                </div>
+
+                                <!-- Details Section -->
+                                <div class="col-12 col-md-5">
+                                    <h5 class="fw-bold mb-3">Standard Family Room</h5>
+                                    <div class="d-flex flex-wrap gap-3 mb-3">
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-bed me-2"></i>
+                                            <span class="text-muted">2 Single Beds</span>
+                                        </div>
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-wifi me-2"></i>
+                                            <span class="text-muted">Free Wifi</span>
+                                        </div>
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-car me-2"></i>
+                                            <span class="text-muted">Parking</span>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Free
+                                                Cancellation</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Fully
+                                                refundable</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Confirmation is
+                                                immediate</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">No registration
+                                                required</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">No booking or
+                                                credit card fees!</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Price & Button Section -->
+                                <div class="col-12 col-md-3 d-flex flex-column justify-content-end text-md-end">
+                                    <div class="text-muted">4 rooms for</div>
+                                    <div class="fs-5 fw-bold mb-1">PKR 3,601,590.00</div>
+                                    <a class="btn w-100 rounded-2 mt-2 text-white"
+                                        href="/activity-guest-detail.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Room 2 -->
+                        <div class="hotel-booking-room-card p-3 mb-4">
+                            <div class="row g-3">
+                                <!-- Image Section -->
+                                <div class="col-12 col-md-4">
+                                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                        class="img-fluid rounded w-100" alt="Standard Family Room">
+                                </div>
+
+                                <!-- Details Section -->
+                                <div class="col-12 col-md-5">
+                                    <h5 class="fw-bold mb-3">Standard Family Room</h5>
+                                    <div class="d-flex flex-wrap gap-3 mb-3">
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-bed me-2"></i>
+                                            <span class="text-muted">2 Single Beds</span>
+                                        </div>
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-wifi me-2"></i>
+                                            <span class="text-muted">Free Wifi</span>
+                                        </div>
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-car me-2"></i>
+                                            <span class="text-muted">Parking</span>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Free
+                                                Cancellation</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Fully
+                                                refundable</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Confirmation is
+                                                immediate</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">No registration
+                                                required</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">No booking or
+                                                credit card fees!</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Price & Button Section -->
+                                <div class="col-12 col-md-3 d-flex flex-column justify-content-end text-md-end">
+                                    <div class="text-muted">4 rooms for</div>
+                                    <div class="fs-5 fw-bold mb-1">PKR 3,601,590.00</div>
+                                    <a class="btn w-100 rounded-2 mt-2 text-white"
+                                        href="/activity-guest-detail.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Room 3 -->
+                        <div class="hotel-booking-room-card p-3 mb-4">
+                            <div class="row g-3">
+                                <!-- Image Section -->
+                                <div class="col-12 col-md-4">
+                                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                        class="img-fluid rounded w-100" alt="Standard Family Room">
+                                </div>
+
+                                <!-- Details Section -->
+                                <div class="col-12 col-md-5">
+                                    <h5 class="fw-bold mb-3">Standard Family Room</h5>
+                                    <div class="d-flex flex-wrap gap-3 mb-3">
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-bed me-2"></i>
+                                            <span class="text-muted">2 Single Beds</span>
+                                        </div>
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-wifi me-2"></i>
+                                            <span class="text-muted">Free Wifi</span>
+                                        </div>
+                                        <div class="d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-car me-2"></i>
+                                            <span class="text-muted">Parking</span>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Free
+                                                Cancellation</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Fully
+                                                refundable</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">Confirmation is
+                                                immediate</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">No registration
+                                                required</span>
+                                        </li>
+                                        <li class="mb-1 d-flex align-items-center hotel-services-icon">
+                                            <i class="fas fa-check me-2"></i> <span class="text-muted">No booking or
+                                                credit card fees!</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Price & Button Section -->
+                                <div class="col-12 col-md-3 d-flex flex-column justify-content-end text-md-end">
+                                    <div class="text-muted">4 rooms for</div>
+                                    <div class="fs-5 fw-bold mb-1">PKR 3,601,590.00</div>
+                                    <a class="btn w-100 rounded-2 mt-2 text-white"
+                                        href="/activity-guest-detail.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Hotel Details Section -->
+                    <div class="hotel-detail-bg p-4">
+                        <div class="mb-4 hotel-booking-detail-custom-heading">
+                            <h4 class="fw-semibold mb-4">Hotel Detail:</h4>
+
+                            <!-- Hotel Detail -->
+                            <div class="mb-4 hotel-detail-head">
+                                <h6 class="fw-bold mb-2">Hotel Detail:</h6>
+                                <p class="text-muted">Stunning ocean views and a prime location right on the bustling
+                                    promenade
+                                    of Jumeirah Beach.</p>
+                            </div>
+
+                            <!-- Accommodations -->
+                            <div class="mb-4 hotel-detail-head">
+                                <h6 class="fw-semibold mb-2">Accommodations:</h6>
+                                <p class="text-muted">JA Ocean View Hotel, Jumeirah Beach Dubai caters to a variety of
+                                    travelers
+                                    with its richly appointed rooms and suites. Guests can enjoy a comfortable stay in
+                                    one
+                                    of
+                                    the 346 elegantly appointed guestrooms. Elegantly</p>
+                            </div>
+
+                            <!-- Amenities -->
+                            <div class="mb-4 hotel-detail-head">
+                                <h6 class="fw-semibold mb-2">Amenities:</h6>
+                                <p class="text-muted">The hotel offers an array of premium amenities including a rooftop
+                                    infinity pool overlooking the cityscape a fully-equipped fitness center and
+                                    comprehensive
+                                    concierge services.</p>
+                            </div>
+
+                            <!-- Dining Options -->
+                            <div class="mb-4 hotel-detail-head">
+                                <h6 class="fw-semibold mb-2">Dining Options:</h6>
+                                <p class="text-muted">Anantara Downtown Dubai hosts multiple dining venues including
+                                    Mekong
+                                    Restaurant which offers an exquisite blend of Thai, Vietnamese and Chinese cuisines.
+                                    Guests
+                                    can also enjoy bespoke cocktails at the rooftop lounge which provides panoramic
+                                    views of
+                                    the
+                                    skyline.</p>
+                            </div>
+
+                            <!-- Nearby Location & Transportation -->
+                            <div class="mb-4 hotel-detail-head">
+                                <h6 class="fw-semibold mb-2">Nearby Location & Transportation:</h6>
+                                <p class="text-muted">The hotel is conveniently located 15 minutes from Dubai
+                                    International
+                                    Airport and is within walking distance to major downtown attractions such as Burj
+                                    Khalifa
+                                    and The Dubai Mall.</p>
+                            </div>
+
+                            <!-- Nearby Attractions -->
+                            <div class="mb-4 hotel-detail-head mb-3">
+                                <h6 class="fw-semibold mb-2">Nearby Attractions:</h6>
+                                <div class="text-muted">
+                                    <p class="mb-2">Burj Khalifa - 1 km The tallest building in the world offers
+                                        breathtaking
+                                        views from its observation deck.</p>
+                                    <p>Dubai Mall - 1.2 km One of the largest shopping centers globally featuring over
+                                        1200
+                                        stores an ice rink and an aquarium.ation deck.</p>
+                                </div>
+                            </div>
+
+                            <!-- Attractions -->
+                            <div id="attractions" class="mb-4 hotel-attraction-sec mt-5">
+                                <h4 class="fw-bold mb-3">Attractions:</h4>
+                                <p class="text-muted mb-3">Distances are displayed to the nearest 0.1 mile and
+                                    kilometer.
+                                </p>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+                                                <span class="text-muted">Dubai Opera - 1.7 km / 1.1 mi</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+                                                <span class="text-muted">Dubai Water Canal Waterfall - 2 km / 1.3
+                                                    mi</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+                                                <span class="text-muted">Souk al Bahar - 2.1 km / 1.3 mi</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+                                                <span class="text-muted">Safa Park - 2.1 km / 1.3 mi</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+
+                                                <span class="text-muted">Dubai Fountain - 2.2 km / 1.4 mi</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+
+                                                <span class="text-muted">Dubai Water Canal - 2.3 km / 1.4 mi</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+
+                                                <span class="text-muted"> Burj Khalifa - 2.3 km / 1.4 mi</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt me-2"></i>
+
+                                                <span class="text-muted">KidZania - 2.4 km / 1.5 mi</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">The preferred airport for Anantara Downtown Dubai Hotel is
+                                    Dubai
+                                    Intl. Airport (DXB).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Map and Highlights -->
+            <div class="col-lg-3">
+                <!-- Direction Map -->
+                <div class="hotel-direction-card p-3 mb-4">
+                    <h5 class="fw-semibold mb-3">Direction Map</h5>
+                    <div class="map-container mb-3" onclick="openMapModal()">
+                        <div class="map-overlay">
+                            <i class="fas fa-expand"></i> Click to view fullscreen
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.344133688532!2d55.14543731500953!3d25.092145983944615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5402c126e3%3A0xb6e3cedf5c3eec45!2sDubai%20Marina!5e0!3m2!1sen!2s!4v1647886157153!5m2!1sen!2s"
+                            allowfullscreen="" class="w-100 border-0 rounded-2" height="250" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+
+
+                <!-- Highlights -->
+                <div class="hotel-highlights-card p-3">
+                    <h5 class="fw-semibold mb-3">Highlights</h5>
+                    <div class="mb-3">
+                        <div class="fw-bold mb-2">Top location:</div>
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check-circle me-2"></i>
+                            <span>Perfect for a 20-night stay!</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="fw-bold mb-2">Rooms with:</div>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>AC & Heating</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>Wifi</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>Landmark view</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>City view</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>Garden view</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>Continental</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>Breakfast info</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>Free private parking</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2"></i>
+
+                                <span>24-hour front desk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h5 class="fw-bold text-white mb-4 fs-4">Logo</h5>
+                        <p class="small text-white">
+                            From flights to tours, Umrah to visa â€” Tourism offers personalized services for your ideal
+                            trip. Smart
+                            planning for better travel experiences.
+                        </p>
+                        <div>
+                            <button id="lightModeBtn">Light</button>
+                            <button id="darkModeBtn">Dark</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
+                        <ul class="list-unstyled small text-white">
+                            <li><a href="/visa.html" class="text-white text-decoration-none">Visas</a></li>
+                            <li><a href="/activities.html" class="text-white text-decoration-none">Activities</a></li>
+                            <li><a href="/combo-tour.html" class="text-white text-decoration-none">Combo Tours</a></li>
+                            <li><a href="/hotel.html" class="text-white text-decoration-none">Hotel</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Blogs</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Get In Touch:</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 12 345
+                                    6789</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">info__gmail.com</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Street 1, Lahore
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">Â© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/hotel-booking-detail.js"></script>
+    <script src="js/theme-change.js"></script>
+</body>
+
+</html>

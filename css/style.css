@@ -1,0 +1,1372 @@
+
+
+.home-for-mobileview .offcanvas .offcanvas-body ul li a {
+    color: var(--primary-colors);
+}
+
+.offcanvas-icon {
+    color: var(--secondary-colors);
+}
+
+/* header & banner sec start */
+
+
+.navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+}
+.header-home .nav-link{
+    color: var(--color-white);
+}
+.header-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar .nav-link.active {
+    color: var(--secondary-colors);
+    /* or any color you want */
+}
+
+.hero-section-home .hero-overlay {
+    background-color: var(--all-overlay-bg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section-home {
+    position: relative;
+    background: url("../img/Bg home.png") no-repeat center/cover;
+    min-height: 500px;
+    padding: 100px 20px 60px;
+}
+
+.hero-section-home .hero-content-banner {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.hero-section-home .hero-content-banner h1 {
+    font-size: var(--font-size-banner-heading);
+}
+
+.hero-content-banner .nav-tabs .nav-link {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 2px solid var(--all-border);
+    border-radius: 50px;
+}
+
+.hero-content-banner .nav-tabs .nav-link i {
+    color: var(--secondary-colors);
+}
+
+.hero-content-banner .nav-tabs .nav-link.active,
+.hero-content-banner .nav-tabs .nav-link:hover {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border-color: var(--secondary-colors);
+}
+
+.hero-content-banner .nav-tabs .nav-link.active i,
+.hero-content-banner .nav-tabs .nav-link:hover i {
+    color: var(--color-white);
+}
+
+.hero-content-banner .nav-tabs .nav-link:hover {
+    color: var(--color-white) !important;
+}
+
+
+
+
+.hero-content-banner .nav-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    min-width: max-content;
+}
+
+/* Optional: Hide scrollbar for cleaner UI */
+.hero-content-banner .nav-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.hero-content-banner .nav-tabs-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* hotel input sec start */
+.hero-content-banner .hotel-input-sec {
+    border-radius: var(--border-radius-boxes);
+}
+
+.hero-content-banner .hotel-input-sec .hotel-input-group .hotel-search-btn {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border: none;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+
+}
+
+.hero-content-banner .hotel-input-sec .hotel-input-group .hotel-search-btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+
+.hero-content-banner .hotel-input-sec .btn-infants-add-remove {
+    width: 30px;
+    height: 30px;
+}
+
+
+.hero-content-banner .hotel-input-sec .add-guest-btn {
+    background-color: var(--secondary-colors);
+}
+
+.hero-content-banner .hotel-input-sec .add-guest-btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+/* hotel input sec start */
+
+/* flight input sec start */
+
+.form-select:focus {
+
+    outline: 0;
+    box-shadow: none;
+}
+
+.hero-content-banner .flight-input-sec {
+    border-radius: var(--border-radius-boxes);
+
+}
+
+
+.hero-content-banner .flight-form-container {
+    border-radius: var(--border-radius-boxes);
+}
+
+/* Trip Type Radio Buttons */
+
+.hero-content-banner .flight-trip-type-container .trip-type-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-content-banner .flight-trip-type-container .trip-type-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--secondary-colors);
+}
+
+.hero-content-banner .flight-trip-type-container .trip-type-option label {
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--btn-font-weight);
+    color: var(--primary-colors);
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Custom Travelers Dropdown */
+.hero-content-banner .flight-trip-content .travelers-dropdown {
+    position: relative;
+}
+
+.hero-content-banner .flight-trip-content .travelers-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2.5rem;
+}
+
+.hero-content-banner .flight-trip-content .travelers-toggle::after {
+    content: "▼";
+    position: absolute;
+    right: 0.75rem;
+    font-size: var(--font-size-small);
+
+}
+
+.flight-trip-content .travelers-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    border: 1px solid var(--all-border);
+    border-radius: 4px;
+    z-index: 1000;
+    padding: 1rem;
+    display: none;
+}
+
+.hero-content-banner .flight-trip-content .travelers-menu.show {
+    display: block;
+}
+
+.hero-content-banner .flight-trip-content .traveler-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.hero-content-banner .flight-trip-content .traveler-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-content-banner .flight-trip-content .counter-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--all-border);
+    background: var(--color-white);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.hero-content-banner .flight-trip-content .counter-btn:hover {
+    background: var(--primary-lights);
+}
+
+.hero-content-banner .flight-trip-content .counter-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hero-content-banner .flight-trip-content .counter-value {
+    min-width: 20px;
+    text-align: center;
+    font-weight: var(--btn-font-weight);
+}
+
+.hero-content-banner .flight-trip-content .class-options {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--all-border);
+}
+
+.hero-content-banner .flight-trip-content .class-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content-banner .flight-trip-content .class-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-color);
+}
+
+.hero-content-banner .flight-trip-content .class-option label {
+    margin: 0;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+.hero-content-banner .flight-trip-content .apply-btn {
+    width: 100%;
+    background-color: var(--secondary-colors);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-weight: var(--btn-font-weight);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.hero-content-banner .flight-trip-content .apply-btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.hero-content-banner .flight-search-btn {
+    background-color: var(--secondary-colors);
+    border: none;
+    border-radius: 4px;
+}
+
+.hero-content-banner .flight-search-btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.hero-content-banner .flight-multi-city-segment {
+
+    border: 1px solid var(--all-border);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.hero-content-banner .flight-remove-segment {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hero-content-banner .flight-remove-segment:hover {
+    background: var(--primary-lights);
+    color: var(--text-dark);
+}
+
+.hero-content-banner .flight-trip-content .add-flight-btn {
+    border: none;
+    background: none;
+    color: var(--text-dark);
+    border-radius: 4px;
+    width: auto;
+    font-weight: var(--btn-font-weight);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-content-banner .flight-trip-content .add-flight-btn:hover {
+    color: var(--primary-color);
+}
+
+.hero-content-banner .flight-trip-content .date-range-input {
+    cursor: pointer;
+}
+
+.hero-content-banner .flight-trip-content .date-single-input {
+    cursor: pointer;
+}
+
+/* City Suggestions Dropdown */
+.hero-content-banner .flight-trip-content .city-suggestions-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--all-border);
+    border-radius: 4px;
+    z-index: 9999;
+    padding: 0;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.hero-content-banner .flight-trip-content .city-suggestions-menu.show {
+    display: block;
+}
+
+.hero-content-banner .flight-trip-content .city-suggestions-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content-banner .flight-trip-content .city-suggestions-menu li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--all-border);
+    font-size: var(--font-size-small);
+    color: var(--text-dark);
+}
+
+.hero-content-banner .flight-trip-content .city-suggestions-menu li:last-child {
+    border-bottom: none;
+}
+
+.hero-content-banner .flight-trip-content .city-suggestions-menu li:hover {
+    background-color: var(--primary-lights);
+}
+
+/* flight input sec end */
+
+/* visa input sec start */
+
+.visa-input-sec {
+    border-radius: var(--border-radius-boxes);
+}
+
+
+
+.visa-input-sec .visa-input-group .visa-search-btn {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border: none;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+
+}
+
+.visa-input-sec .visa-input-group .visa-search-btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+/* visa input sec end */
+
+.hotel-card-custom {
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--all-border);
+    cursor: pointer;
+}
+
+
+.hero-section-home .search-box {
+    max-width: 900px;
+    margin: 0px auto;
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-section-home .search-box input {
+    border: none;
+    border-radius: 50px;
+    flex: 1;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.hero-section-home .search-box button {
+    border-radius: 50px;
+    padding: 10px 25px;
+    background-color: var(--secondary-colors);
+}
+
+.hero-section-home .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.hero-section-home .btn-search {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border: none;
+}
+
+.hero-section-home .btn-search:hover {
+    background-color: var(--secondary-colors);
+}
+
+
+.header-home .navbar {
+    z-index: 1030;
+}
+
+
+/* Cart container styles */
+
+.add-to-cart .cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: -18px;
+    width: 360px;
+    z-index: 1050;
+    margin-top: 0.5rem;
+    background-color: var(--color-white);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.375rem;
+}
+
+@media (max-width: 576px) {
+    .add-to-cart .cart-dropdown {
+        width: 300px;
+        right: -50px;
+    }
+}
+
+.add-to-cart .cart-dropdown:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--color-white);
+}
+
+.add-to-cart .cart-toggle-btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 1051;
+}
+
+.add-to-cart .cart-dropdown-content {
+    
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.add-to-cart .checkout-btn-cart{
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.add-to-cart .cart-item-card{
+    border: 1px solid var(--all-border);
+}
+
+.add-to-cart .checkout-btn-cart:hover{
+    background-color: var(--btn-hover-color);
+}
+
+
+
+/* Force display when not d-none */
+.add-to-cart .cart-dropdown:not(.d-none) {
+    display: block;
+}
+
+
+/* Mobile toggle menu background and styles */
+@media (max-width: 991px) {
+    .header-home #mainMenu {
+        background-color: var(--primary-colors);
+        padding: 1rem;
+    }
+
+    .header-home #mainMenu .nav-link {
+        color: var(--color-white);
+    }
+
+    .header-home .btn-outline-light:hover {
+        background-color: var(--color-white);
+        color: var(--primary-colors);
+    }
+}
+
+.home-for-mobileview .offcanvas {
+    border-radius: 0 18px 18px 0;
+    width: 320px;
+}
+
+.home-for-mobileview .list-group-item {
+    border: none;
+    font-size: var(--font-size-paragraph);
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+}
+
+.home-for-mobileview .list-group-item:not(:last-child) {
+    border-bottom: 1px solid var(--primary-lights);
+}
+
+@media (min-width: 992px) {
+    .home-for-mobileview .offcanvas {
+        display: none !important;
+    }
+
+    .hero-section-home .navbar-nav .nav-link {
+        /* color: #fff !important; */
+        font-size: var(--font-size-paragraph);
+        padding: 0.5rem 1.1rem;
+        font-weight: 400;
+        opacity: 0.9;
+        transition: color 0.2s, opacity 0.2s;
+
+    }
+
+    .hero-section-home .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+        /* color: #fff !important; */
+        opacity: 1;
+    }
+
+    .hero-section-home .navbar .btn {
+        font-size: 0.98rem;
+        border-radius: 6px;
+    }
+
+    .hero-section-home .navbar .bi-cart {
+        vertical-align: middle;
+        font-size: 1.25rem;
+    }
+
+    .hero-section-home .navbar {
+        background: linear-gradient(90deg, rgba(10, 18, 40, 0.85) 0%, rgba(20, 30, 60, 0.7) 100%);
+
+    }
+}
+
+/* header fixed */
+.header-home .navbar-scroll {
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-home .navbar-scroll.scrolled {
+    background-color: var(--primary-colors);
+    /* Change to any color */
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .nav-link:active {
+    color: var(--secondary-colors);
+}
+
+.header-home .navbar-scroll.scrolled .btn-outline-light {
+    color: var(--color-white);
+}
+.header-home .navbar-scroll.scrolled .btn-outline-light:hover {
+    color: var(--primary-colors);
+}
+
+/* header fixed */
+/* header & banner sec end */
+
+/* home ads section start */
+.home-ads .home-ads-card {
+    min-height: 250px;
+    background-color: var(--secondary-colors);
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+}
+
+.home-ads .home-ads-card .home-ads-img {
+    height: 100%;
+}
+
+
+.home-ads-card .ads-btn {
+    background-color: var(--secondary-colors);
+}
+
+
+/* home ads section end */
+
+.home-ads .home-ads-card {
+    min-height: 198px;
+    background-color: var(--secondary-colors);
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-ads-card .ads-btn {
+    background-color: var(--secondary-colors);
+    border: 1px solid var(--secondary-colors);
+    transition: all 0.3s ease;
+}
+
+.home-ads-card .ads-btn:hover {
+    background-color: transparent;
+    border-color: var(--all-border);
+}
+
+.home-ads-card .btn:not(.ads-btn) {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-ads .home-ads-card {
+        min-height: 220px;
+    }
+
+
+    .home-ads .home-ads-card .home-ads-img {
+        height: 220px;
+    }
+
+    .home-ads-card .card-content {
+        padding: 1.5rem !important;
+    }
+
+    .home-ads-card .card-content h5 {
+        font-size: 1.1rem;
+    }
+
+    .home-ads-card .card-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-ads .home-ads-card {
+        min-height: 200px;
+    }
+
+    .home-ads .home-ads-card .home-ads-img {
+        height: 200px;
+    }
+
+    .home-ads-card .card-content {
+        padding: 1rem !important;
+    }
+
+    .home-ads-card .card-content h5 {
+        font-size: 1rem;
+    }
+
+    .home-ads-card .card-content p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Ensure equal height on larger screens */
+@media (min-width: 768px) {
+    .home-ads .row {
+        display: flex;
+    }
+
+    .home-ads .col-md-6 {
+        display: flex;
+    }
+
+    .home-ads .home-ads-card {
+        flex: 1;
+    }
+}
+
+/* world top cities sec start */
+.world-top-cities {
+    background-color: var(--primary-lights);
+}
+
+.world-top-cities .world-top-head h2 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
+}
+
+
+.world-top-cities .world-top-head a {
+    color: var(--secondary-colors);
+}
+
+.our-blog .our-blog-custom img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius-boxes);
+}
+
+@media (max-width: 767.9px) {
+    /* .cities-card {
+        height: 200px;
+    } */
+
+    .cities-card .btn-orange {
+
+        top: 75% !important;
+        left: 50%;
+
+    }
+
+    .our-blog .our-blog-custom img {
+        height: 300px;
+        object-fit: cover;
+        border-radius: var(--border-radius-boxes);
+    }
+}
+
+.cities-card .btn-orange {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+    border: none;
+    padding: 6px 16px;
+    font-size: var(--font-size-small);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    top: 80%;
+    left: 50%;
+    z-index: 99;
+}
+
+.cities-card .btn-orange:hover {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+
+.cities-card {
+    border-radius: var(--border-radius-boxes);
+    height: 270px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .cities-card img {
+    width: 100%;
+    object-fit: cover;
+} */
+.cities-card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.cities-image-overlay-gradient {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 80%);
+    z-index: 1;
+}
+
+/* world top cities sec end */
+
+/* high rated hotel sec start */
+
+.top-rated-hotel-heading h3 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
+}
+
+.hotel-card-custom {
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--all-border);
+    cursor: pointer;
+}
+
+.hotel-card-custom .btn {
+    background-color: var(--secondary-colors);
+
+}
+
+.hotel-card-custom .btn:hover {
+    background-color: var(--secondary-colors);
+}
+
+.hotel-card-custom .tour-image {
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.hotel-card-custom .top-rated-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--secondary-colors);
+    padding: 4px 8px;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-small);
+    font-weight: var(--btn-font-weight);
+}
+
+
+
+.hotel-card-custom .rating-stars {
+    color: var(--rating-star-color);
+    font-size: 13px;
+}
+
+.hotel-card-custom .price-current {
+    font-weight: var(--font-size-banner-heading-weight);
+    color: var(--primary-colors);
+    font-size: 1.1rem;
+}
+
+.hotel-card-custom .hotel-card-title {
+    font-size: var(--font-size-card-heading);
+    color: var(--primary-colors);
+}
+
+.hotel-card-custom .price-original {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+/* high rated hotel sec end */
+
+
+/* promotion sec start */
+.home-promotion .home-promotion-custom {
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0)),
+        /* overlay */
+        url('../img/start-journey.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 418px;
+    width: 100%;
+    border-radius: var(--border-radius-boxes);
+}
+
+.home-promotion .home-promotion-btn {
+    background-color: var(--secondary-colors);
+
+}
+
+/* promotion sec end */
+
+/* high rated tour section start */
+
+.high-rated-tour .tour-card {
+    border-radius: var(--border-radius-boxes);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--all-border);
+    cursor: pointer;
+}
+
+.high-rated-tour .tour-image {
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.high-rated-tour .top-rated-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--secondary-colors);
+    padding: 4px 8px;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-small);
+
+}
+
+.high-rated-tour .top-rated-badge-star {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary-colors-low-opacity);
+    padding: 4px 8px;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-small);
+
+}
+
+.high-rated-tour .rating-stars {
+    color: var(--rating-star-color);
+    font-size: 13px;
+}
+
+.high-rated-tour .price-current {
+    font-weight: var(--font-size-banner-heading-weight);
+    color: var(--primary-colors);
+    font-size: var(--font-size-paragraph);
+}
+
+.high-rated-tour .activity-card-title {
+    font-size: var(--font-size-paragraph);
+    color: var(--primary-colors);
+}
+
+.high-rated-tour .price-original {
+    text-decoration: line-through;
+    margin-bottom: -5px;
+}
+
+.high-rated-tour .view-more-high-rated .btn {
+    border: 1px solid var(--primary-colors);
+}
+
+.high-rated-tour-head h2 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
+}
+
+
+/* our blog section start */
+.our-blog {
+    background-color: var(--primary-lights);
+}
+
+.our-blog .our-blog-head h2 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
+}
+
+
+.our-blog .our-blog-custom h5 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-box-heading);
+}
+
+.our-blog .our-blog-custom a {
+    color: var(--secondary-colors);
+}
+
+/* our blog section end */
+/* our review sec start  */
+.our-review .section-title {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-size-heading-weight);
+}
+
+.our-review .review-card {
+    border-radius: var(--border-radius-boxes);
+    padding: 30px;
+    border: 1px solid var(--all-border) !important;
+    border: none;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.our-review .review-card:hover {
+    transform: translateY(-10px);
+}
+
+.our-review .reviewer-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--all-border);
+    transition: transform 0.3s ease;
+}
+
+.our-review .reviewer-avatar:hover {
+    transform: scale(1.1);
+}
+
+.our-review .reviewer-name {
+    font-size: var(--font-size-card-heading);
+    font-weight: var(--font-size-heading-weight);
+    margin-bottom: 5px;
+}
+
+.our-review .reviewer-title {
+    color: var(--primary-colors);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+}
+
+.our-review .star-rating {
+    color: var(--rating-star-color);
+    font-size: var(--font-size-small);
+    /* margin-bottom: 20px; */
+}
+
+.our-review .review-text {
+    line-height: 1.7;
+    font-size: var(--font-size-paragraph);
+    font-style: italic;
+}
+
+.our-review .carousel-indicators {
+    position: static;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.our-review .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-colors-low-opacity);
+    border: none;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.our-review .carousel-indicators .active {
+    background-color: var(--secondary-colors);
+    transform: scale(1.2);
+}
+
+.our-review .reviewer-info {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 25px; */
+}
+
+.our-review .reviewer-details {
+    /* margin-left: 20px; */
+    flex: 1;
+}
+
+/* Hide second review card on tablet and mobile screens */
+@media (max-width: 991.98px) {
+    .our-review .carousel-item .row .col-lg-6:nth-child(2) {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-review .section-title {
+        font-size: var(--font-size-heading);
+        margin-bottom: 40px;
+    }
+
+    .our-review .review-card {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+
+    .our-review .reviewer-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+/* our review sec end  */
+
+
+/* login-in sign-in modal start */
+.signin-login .modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.signin-login .btn-google {
+    border: 2px solid var(--all-border);
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.signin-login .btn-google:hover {
+    border: 2px solid var(--secondary-colors);
+    background-color: var(--secondary-colors);
+}
+
+
+.signin-login .btn-facebook {
+    border: 2px solid var(--all-border);
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.signin-login .btn-facebook:hover {
+    border: 2px solid var(--secondary-colors);
+    background-color: var(--secondary-colors);
+}
+
+
+.signin-login .btn-primary-custom {
+    background-color: var(--secondary-colors);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: var(--btn-font-size);
+}
+
+.signin-login .btn-primary-custom:hover {
+    background-color: var(--secondary-colors);
+}
+
+.signin-login .form-control {
+    border: none;
+    background-color: var(--secondary-lights);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.signin-login .form-control:focus {
+    border-color: var(--secondary-colors);
+    background-color: var(--color-white);
+}
+
+.signin-login .divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.signin-login .divider::before,
+.signin-login .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: var(--all-border);
+    width: 30%;
+}
+
+.signin-login .divider::before {
+    left: 0;
+}
+
+.signin-login .divider::after {
+    right: 0;
+}
+
+.signin-login .divider span {
+    padding: 0 15px;
+}
+
+.signin-login .forgot-password {
+    color: var(--secondary-colors);
+    text-decoration: none;
+    font-size: var(--font-size-small);
+}
+
+.signin-login .forgot-password:hover {
+    color: var(--secondary-colors);
+    text-decoration: underline;
+}
+
+.signin-login .register-link {
+    color: var(--secondary-colors);
+    text-decoration: none;
+
+}
+
+.signin-login .register-link:hover {
+    color: var(--secondary-colors);
+    text-decoration: underline;
+}
+
+.signin-login .social-icons i {
+    color: var(--primary-colors);
+}
+
+.signin-login .social-icons ul li {
+    margin: 0 4px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-lights);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    font-size: var(--font-size-card-heading);
+}
+
+.signin-login .social-icons ul li:hover {
+    /* border: 1px solid var(--secondary-colors); */
+    background-color: var(--primary-lights);
+}
+
+.signin-login .social-icons ul li:hover i {
+    color: var(--secondary-colors);
+    transition: color 0.3s ease;
+}
+
+
+.signin-login .password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--primary-colors-low-opacity);
+    cursor: pointer;
+}
+
+.signin-login .password-toggles {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--primary-colors-low-opacity);
+    cursor: pointer;
+}
+
+
+.signin-login .password-toggless {
+    position: absolute;
+    right: 27px;
+    top: 60%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--primary-colors-low-opacity);
+    cursor: pointer;
+}
+
+.signin-login .password-input-container {
+    position: relative;
+}
+
+/* login-in sign-in modal end */
+
+
+
+/* footer section start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: var(--font-size-paragraph);
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer section end */
+
+.navbar.scrolled {
+    background: rgba(20, 20, 20, 0.95) !important;
+    transition: background 0.3s;
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
+}

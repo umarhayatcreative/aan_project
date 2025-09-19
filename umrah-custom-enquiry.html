@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAN Tourism Activities</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/umrah-custom-enquiry.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- header & banner sec start -->
+    <section class="header-home">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg position-fixed w-100 navbar-scroll">
+            <div class="container d-flex align-items-center py-2 flex-nowrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold me-4 flex-shrink-0" href="/index.html">Logo</a>
+
+                <!-- Menu Items (centered on large screens) -->
+                <div class="collapse navbar-collapse justify-content-center flex-grow-1" id="mainMenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
+                        <li class="nav-item"><a class="nav-link" href="/flight.html">Flight</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/hotel.html">Hotel</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="/activities-detail-page.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/combo-tour.html">Combo
+                                Tours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/umrah.html">Umrah</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/visa.html">Visa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side: Contact Us, Log in, Cart -->
+                <div class="d-flex align-items-center ms-auto flex-shrink-0">
+                    <div class="d-none d-lg-flex align-items-center gap-2">
+                        <a href="/contact-us.html" class="nav-link me-2">Contact Us</a>
+                        <a href="#" class="btn btn-outline-light py-1 px-3 me-2">Log in</a>
+                    </div>
+                    <!-- Cart icon always visible -->
+                    <a href="#" class="nav-link fs-5 d-flex align-items-center ms-2" id="cartIcon"><i
+                            class="bi bi-cart"></i></a>
+                    <!-- Toggler (hamburger icon) for mobile -->
+                    <button class="navbar-toggler ms-2 border-white d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <span class="navbar-toggler-icon border-white"> <i class="bi bi-list text-white"></i></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="home-for-mobileview">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-grid"></i>Visas</li>
+                    <li class="list-group-item"><i class="bi bi-airplane"></i>Flights</li>
+                    <li class="list-group-item"><i class="bi bi-box"></i>Umrah</li>
+                    <li class="list-group-item"><i class="bi bi-people"></i>Tours</li>
+                    <li class="list-group-item"><i class="bi bi-telephone"></i>Contact Us</li>
+                    <li class="list-group-item"><i class="bi bi-person"></i>Log in</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- header & banner sec end -->
+
+    <!-- add guest detail start-->
+
+    <section class="umrah-custom-enquiry py-5 mt-2">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-10">
+                    <div class="form-container-custom p-4 bg-white">
+                        <!-- Header -->
+                        <form id="bookingForm">
+                            <!-- Personal Details Section -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                        <i class="fas fa-user me-3 fs-6"></i>
+                                        <h3 class="mb-0 fs-5 fw-semibold">Personal Details</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-5">
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <label for="firstName" class="text-muted mb-1">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder=" " required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <label for="email" class="text-muted mb-1">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder=" " required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <label for="phone" class="text-muted mb-1">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder=" " required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label text-muted mb-1">Days in Makkah</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select Days Range</option>
+                                        <option value="3">3 Days</option>
+                                        <option value="5">5 Days</option>
+                                        <option value="7">7 Days</option>
+                                        <option value="10">10 Days</option>
+                                        <option value="14">14 Days</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label text-muted mb-1">Days in Madinah</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select Days Range</option>
+                                        <option value="3">3 Days</option>
+                                        <option value="5">5 Days</option>
+                                        <option value="7">7 Days</option>
+                                        <option value="10">10 Days</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label text-muted mb-1">Days for Makkah Return</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select Days Range</option>
+                                        <option value="2">2 Days</option>
+                                        <option value="3">3 Days</option>
+                                        <option value="5">5 Days</option>
+                                        <option value="7">7 Days</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Flight Details Section -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                        <i class="fas fa-plane me-3 fs-6"></i>
+                                        <h3 class="mb-0 fs-5 fw-semibold">Flight Details</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-4 mb-5">
+                                <div class="col-md-6">
+                                    <div class="option-card-custom" onclick="selectOption(this, 'flight', 'group')">
+                                        <h6 class="mb-0"><i class="fas fa-users me-2 text-secondary-custom"></i>Group
+                                            Flight</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="option-card-custom" onclick="selectOption(this, 'flight', 'online')">
+                                        <h6 class="mb-0"><i class="fas fa-laptop me-2 text-secondary-custom"></i>Online
+                                            Flight</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hotel Details Section -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                        <i class="fas fa-hotel me-3 fs-6"></i>
+                                        <h3 class="mb-0 fs-5 fw-semibold">Hotel Details</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-2 mb-5">
+                                <div class="col-12">
+                                    <h6 class="fw-bold mb-0">Makkah Accommodation</h6>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted mb-1">Select Hotel</label>
+                                    <select class="form-select" required>
+                                        <option value="">Please Select a Hotel</option>
+                                        <option value="hilton">Hilton Makkah Convention Hotel</option>
+                                        <option value="fairmont">Fairmont Makkah Clock Royal Tower</option>
+                                        <option value="conrad">Conrad Makkah</option>
+                                        <option value="anjum">Anjum Hotel Makkah</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted mb-1">Distance from Haram</label>
+                                    <select class="form-select" required>
+                                        <option value="">Please Select Distance</option>
+                                        <option value="walking">Walking Distance (0-500m)</option>
+                                        <option value="close">Close (500m-1km)</option>
+                                        <option value="nearby">Nearby (1-2km)</option>
+                                        <option value="transport">Transportation Required (2km+)</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <h6 class="fw-bold mb-0 mt-4">Madinah Accommodation</h6>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted mb-1">Select Hotel</label>
+                                    <select class="form-select" required>
+                                        <option value="">Please Select a Hotel</option>
+                                        <option value="oberoi">The Oberoi Madinah</option>
+                                        <option value="pullman">Pullman Zamzam Madinah</option>
+                                        <option value="shaza">Shaza Madinah</option>
+                                        <option value="anwar">Anwar Al Madinah Movenpick</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted mb-1">Distance from Masjid Nabawi</label>
+                                    <select class="form-select" required>
+                                        <option value="">Please Select Distance</option>
+                                        <option value="walking">Walking Distance (0-500m)</option>
+                                        <option value="close">Close (500m-1km)</option>
+                                        <option value="nearby">Nearby (1-2km)</option>
+                                        <option value="transport">Transportation Required (2km+)</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <h6 class="fw-bold mb-0 mt-4">Makkah Return Accommodation</h6>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted mb-1">Select Hotel</label>
+                                    <select class="form-select" required>
+                                        <option value="">Please Select a Hotel</option>
+                                        <option value="hilton2">Hilton Makkah Convention Hotel</option>
+                                        <option value="fairmont2">Fairmont Makkah Clock Royal Tower</option>
+                                        <option value="conrad2">Conrad Makkah</option>
+                                        <option value="anjum2">Anjum Hotel Makkah</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted mb-1">Distance from Haram</label>
+                                    <select class="form-select" required>
+                                        <option value="">Please Select Distance</option>
+                                        <option value="walking">Walking Distance (0-500m)</option>
+                                        <option value="close">Close (500m-1km)</option>
+                                        <option value="nearby">Nearby (1-2km)</option>
+                                        <option value="transport">Transportation Required (2km+)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Transfer Details Section -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-header-custom p-3 mb-4 d-flex align-items-center rounded-3">
+                                        <i class="fas fa-bus me-3 fs-6"></i>
+                                        <h3 class="mb-0 fs-5 fw-semibold">Transfer Options</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-5">
+                                <div class="col-md-6">
+                                    <div class="option-card-custom" onclick="selectOption(this, 'transfer', 'shared')">
+                                        <h6 class="mb-0"><i class="fas fa-share-alt me-2"></i>Shared Transfer
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="option-card-custom" onclick="selectOption(this, 'transfer', 'private')">
+                                        <h6 class="mb-0"><i class="fas fa-car me-2"></i>Private Transfer</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="option-card-custom"
+                                        onclick="selectOption(this, 'transfer', 'jeddah-makkah')">
+                                        <h6 class="mb-0"><i class="fas fa-route me-2"></i>Jeddah to Makkah
+                                            Transfer</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="option-card-custom" onclick="selectOption(this, 'transfer', 'ziarat')">
+                                        <h6 class="mb-0"><i class="fas fa-map-marked-alt me-2"></i>Ziarat</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-submit-booking fw-semibold text-white">
+                                        <i class="fas fa-paper-plane me-2"></i>Submit Booking Request
+                                    </button>
+                                    <div class="mt-4 p-4 rounded-2 border border-dashed">
+                                        <div class="row justify-content-center g-4">
+                                            <div class="col-auto">
+                                                <div class="d-flex align-items-center gap-2 text-muted">
+                                                    <i class="fas fa-shield-alt text-success"></i>
+                                                    <small class="fw-medium">SSL Protected</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="d-flex align-items-center gap-2 text-muted">
+                                                    <i class="fas fa-headset text-primary-custom"></i>
+                                                    <small class="fw-medium">24/7 Support</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="d-flex align-items-center gap-2 text-muted">
+                                                    <i class="fas fa-award text-warning"></i>
+                                                    <small class="fw-medium">Licensed Tour Operator</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- add guest detail end -->
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h5 class="fw-bold text-white mb-4 fs-4">Logo</h5>
+                        <p class="small text-white">
+                            From flights to tours, Umrah to visa â€” Tourism offers personalized services for your ideal
+                            trip. Smart
+                            planning for better travel experiences.
+                        </p>
+                        <div>
+                            <button id="lightModeBtn">Light</button>
+                            <button id="darkModeBtn">Dark</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
+                        <ul class="list-unstyled small text-white">
+                            <li><a href="/visa.html" class="text-white text-decoration-none">Visas</a></li>
+                            <li><a href="/activities.html" class="text-white text-decoration-none">Activities</a></li>
+                            <li><a href="/combo-tour.html" class="text-white text-decoration-none">Combo Tours</a></li>
+                            <li><a href="/hotel.html" class="text-white text-decoration-none">Hotel</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Blogs</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Get In Touch:</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 12 345
+                                    6789</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">info__gmail.com</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Street 1, Lahore
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">Â© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/umrah-custom-enquiry.js"></script>
+    <script src="js/theme-change.js"></script>
+</body>
+
+</html>

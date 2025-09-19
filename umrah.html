@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAN Tourism Combo Tour</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/umrah.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- header & banner sec start -->
+    <section class="header-home">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg position-fixed w-100 navbar-scroll">
+            <div class="container d-flex align-items-center py-2 flex-nowrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold me-4 flex-shrink-0 text-white" href="/index.html">Logo</a>
+
+                <!-- Menu Items (centered on large screens) -->
+                <div class="collapse navbar-collapse justify-content-center flex-grow-1" id="mainMenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
+                        <li class="nav-item"><a class="nav-link" href="/flight.html">Flight</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/hotel.html">Hotel</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/activities.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/combo-tour.html">Combo Tours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/packages.html">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/umrah.html">Umrah</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/visa.html">Visa</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Right Side: Contact Us, Log in, Cart -->
+                <div class="d-flex align-items-center ms-auto flex-shrink-0">
+                    <div class="d-none d-lg-flex align-items-center gap-2">
+                        <a href="/contact-us.html" class="nav-link me-2">Contact Us</a>
+                        <a href="#" class="btn btn-outline-light py-1 px-3 me-2">Log in</a>
+                    </div>
+                    <!-- Cart icon always visible -->
+                    <a href="#" class="nav-link fs-5 d-flex align-items-center ms-2" id="cartIcon"><i
+                            class="bi bi-cart"></i></a>
+                    <!-- Toggler (hamburger icon) for mobile -->
+                    <button class="navbar-toggler ms-2 border-white d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <span class="navbar-toggler-icon border-white"> <i class="bi bi-list text-white"></i></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="home-for-mobileview">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/flight.html" class="text-decoration-none"><i
+                                class="bi bi-airplane me-2 offcanvas-icon"></i>Flight</a></li>
+                    <li class="list-group-item"><a href="/hotel.html" class="text-decoration-none"><i
+                                class="bi bi-bank me-2 offcanvas-icon"></i>Hotel</a></li>
+                    <li class="list-group-item"><a href="/activities.html" class="text-decoration-none"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-luggage me-2 offcanvas-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 1a.5.5 0 0 0-.5.5V5h-.5A1.5 1.5 0 0 0 0 6.5v7a1.5 1.5 0 0 0 1 1.415v.335a.75.75 0 0 0 1.5 0V15H4v-1H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5V7h1v-.5A1.5 1.5 0 0 0 6.5 5H6V1.5a.5.5 0 0 0-.5-.5zM5 5H3V2h2z" />
+                                <path
+                                    d="M3 7.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0zM11 6a1.5 1.5 0 0 1 1.5 1.5V8h2A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 14.5v-5A1.5 1.5 0 0 1 6.5 8h2v-.5A1.5 1.5 0 0 1 10 6zM9.5 7.5V8h2v-.5A.5.5 0 0 0 11 7h-1a.5.5 0 0 0-.5.5M6 9.5v5a.5.5 0 0 0 .5.5H7V9h-.5a.5.5 0 0 0-.5.5m7 5.5V9H8v6zm1.5 0a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5H14v6z" />
+                            </svg>Activities</a></li>
+                    <li class="list-group-item"><a href="/combo-tour.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Combo Tour</a></li>
+                    <li class="list-group-item"><a href="/packages.html" class="text-decoration-none"><i
+                                class="bi bi-boxes me-2 offcanvas-icon"></i>Packages</a></li>
+                    <li class="list-group-item"><a href="/umrah.html" class="text-decoration-none"><i
+                                class="bi bi-box me-2 offcanvas-icon"></i>Umrah</a></li>
+                    <li class="list-group-item"><a href="/visa.html" class="text-decoration-none"><i
+                                class="bi bi-grid me-2 offcanvas-icon"></i>Visa</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero-section-home">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="hero-content">
+                <h1 class="display-6 fw-bold text-white">Your Trusted Partner for a Peaceful Umrah</h1>
+                <p class="lead text-white">"30,000+ Exciting Adventures Await You!"</p>
+            </div>
+        </div>
+    </section>
+    <!-- header & banner sec end -->
+
+    <!-- combo list sec start -->
+    <section class="umrah-list py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Mobile Filter Button -->
+                <div class="col-12 mobile-filter-btn mb-3">
+                    <button class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center"
+                        id="mobileFilterBtn">
+                        <i class="bi bi-funnel me-2"></i>
+                        Filter Options
+                    </button>
+                </div>
+
+                <!-- Filters Sidebar -->
+                <div class="col-lg-3 col-md-4 mb-4 desktop-umrah-filters">
+                    <!-- Search Box -->
+                    <div class="mb-4">
+                        <a href="/umrah-custom-enquiry.html" class="btn custom-enquiry-btn w-100">Custom
+                            Enquiry</a>
+                    </div>
+
+
+                    <!-- Visa Filter -->
+                    <div class="filter-section price-range-filter mb-4">
+                        <h6 class="filter-title">Price Range:</h6>
+                        <div class="d-flex justify-content-between mt-2">
+                            <span>Min: <span id="minValue">0</span></span>
+                            <span>Max: <span id="maxValue">50000</span></span>
+                        </div>
+                        <div class="range-slider">
+                            <div class="range-track">
+                                <div class="range-fill" id="rangeFill"></div>
+                            </div>
+                            <input type="range" class="range-input" id="minRange" min="0" max="50000" value="0"
+                                step="1000">
+                            <input type="range" class="range-input" id="maxRange" min="0" max="50000" value="50000"
+                                step="1000">
+                        </div>
+                    </div>
+
+                    <!-- Visa Filter -->
+                    <div class="filter-section mb-4">
+                        <h6 class="filter-title">Visa:</h6>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">With Visa</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration2">
+                            <label class="form-check-label" for="duration2">Without Visa</label>
+                        </div>
+                    </div>
+
+                    <!-- Hotel -->
+                    <div class="filter-section mb-4">
+                        <h6 class="filter-title">Hotel:</h6>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">1 Star</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration2">
+                            <label class="form-check-label" for="duration2">2 Star</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">3 Star</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration2">
+                            <label class="form-check-label" for="duration2">4 Star</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">5 Star</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration2">
+                            <label class="form-check-label" for="duration2">Without Hotel</label>
+                        </div>
+                    </div>
+
+                    <!--Transport-->
+                    <div class="filter-section mb-4">
+                        <h6 class="filter-title">Transport:</h6>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">Without Transport</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration2">
+                            <label class="form-check-label" for="duration2">Shared</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">Private</label>
+                        </div>
+                    </div>
+
+                    <!--Flight-->
+                    <div class="filter-section mb-4">
+                        <h6 class="filter-title">Transport:</h6>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">Without Flight</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration2">
+                            <label class="form-check-label" for="duration2">Group</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="duration1">
+                            <label class="form-check-label" for="duration1">Private</label>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-12 mb-4">
+                            <div class="card umrah-card-custom p-2">
+                                <div class="row g-0">
+                                    <!-- Image -->
+                                    <div class="col-md-4">
+                                        <div class="umrah-card-custom-img">
+                                            <div class="review-badge shadow-sm">
+                                                3.5
+                                            </div>
+                                            <img src="/img/umrah1.png"
+                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
+                                        </div>
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="col-md-8 d-flex flex-column p-3">
+                                        <!-- Stars -->
+                                        <div class="d-flex flex-wrap align-items-baseline mb-3">
+                                            <h5 class="fw-semibold">21 Days Umrah Package</h5>
+                                            <div class="mb-2 ms-auto">
+                                                <span class="rating-stars mb-1 me-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </span>
+                                                <!-- <span class="mb-2 text-muted">4.5 reviews</span> -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Title -->
+
+                                        <div class="row">
+                                            <!-- Left Column -->
+                                            <div class="col-md-12 mb-2">
+                                                <div class="d-flex umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center mb-2 me-2">
+                                                        <i class="fas fa-mosque text-success me-2"></i>
+                                                        <span class="fw-medium">10 Nights Madinah</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <i class="fas fa-kaaba text-dark me-2"></i>
+                                                        <span class="fw-medium">10 Nights Makkah</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Right Column -->
+                                            <div class="col-md-12 mb-4">
+                                                <div class="d-flex align-items-baseline gap-2 umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-shuttle-van me-2"></i>
+                                                        <span class="text-muted">Complete ground transportation</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-passport me-2"></i>
+                                                        <span class="text-muted">Swift eVisa processing</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-map-marked-alt me-2"></i>
+                                                        <span class="text-muted">Side tours to historical places</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-headset me-2"></i>
+                                                        <span class="text-muted">24/7 staff assistance</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Price + Button -->
+                                        <div class="d-flex align-items-center mt-auto flex-wrap">
+                                            <div class="me-3 small">
+                                                <span
+                                                    class="d-block starting-price text-muted text-decoration-line-through">Starting</span>
+                                                <span class="text-decoration-line-through text-muted">From</span>
+                                            </div>
+                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
+                                            <a href="/umrah-detail.html"
+                                                class="btn umarh-card-btn ms-auto text-white fw-medium py-2 px-3">Book
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="card umrah-card-custom p-2">
+                                <div class="row g-0">
+                                    <!-- Image -->
+                                    <div class="col-md-4">
+                                        <div class="umrah-card-custom-img">
+                                            <div class="review-badge shadow-sm">
+                                                4.0
+                                            </div>
+                                            <img src="/img/umrah2.png"
+                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
+                                        </div>
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="col-md-8 d-flex flex-column p-3">
+                                        <!-- Stars -->
+                                        <div class="d-flex flex-wrap align-items-baseline mb-3">
+                                            <h5 class="fw-semibold">21 Days Umrah Package</h5>
+                                            <div class="mb-2 ms-auto">
+                                                <span class="rating-stars mb-1 me-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </span>
+                                                <!-- <span class="mb-2 text-muted">4.5 reviews</span> -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Title -->
+
+                                        <div class="row">
+                                            <!-- Left Column -->
+                                            <div class="col-md-12 mb-2">
+                                                <div class="d-flex umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center mb-2 me-2">
+                                                        <i class="fas fa-mosque text-success me-2"></i>
+                                                        <span class="fw-medium">10 Nights Madinah</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <i class="fas fa-kaaba text-dark me-2"></i>
+                                                        <span class="fw-medium">10 Nights Makkah</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Right Column -->
+                                            <div class="col-md-12 mb-4">
+                                                <div class="d-flex align-items-baseline gap-2 umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-shuttle-van me-2"></i>
+                                                        <span class="text-muted">Complete ground transportation</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-passport me-2"></i>
+                                                        <span class="text-muted">Swift eVisa processing</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-map-marked-alt me-2"></i>
+                                                        <span class="text-muted">Side tours to historical places</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-headset me-2"></i>
+                                                        <span class="text-muted">24/7 staff assistance</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Price + Button -->
+                                        <div class="d-flex align-items-center mt-auto flex-wrap">
+                                            <div class="me-3 small">
+                                                <span
+                                                    class="d-block starting-price text-muted text-decoration-line-through">Starting</span>
+                                                <span class="text-decoration-line-through text-muted">From</span>
+                                            </div>
+                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
+                                            <a href="/umrah-detail.html"
+                                                class="btn umarh-card-btn ms-auto text-white fw-medium py-2 px-3">Book
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="card umrah-card-custom p-2">
+                                <div class="row g-0">
+                                    <!-- Image -->
+                                    <div class="col-md-4">
+                                        <div class="umrah-card-custom-img">
+                                            <div class="review-badge shadow-sm">
+                                                3.0
+                                            </div>
+                                            <img src="/img/umarh3.png"
+                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
+                                        </div>
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="col-md-8 d-flex flex-column p-3">
+                                        <!-- Stars -->
+                                        <div class="d-flex flex-wrap align-items-baseline mb-3">
+                                            <h5 class="fw-semibold">21 Days Umrah Package</h5>
+                                            <div class="mb-2 ms-auto">
+                                                <span class="rating-stars mb-1 me-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </span>
+                                                <!-- <span class="mb-2 text-muted">4.5 reviews</span> -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Title -->
+
+                                        <div class="row">
+                                            <!-- Left Column -->
+                                            <div class="col-md-12 mb-2">
+                                                <div class="d-flex umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center mb-2 me-2">
+                                                        <i class="fas fa-mosque text-success me-2"></i>
+                                                        <span class="fw-medium">10 Nights Madinah</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <i class="fas fa-kaaba text-dark me-2"></i>
+                                                        <span class="fw-medium">10 Nights Makkah</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Right Column -->
+                                            <div class="col-md-12 mb-4">
+                                                <div class="d-flex align-items-baseline gap-2 umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-shuttle-van me-2"></i>
+                                                        <span class="text-muted">Complete ground transportation</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-passport me-2"></i>
+                                                        <span class="text-muted">Swift eVisa processing</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-map-marked-alt me-2"></i>
+                                                        <span class="text-muted">Side tours to historical places</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-headset me-2"></i>
+                                                        <span class="text-muted">24/7 staff assistance</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Price + Button -->
+                                        <div class="d-flex align-items-center mt-auto flex-wrap">
+                                            <div class="me-3 small">
+                                                <span
+                                                    class="d-block starting-price text-muted text-decoration-line-through">Starting</span>
+                                                <span class="text-decoration-line-through text-muted">From</span>
+                                            </div>
+                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
+                                            <a href="/umrah-detail.html"
+                                                class="btn umarh-card-btn ms-auto text-white fw-medium py-2 px-3">Book
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-4">
+                            <div class="card umrah-card-custom p-2">
+                                <div class="row g-0">
+                                    <!-- Image -->
+                                    <div class="col-md-4">
+                                        <div class="umrah-card-custom-img">
+                                            <div class="review-badge shadow-sm">
+                                                3.5
+                                            </div>
+                                            <img src="/img/umrah4.png"
+                                                class="img-fluid w-100 object-fit-cover rounded-3 " alt="Umrah Image">
+                                        </div>
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="col-md-8 d-flex flex-column p-3">
+                                        <!-- Stars -->
+                                        <div class="d-flex flex-wrap align-items-baseline mb-3">
+                                            <h5 class="fw-semibold">21 Days Umrah Package</h5>
+                                            <div class="mb-2 ms-auto">
+                                                <span class="rating-stars mb-1 me-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </span>
+                                                <!-- <span class="mb-2 text-muted">4.5 reviews</span> -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Title -->
+
+                                        <div class="row">
+                                            <!-- Left Column -->
+                                            <div class="col-md-12 mb-2">
+                                                <div class="d-flex umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center mb-2 me-2">
+                                                        <i class="fas fa-mosque text-success me-2"></i>
+                                                        <span class="fw-medium">10 Nights Madinah</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <i class="fas fa-kaaba text-dark me-2"></i>
+                                                        <span class="fw-medium">10 Nights Makkah</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Right Column -->
+                                            <div class="col-md-12 mb-4">
+                                                <div class="d-flex align-items-baseline gap-2 umrah-services flex-wrap">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-shuttle-van me-2"></i>
+                                                        <span class="text-muted">Complete ground transportation</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-passport me-2"></i>
+                                                        <span class="text-muted">Swift eVisa processing</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-map-marked-alt me-2"></i>
+                                                        <span class="text-muted">Side tours to historical places</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-headset me-2"></i>
+                                                        <span class="text-muted">24/7 staff assistance</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Price + Button -->
+                                        <div class="d-flex align-items-center mt-auto flex-wrap">
+                                            <div class="me-3 small">
+                                                <span
+                                                    class="d-block starting-price text-muted text-decoration-line-through">Starting</span>
+                                                <span class="text-decoration-line-through text-muted">From</span>
+                                            </div>
+                                            <h5 class="mb-0 fw-bold price-name">PKR 832,170.00</h5>
+                                            <a href="/umrah-detail.html"
+                                                class="btn umarh-card-btn ms-auto text-white fw-medium py-2 px-3">Book
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="paginations-combo">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Filter Sidebar -->
+        <div class="filter-overlay" id="filterOverlay"></div>
+        <div class="filter-sidebar combo-filter-view" id="filterSidebar">
+            <div class="filter-header">
+                <h5 class="mb-0">Filter Options</h5>
+                <button class="filter-close" id="filterClose">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+
+            <!-- Visa Filter -->
+            <div class="filter-section price-range-filter mb-4">
+                <h6 class="filter-title">Price Range:</h6>
+                <div class="d-flex justify-content-between mt-2">
+                    <span>Min: <span id="minValue">0</span></span>
+                    <span>Max: <span id="maxValue">50000</span></span>
+                </div>
+                <div class="range-slider">
+                    <div class="range-track">
+                        <div class="range-fill" id="rangeFill"></div>
+                    </div>
+                    <input type="range" class="range-input" id="minRange" min="0" max="50000" value="0" step="1000">
+                    <input type="range" class="range-input" id="maxRange" min="0" max="50000" value="50000" step="1000">
+                </div>
+            </div>
+
+            <!-- Visa Filter -->
+            <div class="filter-section mb-4">
+                <h6 class="filter-title">Visa:</h6>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">With Visa</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration2">
+                    <label class="form-check-label" for="duration2">Without Visa</label>
+                </div>
+            </div>
+
+            <!-- Hotel -->
+            <div class="filter-section mb-4">
+                <h6 class="filter-title">Hotel:</h6>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">1 Star</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration2">
+                    <label class="form-check-label" for="duration2">2 Star</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">3 Star</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration2">
+                    <label class="form-check-label" for="duration2">4 Star</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">5 Star</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration2">
+                    <label class="form-check-label" for="duration2">Without Hotel</label>
+                </div>
+            </div>
+
+            <!--Transport-->
+            <div class="filter-section mb-4">
+                <h6 class="filter-title">Transport:</h6>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">Without Transport</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration2">
+                    <label class="form-check-label" for="duration2">Shared</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">Private</label>
+                </div>
+            </div>
+
+            <!--Flight-->
+            <div class="filter-section mb-4">
+                <h6 class="filter-title">Transport:</h6>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">Without Flight</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration2">
+                    <label class="form-check-label" for="duration2">Group</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="duration1">
+                    <label class="form-check-label" for="duration1">Private</label>
+                </div>
+            </div>
+
+
+
+            <!-- Apply Filters Button -->
+            <div class="d-grid">
+                <button class="btn btn-primary apply-filter-close-btn " id="applyFilters">
+                    Apply Filters
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- combo list sec end -->
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h5 class="fw-bold text-white mb-4 fs-4">Logo</h5>
+                        <p class="small text-white">
+                            From flights to tours, Umrah to visa â€” Tourism offers personalized services for your ideal
+                            trip. Smart
+                            planning for better travel experiences.
+                        </p>
+                        <div>
+                            <button id="lightModeBtn">Light</button>
+                            <button id="darkModeBtn">Dark</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
+                        <ul class="list-unstyled small text-white">
+                            <li><a href="/visa.html" class="text-white text-decoration-none">Visas</a></li>
+                            <li><a href="/activities.html" class="text-white text-decoration-none">Activities</a></li>
+                            <li><a href="/combo-tour.html" class="text-white text-decoration-none">Combo Tours</a></li>
+                            <li><a href="/hotel.html" class="text-white text-decoration-none">Hotel</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Blogs</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-bold text-white mb-4 fs-5">Get In Touch:</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 12 345
+                                    6789</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">info__gmail.com</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Street 1, Lahore
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">Â© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/umrah.js"></script>
+    <script src="js/theme-change.js"></script>
+
+</body>
+
+</html>
