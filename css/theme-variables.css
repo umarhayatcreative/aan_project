@@ -38,7 +38,11 @@ body {
     --color-white: #fff;
     --primary-colors-low-opacity: rgba(6, 38, 0, 0.5);
     --all-border: #E6E6E6;
+<<<<<<< HEAD
     --font-family-primary: "Jost", sans-serif;
+=======
+   --font-family-primary:"Jost", sans-serif;
+>>>>>>> origin/main
     --font-size-paragraph: 16px;
     --font-size-small: 14px;
     --font-size-heading: clamp(20px, 2.5vw, 25px);
@@ -80,15 +84,23 @@ body {
     color-scheme: dark;
 }
 
+<<<<<<< HEAD
 #lightModeBtn {
+=======
+#lightModeBtn{
+>>>>>>> origin/main
     background-color: #44b50c;
     border-radius: 5px;
     border: 1px solid #44b50c;
     padding: 3px 20px;
     color: white;
 }
+<<<<<<< HEAD
 
 #darkModeBtn {
+=======
+#darkModeBtn{
+>>>>>>> origin/main
     background-color: #FB5B32;
     border-radius: 5px;
     border: 1px solid #FB5B32;
