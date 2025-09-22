@@ -468,11 +468,7 @@
 }
 
 .hero-section-home .nav-link:hover {
-<<<<<<< HEAD
     color: var(--secondary-colors);
-=======
-    color: var(--secondary-colors) !important;
->>>>>>> origin/main
 }
 
 .hero-section-home .btn-search {
@@ -492,24 +488,12 @@
 
 
 /* Cart container styles */
-<<<<<<< HEAD
 
 .add-to-cart .cart-dropdown {
     position: absolute;
     top: 100%;
     right: -18px;
     width: 360px;
-=======
-.position-relative {
-    position: relative !important;
-}
-
-.cart-dropdown {
-    position: absolute;
-    top: 100%;
-    right: -18px;
-    width: 300px;
->>>>>>> origin/main
     z-index: 1050;
     margin-top: 0.5rem;
     background-color: var(--color-white);
@@ -518,22 +502,13 @@
 }
 
 @media (max-width: 576px) {
-<<<<<<< HEAD
     .add-to-cart .cart-dropdown {
         width: 300px;
-=======
-    .cart-dropdown {
-        width: 280px;
->>>>>>> origin/main
         right: -50px;
     }
 }
 
-<<<<<<< HEAD
 .add-to-cart .cart-dropdown:before {
-=======
-.cart-dropdown:before {
->>>>>>> origin/main
     content: '';
     position: absolute;
     top: -8px;
@@ -543,27 +518,18 @@
     border-bottom: 8px solid var(--color-white);
 }
 
-<<<<<<< HEAD
 .add-to-cart .cart-toggle-btn {
-=======
-.cart-toggle-btn {
->>>>>>> origin/main
     cursor: pointer;
     position: relative;
     z-index: 1051;
 }
 
 .add-to-cart .cart-dropdown-content {
-<<<<<<< HEAD
     
-=======
-    max-height: 300px;
->>>>>>> origin/main
     overflow-y: auto;
     padding: 15px;
 }
 
-<<<<<<< HEAD
 .add-to-cart .checkout-btn-cart{
     background-color: var(--secondary-colors);
     color: var(--color-white);
@@ -582,11 +548,6 @@
 /* Force display when not d-none */
 .add-to-cart .cart-dropdown:not(.d-none) {
     display: block;
-=======
-/* Force display when not d-none */
-.add-to-cart .cart-dropdown:not(.d-none) {
-    display: block !important;
->>>>>>> origin/main
 }
 
 
@@ -598,11 +559,7 @@
     }
 
     .header-home #mainMenu .nav-link {
-<<<<<<< HEAD
         color: var(--color-white);
-=======
-        color: var(--color-white) !important;
->>>>>>> origin/main
     }
 
     .header-home .btn-outline-light:hover {
