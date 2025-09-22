@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /* Offcanvas Mobile Menu */
-=======
-
->>>>>>> origin/main
 .home-for-mobileview .offcanvas .offcanvas-body ul li a {
     color: var(--primary-colors);
 }
@@ -11,7 +7,6 @@
     color: var(--secondary-colors);
 }
 
-<<<<<<< HEAD
 /* Offcanvas Mobile Menu */
 
 /* header & banner sec start */
@@ -29,87 +24,6 @@
 }
 
 /* Mobile toggle menu background and styles */
-=======
-/* header & banner sec start */
-.navbar-toggler-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.hero-section-home {
-    background: url("../img/bahrian\ vissa\ img.png");
-    height: 437px;
-    position: relative;
-}
-
-@media (max-width: 576px) {
-    .hero-section-home {
-        height: 350px;
-    }
-
-}
-
-.hero-section-home .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.55);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.hero-section-home .lead {
-    font-size: clamp(16px, 2.5vw, 25px);
-}
-
-.hero-section-home .hero-content {
-    position: relative;
-    z-index: 2;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-}
-
-
-.header-home .nav-link{
-    color: var(--color-white);
-}
-
-.header-home .nav-link:hover {
-    color: var(--secondary-colors);
-}
-
-.header-home .navbar .nav-link.active {
-    color: var(--secondary-colors);
-}
-
-
-.navbar .nav-link.active {
-    color: var(--secondary-colors);
-    /* or any color you want */
-}
-
-.header-home .navbar {
-    z-index: 1030;
-}
-
-/* Mobile toggle menu background and styles */
-@media (max-width: 991px) {
-    .header-home #mainMenu {
-        background-color: var(--primary-colors);
-        padding: 1rem;
-    }
-
-    .header-home #mainMenu .nav-link {
-        color: var(--color-white);
-    }
-
-    .header-home .btn-outline-light:hover {
-        background-color: var(--color-white);
-        color: var(--primary-colors);
-    }
-}
->>>>>>> origin/main
 
 .home-for-mobileview .offcanvas {
     border-radius: 0 18px 18px 0;
@@ -130,7 +44,6 @@
     border-bottom: 1px solid var(--primary-lights);
 }
 
-<<<<<<< HEAD
 
 
 /* header fixed */
@@ -155,49 +68,6 @@
 
 
 
-=======
-@media (min-width: 992px) {
-    .home-for-mobileview .offcanvas {
-        display: none !important;
-    }
-
-    .hero-section-home .navbar-nav .nav-link {
-        /* color: #fff !important; */
-        font-size: 1rem;
-        padding: 0.5rem 1.1rem;
-        font-weight: 400;
-        opacity: 0.9;
-        transition: color 0.2s, opacity 0.2s;
-    }
-
-    .hero-section-home .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-        /* color: #fff !important; */
-        opacity: 1;
-    }
-
-    .hero-section-home .navbar .btn {
-        font-size: 0.98rem;
-        border-radius: 6px;
-    }
-
-    .hero-section-home .navbar .bi-cart {
-        vertical-align: middle;
-        font-size: 1.25rem;
-    }
-
-    .hero-section-home .navbar {
-        background: linear-gradient(90deg, rgba(10, 18, 40, 0.85) 0%, rgba(20, 30, 60, 0.7) 100%);
-    }
-}
-
-/* header fixed */
-.header-home .navbar-scroll {
-    background-color: transparent;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
->>>>>>> origin/main
 .header-home .navbar-scroll.scrolled {
     background-color: var(--primary-colors);
     /* Change to any color */
@@ -214,15 +84,10 @@
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 .header-home .navbar-scroll.scrolled .btn-outline-light:hover {
     color: var(--primary-colors);
 }
 
-<<<<<<< HEAD
 .header-home .nav-link {
     color: var(--color-white);
 }
@@ -238,11 +103,6 @@
 
 /* header fixed */
 
-=======
-/* header fixed */
-
-/* header & banner sec end */
->>>>>>> origin/main
 
 .visa-options-price .visa-options-price-heading {
     color: var(--primary-colors);
