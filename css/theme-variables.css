@@ -32,7 +32,7 @@ body {
     --all-overlay-bg: rgba(0, 0, 0, 0.55);
     --primary-colors: #1d1d1d;
     --secondary-colors: #44b50c;
-    --btn-hover-color: #58e013;
+    --btn-hover-color: #3ea809;
     --primary-lights: #f3f3f3;
     --secondary-lights: #ebfde2;
     --color-white: #fff;
@@ -84,14 +84,18 @@ body {
     background-color: #44b50c;
     border-radius: 5px;
     border: 1px solid #44b50c;
-    padding: 3px 20px;
+    width: 15px;
+    height: 15px;
     color: white;
+    border-radius: 50%;
 }
 
 #darkModeBtn {
     background-color: #FB5B32;
     border-radius: 5px;
     border: 1px solid #FB5B32;
-    padding: 3px 20px;
+    width: 15px;
+    height: 15px;
     color: white;
+    border-radius: 50%;
 }
