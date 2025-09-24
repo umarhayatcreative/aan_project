@@ -13,6 +13,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/theme-variables.css">
     <link rel="stylesheet" href="css/visa-detail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.1/css/all.min.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Flatpickr CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -20,7 +22,7 @@
 
 <body>
     <!-- header & banner sec start -->
-   <section class="header-home">
+    <section class="header-home">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg position-fixed w-100 navbar-scroll">
             <div class="container d-flex align-items-center py-2 flex-nowrap">
@@ -33,8 +35,7 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-2 gap-xl-3">
                         <li class="nav-item"><a class="nav-link" href="/flight.html">Flight</a></li>
                         <li class="nav-item"><a class="nav-link" href="/hotel.html">Hotel</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="/activities-detail-page.html">Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/activities-detail-page.html">Activities</a></li>
                         <li class="nav-item"><a class="nav-link" href="/combo-tour.html">Combo
                                 Tours</a></li>
                         <li class="nav-item"><a class="nav-link" href="/packages.html">Packages</a></li>
@@ -92,25 +93,35 @@
             </div>
         </div>
     </div>
-    <!-- Hero Section -->
-    <section class="hero-section-home">
-        <div class="hero-overlay"></div>
-        <div class="container h-100">
-            <div class="hero-content">
-                <h1 class="display-6 fw-bold text-white">Bahrain Visa</h1>
-                <p class="lead text-white">We've emailed your invoice and order.</p>
-            </div>
-        </div>
-    </section>
+
     <!-- header & banner sec end -->
 
     <!-- visa option sec start -->
     <section class="visa-options-price py-5">
         <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="visa-detail-head p-3 rounded-3 mb-4">
+                        <h3 class="fw-semibold">Malaysia Visa</h3>
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="mb-0">(25 Reviews)</p>
+                            <span class="rating-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="visa-options-price-heading mb-3">
-                        <h2 class="fw-bold">Bahrain Visa Price and Options</h2>
+                        <h3 class="fw-semibold">Bahrain Visa Price and Options</h3>
                     </div>
                 </div>
             </div>
@@ -231,9 +242,6 @@
                 </div>
             </div>
 
-
-
-
             <div class="row">
                 <div class="col-lg-12 d-flex">
                     <a href="/visa-user-detail.html"
@@ -250,17 +258,17 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="visa-application-process-heading mb-5 text-center">
-                        <h2 class="fw-bold">Simple Application Process</h2>
+                        <h3 class="fw-semibold">Simple Application Process</h3>
                     </div>
                 </div>
             </div>
 
             <div class="row g-4">
                 <div class="col-lg-3 col-md-4">
-                    <div class="visa-application-process-custom text-center d-flex align-items-center flex-column">
+                    <div class="visa-application-process-custom text-center d-flex align-items-center flex-column ">
                         <div
                             class="visa-application-process-custom-icon d-flex align-items-center justify-content-center mb-3">
-                            <img src="img/Form.png" alt="">
+                            <i class="fa-solid fa-file-circle-check fs-3"></i>
                         </div>
                         <h5 class="fw-semibold">Complete Form</h5>
                         <p class="text-muted">Fill out our simple application form with your personal and travel
@@ -272,7 +280,7 @@
                     <div class="visa-application-process-custom text-center d-flex align-items-center flex-column">
                         <div
                             class="visa-application-process-custom-icon d-flex align-items-center justify-content-center mb-3">
-                            <img src="img/Form.png" alt="">
+                            <i class="fa-solid fa-upload fs-3"></i>
                         </div>
                         <h5 class="fw-semibold">Upload Documents</h5>
                         <p class="text-muted">Upload scanned copies of your passport, photo, and other required
@@ -284,7 +292,7 @@
                     <div class="visa-application-process-custom text-center d-flex align-items-center flex-column">
                         <div
                             class="visa-application-process-custom-icon d-flex align-items-center justify-content-center mb-3">
-                            <img src="img/Form.png" alt="">
+                            <i class="fa-solid fa-wallet fs-3"></i>
                         </div>
                         <h5 class="fw-semibold">Make Payments</h5>
                         <p class="text-muted">Pay securely online using credit/debit card or other payment methods.</p>
@@ -295,17 +303,208 @@
                     <div class="visa-application-process-custom text-center d-flex align-items-center flex-column">
                         <div
                             class="visa-application-process-custom-icon d-flex align-items-center justify-content-center mb-3">
-                            <img src="img/Form.png" alt="">
+                            <i class="fa-solid fa-passport fs-3"></i>
                         </div>
                         <h5 class="fw-semibold">Receive eVisa</h5>
                         <p class="text-muted">Get your approved eVisa via email within 2-3 working days.</p>
                     </div>
                 </div>
             </div>
-
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="application-now-btn d-flex align-items-center justify-content-center mt-4">
+                        <a href="/visa-user-detail.html" class="btn visa-detail-apply-btn mt-4 px-5 py-2">Start Your
+                            Application Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- visa application process end -->
+
+    <!-- about visa detail sec start -->
+    <section class="about-visa-detail py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-visa-detail-heading py-4 px-3 rounded-3 mb-4">
+                        <h5 class="fw-semibold">About Malaysia Visa</h5>
+                        <div class="devider"></div>
+                        <p class="text-muted">Malaysia is a wonderful country that enfolds a landscape brimming with
+                            modern, cultural, and unbelievable natural sights. We know you're aware of its potentials
+                            and that's why you're here on this page in search of further information. Fortunately,
+                            you're in the right place! Aan Toursim, over a period of ten years, has set up a proven
+                            track record by successfully processing hundreds of thousands of applications.
+                            <br>
+                            <br>
+                            With our unmatched global presence, extensive collection of all-encompassing packages, and
+                            unremitting commitment to quality, we specialize in offering the most appropriate Malaysia
+                            visa solutions while representing UAE residents (any nationality) for their entire leisure
+                            or business tour. Whether you want to apply for a single-entry or multiple-entry Malaysian
+                            visa, we guarantee you an option that is both efficient and quick.
+                            <br>
+                            <br>
+                            As we receive your inquiry or request for a Malaysia tourist visa service, we'll carefully
+                            review your application and then ask you to submit all supporting visa documentation, along
+                            with the stipulated fee. This is followed by the effectual lodgment of your visa
+                            application.
+                            <br>
+                            <br>
+                            Right from the initial consultation till you successfully obtain your visa, you can be
+                            assured of highly professional assistance in every step.
+                        </p>
+                    </div>
+
+                    <div class="about-visa-detail-heading py-4 px-3 rounded-3 mb-4">
+                        <h5 class="fw-semibold">Malaysia Visa Documents</h5>
+                        <div class="devider"></div>
+                        <div class="content py-4">
+                            <h5 class=" mb-1">Clients Documents & Visa Services</h5>
+                            <p class="small-muted mb-3">Aan Tourism Assistance — document checklist, services and
+                                special notes</p>
+
+
+                            <h5>Required Client Documents</h5>
+                            <ul class="simple-list list-unstyled text-muted">
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Color valid UAE residence visa copy —
+                                    minimum
+                                    60 days validity (by email)</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Color passport copy — minimum 180 days
+                                    validity (by email)</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>1 recent photograph — white background,
+                                    3.5 ×
+                                    4.5 cm (by email)</li>
+                            </ul>
+
+
+                            <h5 class=" mt-4">Services We Provide</h5>
+                            <ul class="simple-list list-unstyled text-muted">
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Aan Tourism Assistance</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Appointment Submission</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Application Form Filling Assistance
+                                </li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Verification of Documents</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Flight & Hotel Booking Assistance</li>
+                            </ul>
+
+
+                            <h5 class=" mt-4">Processing Times & Notes</h5>
+                            <ul class="simple-list list-unstyled text-muted">
+                                <li><i class="fa-solid fa-circle-check me-1"></i><strong>Express (Indians):</strong> 2
+                                    hours
+                                </li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i><strong>Normal (other
+                                        nationalities):</strong> 72 hours (single & multiple entry)</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i><strong>Express (other
+                                        nationalities):</strong> 48 hours</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i><strong>Visa validity (Malaysia single
+                                        entry):</strong> 15 days (for other nationalities: valid to stay 15 days and
+                                    valid to enter 90 days)</li>
+                            </ul>
+
+
+                            <h5 class="h6 mt-4">Country-specific Requirements</h5>
+                            <ul class="simple-list list-unstyled text-muted">
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Last 2 months online bank statement
+                                    required
+                                    for single entry visa for <em>Indian, Chinese, Pakistani, Bangladeshi, Sri Lankan,
+                                        Myanmar</em> passport holders with AED 4,000 balance (send by email).</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Last 2 months online bank statement
+                                    required
+                                    for multi-entry visa (Indians) with AED 4,000 balance (by email).</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Single entry visas are sent by email
+                                    for
+                                    <em>Indian, Chinese, Pakistani, Bangladeshi, Sri Lankan, Myanmar</em> passport
+                                    holders.
+                                </li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Single & Multi entry visas are sent by
+                                    email
+                                    for <em>Indian</em> passport holders.</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>Visa will be stamped on passport by
+                                    embassy
+                                    for other nationalities (where applicable).</li>
+                                <li><i class="fa-solid fa-circle-check me-1"></i>NOC letter required for nationalities
+                                    other
+                                    than Indian, Chinese, Pakistani, Bangladeshi, Sri Lankan, Myanmar.</li>
+                            </ul>
+
+
+
+                            <div class="mt-4 ">
+                                <div class="bg-white px-3 py-2 rounded-3 text-muted">
+                                    <p class="mb-0"> <strong class="text-dark">Note:</strong> Additional documents may
+                                        be required depending on your nationality and
+                                        purpose of visit. Our team will guide you through the specific requirements for
+                                        your application.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-visa-detail-heading py-4 px-3 rounded-3 mb-4">
+                        <h5 class="fw-semibold">Holiday List</h5>
+                        <div class="devider"></div>
+                        <p class="text-muted">...........
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about visa detail sec end -->
+
+    <!-- why choose us evisa sec start -->
+    <section class="why-choose-us-evisa py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="why-choose-us-evisa-heading mb-3 text-center">
+                        <h3 class="fw-semibold">Your Best Choice for eVisa Applications</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-choose-evisa-card text-center d-flex align-items-center flex-column bg-white px-3 py-4">
+                        <div
+                            class="why-choose-evisa-card-icon d-flex align-items-center justify-content-center mb-3">
+                            <i class="fa-solid fa-stopwatch fs-3"></i>
+                        </div>
+                        <h5 class="fw-semibold">Fast Processing</h5>
+                        <p class="text-muted m-0">Our average processing time is just 2–3 working days, ensuring quick
+                            approvals and saving you valuable time compared to traditional visa applications.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-choose-evisa-card text-center d-flex align-items-center flex-column bg-white px-3 py-4">
+                        <div
+                            class="why-choose-evisa-card-icon d-flex align-items-center justify-content-center mb-3">
+                            <i class="fa-solid fa-shield-halved fs-3"></i>
+                        </div>
+                        <h5 class="fw-semibold">Secure Platform</h5>
+                        <p class="text-muted">Our platform uses advanced encryption and security measures to protect
+                            your
+                            personal information throughout the application process.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-choose-evisa-card text-center d-flex align-items-center flex-column bg-white px-3 py-4">
+                        <div
+                            class="why-choose-evisa-card-icon d-flex align-items-center justify-content-center mb-3">
+                            <i class="fa-solid fa-headset fs-3"></i>
+                        </div>
+                        <h5 class="fw-semibold">Expert Support</h5>
+                        <p class="text-muted">Our team of experts is available 24/7 to assist you with any questions or
+                            concerns you may have during the application process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why choose us evisa sec end -->
 
     <!-- footer section start -->
     <footer class="footer-sec pt-5">
@@ -320,7 +519,7 @@
                             trip. Smart
                             planning for better travel experiences.
                         </p>
-                         <div>
+                        <div>
                             <button id="lightModeBtn"></button>
                             <button id="darkModeBtn"></button>
                         </div>
@@ -331,12 +530,13 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-custom">
                         <h6 class="fw-bold text-white mb-4 fs-5">Services:</h6>
-                       <ul class="list-unstyled small text-white">
+                        <ul class="list-unstyled small text-white">
                             <li><a href="/visa.html" class="text-white text-decoration-none">Visas</a></li>
                             <li><a href="/activities.html" class="text-white text-decoration-none">Activities</a></li>
                             <li><a href="/combo-tour.html" class="text-white text-decoration-none">Combo Tours</a></li>
                             <li><a href="/hotel.html" class="text-white text-decoration-none">Hotel</a></li>
-                            <li><a href="/order-history.html" class="text-white text-decoration-none">Order History</a></li>
+                            <li><a href="/order-history.html" class="text-white text-decoration-none">Order History</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
