@@ -15,9 +15,11 @@
     width: 20px;
     height: 20px;
 }
+
 .header-home .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
 .header-home .navbar {
     z-index: 1030;
     top: 0;
@@ -84,6 +86,7 @@
 .header-home .navbar-scroll.scrolled .btn-outline-light {
     color: var(--color-white);
 }
+
 .header-home .navbar-scroll.scrolled .btn-outline-light:hover {
     color: var(--primary-colors);
 }
@@ -102,7 +105,20 @@
 
 
 /* header fixed */
+/* header & banner sec end */
+.visa-options-price {
+    margin-top: 50px;
+}
 
+.visa-detail-head {
+    background-color: var(--secondary-lights);
+    color: var(--primary-colors);
+}
+
+.visa-detail-head .rating-stars i {
+    color: var(--rating-star-color);
+    font-size: 14px;
+}
 
 .visa-options-price .visa-options-price-heading {
     color: var(--primary-colors);
@@ -122,7 +138,7 @@
     width: 200px;
 }
 
-.visa-options-price-heading h2 {
+.visa-options-price-heading h3 {
     font-size: clamp(20px, 2vw, 28px);
 }
 
@@ -140,7 +156,7 @@
     background-color: var(--primary-lights);
 }
 
-.visa-application-process .visa-application-process-heading h2 {
+.visa-application-process .visa-application-process-heading h3 {
     color: var(--primary-colors);
     font-size: clamp(20px, 2vw, 28px);
 }
@@ -154,6 +170,63 @@
 
 .visa-application-process .visa-application-process-custom h5 {
     color: var(--primary-colors);
+}
+
+.visa-application-process .visa-application-process-custom i {
+    color: var(--secondary-colors);
+}
+
+.visa-application-process .application-now-btn .btn {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.visa-application-process .application-now-btn .btn:hover {
+    background-color: var(--btn-hover-color);
+    border: 1px solid var(--secondary-colors);
+}
+
+.about-visa-detail-heading h5 {
+    color: var(--primary-colors);
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+.about-visa-detail-heading {
+    background-color: var(--secondary-lights);
+}
+
+.about-visa-detail-heading .devider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--secondary-colors);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.about-visa-detail-heading .simple-list li i {
+    color: var(--secondary-colors);
+}
+
+.why-choose-us-evisa {
+    background-color: var(--primary-lights);
+}
+
+.why-choose-us-evisa h3 {
+    font-size: clamp(20px, 2vw, 28px);
+    color: var(--primary-colors);
+}
+
+.why-choose-evisa-card {
+    border-radius: var(--border-radius-boxes);
+}
+
+.why-choose-evisa-card h5 {
+    color: var(--primary-colors);
+}
+
+.why-choose-evisa-card .why-choose-evisa-card-icon {
+    color: var(--secondary-colors);
 }
 
 /* footer section start */
