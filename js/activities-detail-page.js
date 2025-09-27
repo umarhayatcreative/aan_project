@@ -2,9 +2,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     const elem = document.getElementById('tourDate');
     if (elem) {
-        flatpickr(elem, {
+        const fp = flatpickr(elem, {
             minDate: "today",
-            dateFormat: "Y-m-d"
+            dateFormat: "Y-m-d",
+            appendTo: document.body
+        });
+
+        // Page scroll hone par calendar close ho jaye
+        window.addEventListener('scroll', function () {
+            fp.close();
         });
     }
 });

@@ -336,9 +336,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
  $(document).ready(function(){
     $('.card-slider').owlCarousel({
       loop: true,

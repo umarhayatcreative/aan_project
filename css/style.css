@@ -140,6 +140,32 @@
 .hero-content-banner .hotel-input-sec .add-guest-btn:hover {
     background-color: var(--secondary-colors);
 }
+.hero-content-banner .guest-counter-btn {
+    width: 32px;
+    height: 32px;
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    border-width: 1px;
+}
+
+.hero-content-banner .guest-counter-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s ease-in-out;
+}
+
+.hero-content-banner .guest-counter-btn:active {
+    transform: scale(0.95);
+}
+
+
+
+
 
 /* hotel input sec start */
 
